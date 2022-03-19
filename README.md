@@ -2,6 +2,9 @@
 Computer graphics models and examples
 * Blender
 * Photoshop
+## Requirements
+Arch Linux
+
 
 ## Demos
 https://cg.sanchezcarlosjr.com/
