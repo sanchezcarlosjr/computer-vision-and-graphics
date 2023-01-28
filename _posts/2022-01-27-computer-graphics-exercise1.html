@@ -7,6 +7,13 @@ title:  "Exercise 1"
   <p>Your browser don't support WebGL.</p>
 </canvas>
 
+<script src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js"></script>
 <script>
-console.log("HELLO");
+	const { range, filter, map } = rxjs;
+	range(1, 200)
+		.pipe(
+			filter((x) => x % 2 === 1),
+			map((x) => x + x)
+		)
+		.subscribe((x) => console.log(x));
 </script>
