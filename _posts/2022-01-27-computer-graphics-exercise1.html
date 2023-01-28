@@ -76,7 +76,7 @@ canvas {
 				const aPosition = gl.getAttribLocation( program, "aPosition" );
 				gl.vertexAttribPointer( aPosition, 2, gl.FLOAT, false, 0, 0 );
 				gl.enableVertexAttribArray(aPosition);
-				return {gl,program};
+				return gl;
 			})
 		)
 		.subscribe(gl => {
