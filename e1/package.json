@@ -1,0 +1,27 @@
+{
+  "name": "e1",
+  "version": "1.0.0",
+  "description": "Exercise 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "",
+    "preinstall": "echo \"Installing...\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanchezcarlosjr/computer-graphics.git"
+  },
+  "keywords": [
+    "computer-graphics",
+    "exercises"
+  ],
+  "author": "sanchezcarlosjr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanchezcarlosjr/computer-graphics/issues"
+  },
+  "homepage": "https://github.com/sanchezcarlosjr/computer-graphics#readme",
+  "dependencies": {
+  }
+}
