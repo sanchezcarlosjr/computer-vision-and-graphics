@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1>CG Demos</h1>
+<h1>CG Exercices</h1>
 
 <ul>
   {% for post in site.posts %}
