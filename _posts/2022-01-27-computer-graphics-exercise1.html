@@ -35,7 +35,7 @@ canvas {
 </script>
 
 <script>
-	const { range, filter, map } = rxjs;
+	const { of, filter, map } = rxjs;
 	function error(message) {
 		// I know this is dump, but for JavaScript "throw" is not a expression.
 		throw new Error(message);
@@ -43,14 +43,38 @@ canvas {
 	const clousure = (op) => (ob) => (ob && op(ob) === undefined) ?? ob;
 	of(document.getElementById('gl-canvas'))
 		.pipe(
-			filter((canvas) => !!canvas),
-			map(
-				(canvas) =>
-				clousure((gl) => {
+			filter(canvas => !!canvas),
+			map(canvas => clousure(gl => {
 					gl.viewport(0, 0, canvas.width, canvas.height);
 					gl.clearColor(0.0, 0.0, 0.0, 1.0);
 				})(canvas.getContext('webgl2')) ?? error("WebGL 2.0 isn't available.")
-			)
+			),
+			map(gl => {
+				const program = initShaders(gl, "vertex-shader", "fragment-shader");
+				gl.useProgram(program);
+				return {gl,program};
+			}),
+			map(({gl,program}) => {
+				const square = [
+					vec2( -0.5, -0.5 ),
+					vec2( -0.5,  0.5 ),
+					vec2(  0.5,  0.5 ),
+					vec2(  0.5, -0.5 )
+				];
+				const bufferId = gl.createBuffer();
+				gl.bindBuffer(gl.ARRAY_BUFFER,bufferId);
+				gl.bufferData(gl.ARRAY_BUFFER,flatten(square),gl.STATIC_DRAW);
+				return {gl,program};
+			}),
+			map(({gl, program}) => {
+				const aPosition = gl.getAttribLocation( program, "aPosition" );
+				gl.vertexAttribPointer( aPosition, 2, gl.FLOAT, false, 0, 0 );
+				gl.enableVertexAttribArray(aPosition);
+				return {gl,program};
+			})
 		)
-		.subscribe(console.log);
+		.subscribe(gl => {
+			gl.clear( gl.COLOR_BUFFER_BIT );
+			gl.drawArrays( gl.TRIANGLE_FAN, 0, 4 );
+		});
 </script>
