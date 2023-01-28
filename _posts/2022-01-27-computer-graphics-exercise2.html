@@ -60,6 +60,9 @@ canvas {
 	};
 	fromEvent(document, 'DOMContentLoaded')
 		.pipe(
+			tap(() => {
+				debugger;
+			}),
 			//  Configure WebGL
 			map(() => document.getElementById('gl-canvas')),
 			filter(canvas => !!canvas),
