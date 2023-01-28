@@ -1,9 +1,8 @@
 ---
 layout: default
-title:  "Computer Graphics"
 ---
 
-<h1>Demos</h1>
+<h1>CG Demos</h1>
 
 <ul>
   {% for post in site.posts %}
