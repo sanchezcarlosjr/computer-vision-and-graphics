@@ -17,6 +17,8 @@ canvas {
 <script src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js"></script>
 <script src="https://interactivecomputergraphics.com/Code/Common/initShaders.js"></script>
 <script src="https://interactivecomputergraphics.com/Code/Common/MVnew.js"</script>
+
+/* Ignore this because something is remove it. */
 <script id="fragment-shader2" type="x-shader/x-fragment"></script>
 
 <script id="fragment-shader" type="x-shader/x-fragment">
@@ -42,7 +44,10 @@ canvas {
 		// I know this is dump, but for JavaScript "throw" is not a expression.
 		throw new Error(message);
 	}
-	const clousure = (op) => (ob) => (ob && op(ob) === undefined) ?? ob;
+	const clousure = (op) => (ob) => {
+		if (ob) op(ob);
+		return ob;
+	};
 	of(document.getElementById('gl-canvas'))
 		.pipe(
 			//  Configure WebGL
