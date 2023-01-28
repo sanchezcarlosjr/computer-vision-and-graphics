@@ -84,18 +84,18 @@ canvas {
 				const bufferId = gl.createBuffer();
 				gl.bindBuffer(gl.ARRAY_BUFFER,bufferId);
 				gl.bufferData(gl.ARRAY_BUFFER,flatten(square),gl.STATIC_DRAW);
-				return {gl,program};
+				return {gl,program,square};
 			}),
 			// Associate our shader variable with our data buffer
-			map(({gl, program}) => {
+			map(({gl, program, square}) => {
 				const aPosition = gl.getAttribLocation( program, "aPosition" );
 				gl.vertexAttribPointer( aPosition, 2, gl.FLOAT, false, 0, 0 );
 				gl.enableVertexAttribArray(aPosition);
-				return gl;
+				return {gl, square};
 			})
 		)
-		.subscribe(gl => {
+		.subscribe({gl,square} => {
 			gl.clear( gl.COLOR_BUFFER_BIT );
-			gl.drawArrays( gl.TRIANGLE_FAN, 0, 4 );
+			gl.drawArrays( gl.TRIANGLE_FAN, 0, square.length);
 		});
 </script>
