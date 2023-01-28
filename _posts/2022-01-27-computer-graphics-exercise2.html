@@ -49,7 +49,7 @@ canvas {
 </script>
 
 <script>
-	const { of, filter, map } = rxjs;
+	const { of, filter, map, fromEvent } = rxjs;
 	function error(message) {
 		// I know this is dump, but for JavaScript "throw" is not a expression.
 		throw new Error(message);
@@ -58,9 +58,10 @@ canvas {
 		if (ob) op(ob);
 		return ob;
 	};
-	of(document.getElementById('gl-canvas'))
+	fromEvent(document, 'DOMContentLoaded')
 		.pipe(
 			//  Configure WebGL
+			map(() => document.getElementById('gl-canvas')),
 			filter(canvas => !!canvas),
 			map(canvas => clousure(gl => {
 				gl.viewport(0,0,canvas.width,canvas.height);
@@ -77,26 +78,26 @@ canvas {
 			}),
 			 // Load vertices into the GPU
 			map(({gl,program}) => {
-				const triangle = [
-					vec2(-1,-1),
-					vec2(0,1),
-					vec2(1,-1)
-				];
+				const triangle = new Float32Array([
+					-1, -1 ,
+					0,  1 ,
+					1, -1
+				]);
 				const bufferId = gl.createBuffer();
 				gl.bindBuffer(gl.ARRAY_BUFFER,bufferId);
-				gl.bufferData(gl.ARRAY_BUFFER,flatten(triangle),gl.STATIC_DRAW);
-				return {gl,program,triangle};
+				gl.bufferData(gl.ARRAY_BUFFER,triangle,gl.STATIC_DRAW);
+				return {gl,program};
 			}),
 			// Associate our shader variable with our data buffer
-			map(({gl, program, triangle}) => {
+			map(({gl, program}) => {
 				const aPosition = gl.getAttribLocation( program, "aPosition" );
 				gl.vertexAttribPointer( aPosition, 2, gl.FLOAT, false, 0, 0 );
 				gl.enableVertexAttribArray(aPosition);
-				return {gl, triangle};
+				return {gl};
 			})
 		)
-		.subscribe(({gl,triangle}) => {
+		.subscribe(({gl}) => {
 			gl.clear( gl.COLOR_BUFFER_BIT );
-			gl.drawArrays( gl.TRIANGLE, 0, triangle.length);
+			gl.drawArrays( gl.TRIANGLE, 0, 3);
 		});
 </script>
