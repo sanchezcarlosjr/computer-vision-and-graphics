@@ -94,7 +94,7 @@ canvas {
 				return {gl, square};
 			})
 		)
-		.subscribe({gl,square} => {
+		.subscribe(({gl,square}) => {
 			gl.clear( gl.COLOR_BUFFER_BIT );
 			gl.drawArrays( gl.TRIANGLE_FAN, 0, square.length);
 		});
