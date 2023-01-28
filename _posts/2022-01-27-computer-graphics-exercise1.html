@@ -1,19 +1,28 @@
 ---
 layout: default
-title:  "Exercise 1"
+title:  "Exercise 1 - A perfect square"
 ---
 <style>
+container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 canvas {
 	aspect-ratio: 1 / 1;
-	width: 100%;
-	max-height: 100%;
+	width: 50%;
+	max-height: 50%;
 	border: none;
 	padding: 0;
 	margin: 0;
 }
 </style>
 
-<canvas id="gl-canvas">Your browser does not seem to support HTML canvas.</canvas>
+<container>
+  <canvas id="gl-canvas">Your browser does not seem to support HTML canvas.</canvas>
+<container>
 
 <script src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js"></script>
 <script src="https://interactivecomputergraphics.com/Code/Common/initShaders.js"></script>
