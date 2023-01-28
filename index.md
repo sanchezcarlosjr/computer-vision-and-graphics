@@ -3,12 +3,12 @@ layout: default
 title:  "Computer Graphics"
 ---
 
-<h1>{{ page.title }}</h1>
+<h1>Demos</h1>
 
 <ul>
-  {% assign mypages = site.pages %}
-    {% for page in mypages %}
-    <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
   {% endfor %}
 </ul>
-
