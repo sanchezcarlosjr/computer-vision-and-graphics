@@ -62,7 +62,11 @@ canvas {
 		.pipe(
 			//  Configure WebGL
 			filter(canvas => !!canvas),
-			map(canvas => clousure(gl => gl.viewport(0, 0, canvas.width, canvas.height))(canvas.getContext('webgl2')) 
+			map(canvas => clousure(gl => {
+				gl.viewport(0,0,canvas.width,canvas.height);
+				gl.clearColor( 1.0, 1.0, 1.0, 1.0 );
+			   }
+			)(canvas.getContext('webgl2')) 
 				      ?? error("WebGL 2.0 isn't available.")
 			),
 			//  Load shaders and initialize attribute buffers
