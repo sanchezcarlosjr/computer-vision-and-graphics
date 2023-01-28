@@ -49,7 +49,7 @@ canvas {
 </script>
 
 <script>
-	const { of, filter, map, fromEvent } = rxjs;
+	const { of, filter, map, fromEvent, tap } = rxjs;
 	function error(message) {
 		// I know this is dump, but for JavaScript "throw" is not a expression.
 		throw new Error(message);
