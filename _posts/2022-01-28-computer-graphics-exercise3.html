@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Exercise 2 - A simple triangle"
+title:  "Exercise 3 - A circle"
 ---
 <style>
 container {
@@ -33,15 +33,25 @@ canvas {
  precision mediump float;
  out vec4 fColor;
  void main() {
-     fColor = vec4( 1.0, 0.0, 0.0, 1.0 );
+     fColor = vec4(0.949,0.804,0.361,1.0);
  }
 </script>
 
 <script id="vertex-shader" type="x-shader/x-vertex">
  #version 300 es
- in vec4 aPosition;
+ #define PI radians(180.0)
+ in float vertexId;
+ uniform float numVerts;
+ uniform vec2 resolution;
+
  void main() {
-    gl_Position = aPosition;
+    float u = vertexId/numVerts;      // goes from 0 to 1
+    float angle = u * PI * 2.1;         // goes from 0 to 2PI
+    float radius = 0.9;
+    vec2 pos = vec2(cos(angle), sin(angle)) * radius;
+    float aspect = resolution.y / resolution.x;
+    vec2 scale = vec2(aspect, 1);
+    gl_Position = vertexId == 0.0 ? vec4(0,0,0,1) : vec4(pos*scale, 0, 1);
  }
 </script>
 
@@ -58,42 +68,36 @@ canvas {
 	fromEvent(document, 'DOMContentLoaded')
 		.pipe(
 			map(() => document.getElementById('gl-canvas')),
-			//  Configure WebGL
 			filter(canvas => !!canvas),
 			map(canvas => clousure(gl => {
-					gl.viewport(0, 0, canvas.width, canvas.height);
-					gl.clearColor(1,1,1,1.0);
-				})(canvas.getContext('webgl2')) ?? error("WebGL 2.0 isn't available.")
+				gl.viewport(0, 0, canvas.width, canvas.height);
+				gl.clearColor(1,1,1,1);
+			})(canvas.getContext('webgl2')) ?? error("WebGL 2.0 isn't available.")
 			),
-			//  Load shaders and initialize attribute buffers
 			map(gl => {
 				const program = initShaders(gl, "vertex-shader", "fragment-shader");
 				gl.useProgram(program);
 				return {gl,program};
 			}),
-			 // Load vertices into the GPU
 			map(({gl,program}) => {
-				const triangle = [
-					vec2( -1, -1 ),
-					vec2( 0,  1 ),
-					vec2( 1,  -1 )
-				];
-				const bufferId = gl.createBuffer();
-				gl.bindBuffer(gl.ARRAY_BUFFER,bufferId);
-				gl.bufferData(gl.ARRAY_BUFFER,flatten(triangle),gl.STATIC_DRAW);
-				return {gl,program,triangle};
-			}),
-			// Associate our shader variable with our data buffer
-			map(({gl, program, triangle}) => {
-				const aPosition = gl.getAttribLocation( program, "aPosition" );
-				gl.vertexAttribPointer( aPosition, 2, gl.FLOAT, false, 0, 0 );
-				gl.enableVertexAttribArray(aPosition);
-				return {gl, triangle};
+				const vertexIds = new Float32Array(360).map((_,index) => index);
+				const idBuffer = gl.createBuffer();
+				gl.bindBuffer(gl.ARRAY_BUFFER, idBuffer);
+				gl.bufferData(gl.ARRAY_BUFFER, vertexIds, gl.STATIC_DRAW);
+
+				const vertexIdLoc = gl.getAttribLocation(program, 'vertexId');
+				gl.enableVertexAttribArray(vertexIdLoc);
+				gl.vertexAttribPointer(vertexIdLoc, 1, gl.FLOAT, false, 0, 0);
+
+				gl.uniform1f(gl.getUniformLocation(program, 'numVerts'), vertexIds.length);
+				gl.uniform2f(gl.getUniformLocation(program, 'resolution'), gl.canvas.width, gl.canvas.height);
+
+				return {gl, vertexIds};
 			})
 		)
-		.subscribe(({gl,triangle}) => {
+		.subscribe(({gl, vertexIds}) => {
 			gl.clear( gl.COLOR_BUFFER_BIT );
-			gl.drawArrays( gl.TRIANGLE_FAN, 0, triangle.length);
+		        gl.drawArrays( gl.TRIANGLE_FAN, 0, vertexIds.length);
 		});
 
 </script>
