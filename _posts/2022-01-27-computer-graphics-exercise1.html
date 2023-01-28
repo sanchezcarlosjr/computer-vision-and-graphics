@@ -43,17 +43,20 @@ canvas {
 	const clousure = (op) => (ob) => (ob && op(ob) === undefined) ?? ob;
 	of(document.getElementById('gl-canvas'))
 		.pipe(
+			//  Configure WebGL
 			filter(canvas => !!canvas),
 			map(canvas => clousure(gl => {
 					gl.viewport(0, 0, canvas.width, canvas.height);
 					gl.clearColor(0.0, 0.0, 0.0, 1.0);
 				})(canvas.getContext('webgl2')) ?? error("WebGL 2.0 isn't available.")
 			),
+			//  Load shaders and initialize attribute buffers
 			map(gl => {
 				const program = initShaders(gl, "vertex-shader", "fragment-shader");
 				gl.useProgram(program);
 				return {gl,program};
 			}),
+			 // Load vertices into the GPU
 			map(({gl,program}) => {
 				const square = [
 					vec2( -0.5, -0.5 ),
@@ -66,6 +69,7 @@ canvas {
 				gl.bufferData(gl.ARRAY_BUFFER,flatten(square),gl.STATIC_DRAW);
 				return {gl,program};
 			}),
+			// Associate our shader variable with our data buffer
 			map(({gl, program}) => {
 				const aPosition = gl.getAttribLocation( program, "aPosition" );
 				gl.vertexAttribPointer( aPosition, 2, gl.FLOAT, false, 0, 0 );
