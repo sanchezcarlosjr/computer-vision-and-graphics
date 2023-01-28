@@ -1,0 +1,100 @@
+---
+layout: default
+title:  "Exercise 4 - Sin(x)"
+---
+<style>
+container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+canvas {
+	width: 50%;
+	max-height: 50%;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+</style>
+
+<container>
+ <canvas id="gl-canvas">Your browser does not seem to support HTML canvas.</canvas>
+</container>
+
+<script src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js"></script>
+<script src="https://interactivecomputergraphics.com/Code/Common/initShaders.js"></script>
+<script src="https://interactivecomputergraphics.com/Code/Common/MVnew.js"></script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+ #version 300 es
+ precision mediump float;
+ out vec4 fColor;
+ void main() {
+     fColor = vec4(0.949,0.804,0.361,1.0);
+ }
+</script>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+ #version 300 es
+ #define PI radians(180.0)
+ in float vertexId;
+ uniform float numVerts;
+ uniform vec2 resolution;
+
+ void main() {
+    float u = vertexId/numVerts;      // goes from 0 to 1
+    float angle = 3.0*(u*2.0*PI-PI);  // goes from -3PI to 3PI
+    float aspect = resolution.y / resolution.x;
+    vec2 scale = vec2(aspect, 1);
+    gl_Position = vec4(vec2(angle,sin(angle))*scale*0.3, 0, 1);
+ }
+</script>
+
+<script>
+	const { of, filter, map, fromEvent } = rxjs;
+	function error(message) {
+		// I know this is dump, but for JavaScript "throw" is not a expression.
+		throw new Error(message);
+	}
+	const clousure = (op) => (ob) => {
+		if (ob) op(ob);
+		return ob;
+	};
+	fromEvent(document, 'DOMContentLoaded')
+		.pipe(
+			map(() => document.getElementById('gl-canvas')),
+			filter(canvas => !!canvas),
+			map(canvas => clousure(gl => {
+				gl.viewport(0, 0, canvas.width, canvas.height);
+				gl.clearColor(1,1,1,1);
+			})(canvas.getContext('webgl2')) ?? error("WebGL 2.0 isn't available.")
+			),
+			map(gl => {
+				const program = initShaders(gl, "vertex-shader", "fragment-shader");
+				gl.useProgram(program);
+				return {gl,program};
+			}),
+			map(({gl,program}) => {
+				const vertexIds = new Float32Array(100).map((_,index) => index);
+				const idBuffer = gl.createBuffer();
+				gl.bindBuffer(gl.ARRAY_BUFFER, idBuffer);
+				gl.bufferData(gl.ARRAY_BUFFER, vertexIds, gl.STATIC_DRAW);
+
+				const vertexIdLoc = gl.getAttribLocation(program, 'vertexId');
+				gl.enableVertexAttribArray(vertexIdLoc);
+				gl.vertexAttribPointer(vertexIdLoc, 1, gl.FLOAT, false, 0, 0);
+
+				gl.uniform1f(gl.getUniformLocation(program, 'numVerts'), vertexIds.length);
+				gl.uniform2f(gl.getUniformLocation(program, 'resolution'), gl.canvas.width, gl.canvas.height);
+
+				return {gl, vertexIds};
+			})
+		)
+		.subscribe(({gl, vertexIds}) => {
+			gl.clear( gl.COLOR_BUFFER_BIT );
+		        gl.drawArrays( gl.LINE_STRIP, 0, vertexIds.length);
+		});
+
+</script>
