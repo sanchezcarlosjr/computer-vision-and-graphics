@@ -18,8 +18,7 @@ canvas {
 <script src="https://interactivecomputergraphics.com/Code/Common/initShaders.js"></script>
 <script src="https://interactivecomputergraphics.com/Code/Common/MVnew.js"</script>
 
-
-<script id="vertex-shader" type="x-shader/x-vertex">
+<script id="fff-vertex-shader" type="x-shader/x-vertex">
  #version 300 es
  in vec4 aPosition;
  void main() {
@@ -54,7 +53,7 @@ canvas {
 			),
 			//  Load shaders and initialize attribute buffers
 			map(gl => {
-				const program = initShaders(gl, "vertex-shader", "fragment-shader");
+				const program = initShaders(gl, "fff-vertex-shader", "fragment-shader");
 				gl.useProgram(program);
 				return {gl,program};
 			}),
