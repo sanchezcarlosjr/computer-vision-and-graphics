@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Exercise 4 - Sin(x)"
+title:  "Exercise 4 - Sin(x) and Cos(x)"
 ---
 <style>
 container {
@@ -36,7 +36,24 @@ canvas {
  }
 </script>
 
-<script id="vertex-shader" type="x-shader/x-vertex">
+
+<script id="cos-vertex-shader" type="x-shader/x-vertex">
+ #version 300 es
+ #define PI radians(180.0)
+ in float vertexId;
+ uniform float numVerts;
+ uniform vec2 resolution;
+
+ void main() {
+    float u = vertexId/numVerts;      // goes from 0 to 1
+    float angle = 3.0*(u*2.0*PI-PI);  // goes from -3PI to 3PI
+    float aspect = resolution.y / resolution.x;
+    vec2 scale = vec2(aspect, 1);
+    gl_Position = vec4(vec2(angle,cos(angle)-2.0)*scale*0.3, 0, 1);
+ }
+</script>
+
+<script id="sin-vertex-shader" type="x-shader/x-vertex">
  #version 300 es
  #define PI radians(180.0)
  in float vertexId;
@@ -62,39 +79,45 @@ canvas {
 		if (ob) op(ob);
 		return ob;
 	};
+	const functor = (vertexShader, fragmentShader) => ({gl, objects}) => {
+		const program = initShaders(gl, vertexShader, fragmentShader);
+		gl.useProgram(program);
+
+		const vertexIds = new Float32Array(100).map((_,index) => index);
+		const idBuffer = gl.createBuffer();
+		gl.bindBuffer(gl.ARRAY_BUFFER, idBuffer);
+		gl.bufferData(gl.ARRAY_BUFFER, vertexIds, gl.STATIC_DRAW);
+
+		const vertexIdLoc = gl.getAttribLocation(program, 'vertexId');
+		gl.enableVertexAttribArray(vertexIdLoc);
+		gl.vertexAttribPointer(vertexIdLoc, 1, gl.FLOAT, false, 0, 0);
+
+		gl.uniform1f(gl.getUniformLocation(program, 'numVerts'), vertexIds.length);
+		gl.uniform2f(gl.getUniformLocation(program, 'resolution'), gl.canvas.width, gl.canvas.height);
+
+		objects.push({render: () => {
+			gl.useProgram(program);
+			gl.drawArrays( gl.LINE_STRIP, 0, vertexIds.length)
+		   }
+		});
+
+		return {gl, objects};
+	};
 	fromEvent(document, 'DOMContentLoaded')
 		.pipe(
 			map(() => document.getElementById('gl-canvas')),
 			filter(canvas => !!canvas),
-			map(canvas => clousure(gl => {
+			map(canvas => clousure(({gl}) => {
 				gl.viewport(0, 0, canvas.width, canvas.height);
 				gl.clearColor(1,1,1,1);
-			})(canvas.getContext('webgl2')) ?? error("WebGL 2.0 isn't available.")
+			})({gl: canvas.getContext('webgl2'), objects: []}) ?? error("WebGL 2.0 isn't available.")
 			),
-			map(gl => {
-				const program = initShaders(gl, "vertex-shader", "fragment-shader");
-				gl.useProgram(program);
-				return {gl,program};
-			}),
-			map(({gl,program}) => {
-				const vertexIds = new Float32Array(100).map((_,index) => index);
-				const idBuffer = gl.createBuffer();
-				gl.bindBuffer(gl.ARRAY_BUFFER, idBuffer);
-				gl.bufferData(gl.ARRAY_BUFFER, vertexIds, gl.STATIC_DRAW);
-
-				const vertexIdLoc = gl.getAttribLocation(program, 'vertexId');
-				gl.enableVertexAttribArray(vertexIdLoc);
-				gl.vertexAttribPointer(vertexIdLoc, 1, gl.FLOAT, false, 0, 0);
-
-				gl.uniform1f(gl.getUniformLocation(program, 'numVerts'), vertexIds.length);
-				gl.uniform2f(gl.getUniformLocation(program, 'resolution'), gl.canvas.width, gl.canvas.height);
-
-				return {gl, vertexIds};
-			})
+			map(functor("sin-vertex-shader", "fragment-shader")),
+			map(functor("cos-vertex-shader", "fragment-shader"))
 		)
-		.subscribe(({gl, vertexIds}) => {
+		.subscribe(({gl, objects}) => {
 			gl.clear( gl.COLOR_BUFFER_BIT );
-		        gl.drawArrays( gl.LINE_STRIP, 0, vertexIds.length);
+			objects.forEach(obj => obj.render?.());
 		});
 
 </script>
