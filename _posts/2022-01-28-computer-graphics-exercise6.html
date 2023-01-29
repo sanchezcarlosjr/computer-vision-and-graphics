@@ -56,7 +56,7 @@ canvas {
 
 
 <script>
-	const { scan, last, of, filter, map, fromEvent, switchMap, interval } = rxjs;
+	const { scan, last, of, startWith, filter, map, fromEvent, switchMap, interval } = rxjs;
 	function error(message) {
 		// I know this is dump, but for JavaScript "throw" is not a expression.
 		throw new Error(message);
@@ -114,10 +114,11 @@ canvas {
 			return {gl, objects};
 		}),
 		map(({gl, objects}) => {
-			const positions = flatten(triangles);
+			const positions = triangles.length === 0 ? triangles : flatten(triangles);
 			const nvertices = positions.length/2;
 			const program = initShaders(gl, "vertex-shader", "white-fragment-shader");
 			objects.push({render: () => {
+				if(positions.length === 0) return;
 				gl.useProgram(program);
 
 				const bufferId = gl.createBuffer();
@@ -149,6 +150,7 @@ canvas {
 	interval(1100).pipe(
 		scan(sierpinskiTriangleGenerator.iterate, sierpinskiTriangleGenerator.initialState),
 		scan((acc, curr) => [...acc,...curr.whites], []), 
+		startWith([]),
 		switchMap(application)
 	).subscribe(({gl, objects}) => {
 		gl.clear( gl.COLOR_BUFFER_BIT );
