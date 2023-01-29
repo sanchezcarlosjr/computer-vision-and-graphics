@@ -1,0 +1,157 @@
+---
+layout: default
+title:  "Exercise 6 - Infinite Sierpiński triangle (with delay)"
+---
+<style>
+container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+canvas {
+	aspect-ratio: 1 / 1;
+	width: 50%;
+	max-height: 50%;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+</style>
+
+<container>
+ <canvas id="gl-canvas">Your browser does not seem to support HTML canvas.</canvas>
+</container>
+
+<script src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js"></script>
+<script src="https://interactivecomputergraphics.com/Code/Common/initShaders.js"></script>
+<script src="https://interactivecomputergraphics.com/Code/Common/MVnew.js"></script>
+
+<script id="black-fragment-shader" type="x-shader/x-fragment">
+ #version 300 es
+ precision mediump float;
+ out vec4 fColor;
+ void main() {
+     fColor = vec4(0.949,0.804,0.361,1.0);
+ }
+</script>
+
+<script id="white-fragment-shader" type="x-shader/x-fragment">
+ #version 300 es
+ precision mediump float;
+ out vec4 fColor;
+ void main() {
+     fColor = vec4(0.251,0.055,0.196,1.0);
+ }
+</script>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+ #version 300 es
+ in vec4 aPosition;
+ void main() {
+    gl_Position = aPosition;
+ }
+</script>
+
+
+<script>
+	const { scan, last, of, filter, map, fromEvent, switchMap, interval } = rxjs;
+	function error(message) {
+		// I know this is dump, but for JavaScript "throw" is not a expression.
+		throw new Error(message);
+	}
+	const clousure = (op) => (ob) => {
+		if (ob) op(ob);
+		return ob;
+	};
+	function white(black) {
+		return flatten([
+			mult(0.5,add(black[0], black[1])),
+			mult(0.5,add(black[0], black[2])),
+			mult(0.5,add(black[1], black[2])),
+		]);
+	}
+	function blacks(black) {
+		return [
+			[
+				black[0],
+				mult(0.5,add(black[0], black[1])),
+				mult(0.5,add(black[0], black[2]))
+			],
+			[
+				mult(0.5,add(black[0], black[1])),
+				black[1],
+				mult(0.5,add(black[1], black[2]))
+			],
+			[
+				mult(0.5,add(black[0], black[2])),
+				mult(0.5,add(black[1], black[2])),
+				black[2]
+			]
+		];
+	}
+
+	const startTriangle = [vec2(0,1),vec2(-1.0,-1.0),vec2(1,-1)];
+
+	const application = (triangles) => of(document.getElementById('gl-canvas')).pipe(
+		filter(canvas => !!canvas),
+		map(canvas => clousure(({gl}) => {
+			gl.viewport(0, 0, canvas.width, canvas.height);
+			gl.clearColor(1,1,1,1);
+		})({gl: canvas.getContext('webgl2'), objects: []}) ?? error("WebGL 2.0 isn't available.")
+		),
+		map(({gl, objects}) => {
+			const program = initShaders(gl, "vertex-shader", "black-fragment-shader");
+			gl.useProgram(program);
+			const bufferId = gl.createBuffer();
+			gl.bindBuffer(gl.ARRAY_BUFFER,bufferId);
+			gl.bufferData(gl.ARRAY_BUFFER,flatten(startTriangle),gl.STATIC_DRAW);
+			const aPosition = gl.getAttribLocation( program, "aPosition" );
+			gl.vertexAttribPointer( aPosition, 2, gl.FLOAT, false, 0, 0 );
+			gl.enableVertexAttribArray(aPosition);
+			objects.push({render: () => gl.drawArrays(gl.TRIANGLE_FAN, 0, startTriangle.length)});
+			return {gl, objects};
+		}),
+		map(({gl, objects}) => {
+			const positions = flatten(triangles);
+			const nvertices = positions.length/2;
+			const program = initShaders(gl, "vertex-shader", "white-fragment-shader");
+			objects.push({render: () => {
+				gl.useProgram(program);
+
+				const bufferId = gl.createBuffer();
+				gl.bindBuffer(gl.ARRAY_BUFFER,bufferId);
+				gl.bufferData(gl.ARRAY_BUFFER,positions,gl.STATIC_DRAW);
+
+				const aPosition = gl.getAttribLocation( program, "aPosition" );
+				gl.vertexAttribPointer( aPosition, 2, gl.FLOAT, false, 0, 0 );
+				gl.enableVertexAttribArray(aPosition);
+
+				gl.drawArrays(gl.TRIANGLES, 0, nvertices);
+			}
+			});
+			return {gl, objects};
+		})
+	)
+	const sierpinskiTriangleGenerator = {
+		initialState: {
+			blacks: [startTriangle],
+			whites: []
+		},
+		iterate: state => state.blacks.reduce((acc, triangle) => {
+			// Each triangle has 1 hole and 3 sub triangles.
+			acc.whites.push(white(triangle));
+			acc.blacks.push(...blacks(triangle));
+			return acc;
+		}, {blacks: [], whites: []})
+	};
+	interval(1100).pipe(
+		scan(sierpinskiTriangleGenerator.iterate, sierpinskiTriangleGenerator.initialState),
+		scan((acc, curr) => [...acc,...curr.whites], []), 
+		switchMap(application)
+	).subscribe(({gl, objects}) => {
+		gl.clear( gl.COLOR_BUFFER_BIT );
+		objects.forEach(obj => obj.render?.());
+	});
+</script>
