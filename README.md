@@ -1,7 +1,9 @@
-# Computer Graphics
-Computer graphics models, demos, and examples in
-* Blender
+# Computer Vision and Graphics
+Computer Vision and Graphics are models, demos, and examples in
 * WebGL
+* OpenCV
+* Unity
+* Blender
 * Others
 
 ## Demos
