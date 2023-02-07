@@ -1,10 +1,5 @@
 # Computer Vision and Graphics
-Computer Vision and Graphics are models, demos, and examples in
-* WebGL
-* OpenCV
-* Unity
-* Blender
-* Others
+Computer Vision and Graphics are models, demos, and examples in **WebGL**, **OpenCV**, **Unity**, **Blender**, and Others that you can visualize them.
 
 ## Demos
 https://cg.sanchezcarlosjr.com/
