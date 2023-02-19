@@ -1,0 +1,34 @@
+---
+layout: default
+title:  "Exercise 2 - Animated Workers"
+---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+<script>
+  let n = parseInt(new URLSearchParams(window.location.search).get('n') ?? 5);
+  let positions = new Array(n).fill(0);
+  let ports = new Array(n).fill(0).map(() => new Worker('/assets/2022-02-18-distributed-systems-workers/horse.js'));
+  let someHoarseReachesTheGoal = false;
+  function setup() {
+    createCanvas(600, 80*n);
+    ports.forEach((port, index) => {
+      port.postMessage({position: index, state: "setup"});
+      port.addEventListener('message', async (event) => {
+        console.log(event.data.position, positions);
+        positions[event.data.position] = positions[event.data.position] + event.data.distance;
+        someHoarseReachesTheGoal = positions[event.data.position] >= 510;
+        console.log(someHoarseReachesTheGoal);
+        if (someHoarseReachesTheGoal) {
+            ports.forEach(port => port.terminate());
+        }
+      });
+    });
+    ports.forEach((port, index) => port.postMessage({position: index, state: "start"}));
+  }
+
+  function draw() {
+    background(220);
+    for (let i = 0; i < n; i++) {
+      ellipse(50+positions[i],i*80+40,80,80);
+    }
+  }
+</script>
