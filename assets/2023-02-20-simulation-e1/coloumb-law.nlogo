@@ -12,7 +12,6 @@ to setup
   ask turtles [
     set size 2
     set label charge
-    create-link-with one-of other turtles
   ]
   ask turtles  [
     ifelse charge < 0
@@ -24,6 +23,7 @@ end
 to go
   ask turtles [
     forward 0.5
+    create-link-with min-one-of other turtles [distance myself]
     let force-x 0
     let force-y 0
     ask other turtles [
@@ -37,9 +37,8 @@ to go
       if distance myself = 0 [
         let force -8987999750
         plotxy ticks force
-        let angle towards myself
-        set force-x force-x + force
-        set force-y force-y + force * sin(angle)
+        set force-x force
+        set force-y force
       ]
     ]
     if force-y != 0 or force-x != 0  [

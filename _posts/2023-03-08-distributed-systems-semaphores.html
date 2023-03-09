@@ -1,0 +1,76 @@
+---
+layout: default
+title:  "Exercise 3 - Semaphores and threads"
+---
+<p>Since SharedArrayBuffer is disabled by default, you have got to activate them. </p>
+<a href="https://subscription.packtpub.com/book/web-development/9781788628174/5/ch05lvl1sec47/enabling-sharedarraybuffers-in-firefox">Firefox</a>
+<a href="https://subscription.packtpub.com/book/web-development/9781788628174/5/ch05lvl1sec48/enabling-sharedarraybuffers-in-chrome">Chrome</a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+
+<script>
+  let semaphores = [];
+
+  let semaphoreSize = 50;
+  let rectangleWidth = 5;
+  let rectangleHeight = 5; 
+  class Semaphore {
+    mapper = {
+      "Red": 0,
+      "Yellow": 1,
+      "Green": 2
+    }
+    constructor(locationX, locationY, color, carLocationX=0, carLocationY=0, name="thread") {
+      this.locationX = locationX;
+      this.locationY = locationY;
+      this.carLocationX = carLocationX;
+      this.carLocationY = carLocationY;
+      this.color = color;
+      this.carLocations = [[0,0]];
+      this.sharedMemory = new SharedArrayBuffer(4);
+      const arr = new Int32Array(this.sharedMemory);
+      arr[0] = this.mapper[color];
+      this.semaphore = new Worker('/assets/2023-03-08-distributed-systems-workers-semaphores/semaphore.js', {name: "S"+name});
+      this.carPort = new Worker('/assets/2023-03-08-distributed-systems-workers-semaphores/cars.js', {name: "T"+name});
+      this.semaphore.addEventListener('message', (event) => {
+        this.color  = event.data.state;
+      });
+      this.carPort.addEventListener('message', (event) => {
+         this.carLocations  = event.data.carLocations;
+      });
+   }
+    setup() {
+      this.semaphore.postMessage({state: "start", color: this.color, sharedMemory: this.sharedMemory});
+      this.carPort.postMessage({state: "start", sharedMemory: this.sharedMemory});
+    } 
+    draw() {
+      this.carLocations.forEach(carLocation => {
+        push();
+        translate(this.locationX+this.carLocationX+carLocation[0], this.locationY+this.carLocationY+carLocation[1]);
+        fill("black");
+        rectMode(CENTER);
+        rect(0, 0, rectangleWidth, rectangleHeight);
+        pop();
+      })
+      push();
+      translate(this.locationX, this.locationY);
+      fill(this.color);
+      ellipse(0, 0, semaphoreSize, semaphoreSize);
+      pop();
+    }
+  }
+
+  function setup() {
+    createCanvas(400, 400);
+    semaphores = [
+      new Semaphore(width/2, height/2+Math.sqrt(3)*semaphoreSize/2, "Red",0,2*semaphoreSize, "North"),
+      new Semaphore(width/2, height/2-Math.sqrt(3)*semaphoreSize/2, "Red",0,-2*semaphoreSize, "South"),
+      new Semaphore(width/2-semaphoreSize/2, height/2, "Green",-2*semaphoreSize, 0, "West"),
+      new Semaphore(width/2+semaphoreSize/2, height/2, "Green",2*semaphoreSize, 0, "East")
+    ];
+    semaphores.forEach(semaphore => semaphore.setup());
+  }
+  function draw() {
+    background(220);
+    semaphores.forEach((semaphore) => semaphore.draw());
+  }
+</script>
