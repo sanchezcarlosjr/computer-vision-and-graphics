@@ -29,91 +29,65 @@ title:  "Exercise 7 - Julia Set"
     }
 </style>
 
-<section>
-    <p>Press Enter to execute. Check out <a href="https://mathjs.org/docs/index.html">Mathjs</a> to use Complex numbers and another math. </p>
-    <div id="error"></div>
-    <textarea id="code" rows="6">
-globalThis.c = 0;
+<p>Press Enter to execute. Check out <a href="https://mathjs.org/docs/index.html">Mathjs</a> to use Complex numbers and another math. </p>
+<div id="error"></div>
+<textarea id="code" rows="6">
+globalThis.c = math.evaluate('0.7885e^i');
 globalThis.f = function(complex) {
     return complex.mul(complex).add(globalThis.c);
 }
 globalThis.pseudoInfinity = 100;
-globalThis.iterations = 10;
+globalThis.iterations = 4;
     </textarea>
-    <canvas id="gl-canvas">Your browser does not seem to support HTML canvas.</canvas>
-</section>
 
-<script src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js"></script>
-<script src="https://interactivecomputergraphics.com/Code/Common/initShaders.js"></script>
-<script src="https://interactivecomputergraphics.com/Code/Common/MVnew.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjs@11.6.0/lib/browser/math.min.js"></script>
+<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
 
-<script id="black-fragment-shader" type="x-shader/x-fragment">
- #version 300 es
- precision mediump float;
- out vec4 fColor;
- void main() {
-     fColor = vec4(0,0,0,1.0);
- }
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three/build/three.module.js"
+    }
+  }
 </script>
-
-<script id="vertex-shader" type="x-shader/x-vertex">
- #version 300 es
- in vec4 aPosition;
- void main() {
-    gl_Position = aPosition;
- }
-</script>
-
 
 <script type="module">
-    const {last, of, filter, map} = rxjs;
-    globalThis.c = 0;
-    globalThis.f = (complex) => complex.mul(complex).add(globalThis.c);
-    globalThis.pseudoInfinity = 100;
-    globalThis.iterations = 10;
-    globalThis.n = 100;
-    globalThis.m = 100;
-    globalThis.num = 60;
-    function matrix(m = 60, n = 60, num = 60, start = -1, stop = 1) {
+    import * as THREE from 'three';
+
+    globalThis.c = math.evaluate('0.7885e^i');
+    globalThis.complexFunction = (complex) => complex.mul(complex).add(globalThis.c)
+    globalThis.threshold = 100;
+    globalThis.iterations = 4;
+    globalThis.n = 1000;
+    globalThis.m = 1000;
+    globalThis.num = 1500;
+
+    function matrix(m = 60, n = 60, num = 60, start = -5, stop = 5) {
         const step = (stop - start) / num;
-        const f = (i) => start + step * i;
+        const coordinate = (i) => start + step * i;
         return Array.from({
             length: m
-        }, (_, i) => Array.from({length: n}, (_, j) => vec2(f(i), f(j))));
+        }, (_, i) => Array.from({length: n}, (_, j) => new THREE.Vector3(coordinate(i), coordinate(j), 0)));
     }
     const find_possible_julia_set_element = (z) => {
-        let complex = new math.complex({'im': z[1], 're': z[0]});
+        let complexNumber = globalThis?.complexFunction(new math.complex({'im': z.y, 're': z.x}));
         for (let i = globalThis?.iterations; i > 0; i--)
-            complex = globalThis?.f(complex);
-        return complex;
+            complexNumber = globalThis?.complexFunction(complexNumber);
+        return complexNumber;
     }
-    function showError(message) {
-        document.getElementById('error').innerHTML = message;
-    }
-    const closure = (op) => (ob) => {
-        if (ob) op(ob);
-        return ob;
-    };
-    const f = (pixels) => of(document.getElementById('gl-canvas')).pipe(
-        filter(canvas => !!canvas),
-        map(canvas => closure(({gl}) => {
-                gl.viewport(0, 0, canvas.width, canvas.height);
-                gl.clearColor(1, 1, 1, 1);
-            })({gl: canvas.getContext('webgl2'), objects: []}) ?? error("WebGL 2.0 isn't available.")
-        ),
-        map(({gl, objects}) => {
-            const program = initShaders(gl, "vertex-shader", "black-fragment-shader");
-            gl.useProgram(program);
-            const bufferId = gl.createBuffer();
-            gl.bindBuffer(gl.ARRAY_BUFFER, bufferId);
-            gl.bufferData(gl.ARRAY_BUFFER, flatten(pixels), gl.STATIC_DRAW);
-            const aPosition = gl.getAttribLocation(program, "aPosition");
-            gl.vertexAttribPointer(aPosition, 2, gl.FLOAT, false, 0, 0);
-            gl.enableVertexAttribArray(aPosition);
-            objects.push({render: () => gl.drawArrays(gl.POINTS, 0, pixels.length)});
-            return {gl, objects};
-        }));
+
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    document.body.appendChild( renderer.domElement );
+
+    const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 500);
+    camera.position.set( 0, 0, 5 );
+    camera.lookAt( 0, 0, 0 );
+
+    const scene = new THREE.Scene();
+
+    const material = new THREE.LineBasicMaterial( { color: 0xfffff } );
+
     document.getElementById('code').addEventListener('keydown', (event) => {
         if (event.key === "Enter") {
             event.preventDefault();
@@ -124,13 +98,15 @@ globalThis.iterations = 10;
                 showError(e.message);
                 return;
             }
-            let pixels = matrix(globalThis.m,globalThis.n,globalThis.num).flat();
-            f(
-                pixels.filter(pixel => find_possible_julia_set_element(pixel).abs() < globalThis.pseudoInfinity)
-            ).subscribe(({gl, objects}) => {
-                gl.clear( gl.COLOR_BUFFER_BIT );
-                objects.forEach(obj => obj.render?.());
-            })
+            let pixels = matrix(globalThis.m,globalThis.n,globalThis.num)
+                .flat()
+                .filter(pixel => find_possible_julia_set_element(pixel).abs() < globalThis.threshold)
+
+            const geometry = new THREE.BufferGeometry().setFromPoints( pixels );
+            const juliaSet = new THREE.Points( geometry, material );
+            scene.add( juliaSet );
+            renderer.render( scene, camera );
         }
     });
+
 </script>
