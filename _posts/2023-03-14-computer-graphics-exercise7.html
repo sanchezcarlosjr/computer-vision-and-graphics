@@ -30,7 +30,7 @@ title:  "Exercise 7 - Julia Set"
 </style>
 
 <section>
-    <p>Press Enter to execute. Check out <a href="https://github.com/infusion/Complex.js">ComplexJS</a> to use Complex numbers. </p>
+    <p>Press Enter to execute. Check out <a href="https://mathjs.org/docs/index.html">Mathjs</a> to use Complex numbers and another math. </p>
     <div id="error"></div>
     <textarea id="code" rows="6">
 globalThis.c = 0;
@@ -46,6 +46,7 @@ globalThis.iterations = 10;
 <script src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js"></script>
 <script src="https://interactivecomputergraphics.com/Code/Common/initShaders.js"></script>
 <script src="https://interactivecomputergraphics.com/Code/Common/MVnew.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjs@11.6.0/lib/browser/math.min.js"></script>
 
 <script id="black-fragment-shader" type="x-shader/x-fragment">
  #version 300 es
@@ -67,12 +68,10 @@ globalThis.iterations = 10;
 
 <script type="module">
     const {last, of, filter, map} = rxjs;
-    import complexJs from 'https://cdn.jsdelivr.net/npm/complex.js@2.1.1/+esm'
     globalThis.c = 0;
     globalThis.f = (complex) => complex.mul(complex).add(globalThis.c);
     globalThis.pseudoInfinity = 100;
     globalThis.iterations = 10;
-    globalThis.Complex = complexJs.Complex;
     globalThis.n = 100;
     globalThis.m = 100;
     globalThis.num = 60;
@@ -84,7 +83,7 @@ globalThis.iterations = 10;
         }, (_, i) => Array.from({length: n}, (_, j) => vec2(f(i), f(j))));
     }
     const find_possible_julia_set_element = (z) => {
-        let complex = new complexJs.Complex({'im': z[1], 're': z[0]});
+        let complex = new math.complex({'im': z[1], 're': z[0]});
         for (let i = globalThis?.iterations; i > 0; i--)
             complex = globalThis?.f(complex);
         return complex;
