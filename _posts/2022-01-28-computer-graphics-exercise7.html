@@ -31,17 +31,14 @@ title:  "Exercise 7 - Julia Set"
 
 <section>
     <p>Press Enter to execute. Check out <a href="https://github.com/infusion/Complex.js">ComplexJS</a> to use Complex numbers. </p>
-    <textarea id="code" rows="10">
-        globalThis.state = {
-          c: 0,
-          f: function (complex) {
-            return complex.mul(complex).add(globalThis.state.c);
-          },
-          pseudoInfinity: 100,
-          n: 100,
-          m: 100,
-          num: 60
-        };
+    <div id="error"></div>
+    <textarea id="code" rows="6">
+         globalThis.c = 0;
+         globalThis.f = function(complex) {
+            return complex.mul(complex).add(globalThis.c);
+         }
+         globalThis.pseudoInfinity = 100;
+         globalThis.iterations = 10;
     </textarea>
     <canvas id="gl-canvas">Your browser does not seem to support HTML canvas.</canvas>
 </section>
@@ -71,14 +68,13 @@ title:  "Exercise 7 - Julia Set"
 <script type="module">
     const {last, of, filter, map} = rxjs;
     import complexJs from 'https://cdn.jsdelivr.net/npm/complex.js@2.1.1/+esm'
-    globalThis.state = {
-        c: 0,
-        f: (complex) => complex.mul(complex).add(globalThis.state.c),
-        pseudoInfinity: 100,
-        n: 100,
-        m: 100,
-        num: 60
-    };
+    globalThis.c = 0;
+    globalThis.f = (complex) => complex.mul(complex).add(globalThis.c);
+    globalThis.pseudoInfinity = 100;
+    globalThis.iterations = 10;
+    globalThis.n = 100;
+    globalThis.m = 100;
+    globalThis.num = 60;
     function matrix(m = 60, n = 60, num = 60, start = -1, stop = 1) {
         const step = (stop - start) / num;
         const f = (i) => start + step * i;
@@ -88,9 +84,12 @@ title:  "Exercise 7 - Julia Set"
     }
     const find_possible_julia_set_element = (z) => {
         let complex = new complexJs.Complex({'im': z[1], 're': z[0]});
-        for (let i = globalThis.state.n; i > 0; i--)
-            complex = globalThis.state.f(complex);
+        for (let i = globalThis?.iterations; i > 0; i--)
+            complex = globalThis?.f(complex);
         return complex;
+    }
+    function showError(message) {
+        document.getElementById('error').innerHTML = message;
     }
     const closure = (op) => (ob) => {
         if (ob) op(ob);
@@ -119,17 +118,15 @@ title:  "Exercise 7 - Julia Set"
         if (event.key === "Enter") {
             event.preventDefault();
             const code = event.target.innerHTML.trim();
-            if (!code || !globalThis.state) {
-                return;
-            }
             try {
                 eval(code);
             } catch (e) {
+                showError(e.message);
                 return;
             }
-            let pixels = matrix(globalThis.state.m,globalThis.state.n,globalThis.state.num).flat();
+            let pixels = matrix(globalThis.m,globalThis.n,globalThis.num).flat();
             f(
-                pixels.filter(pixel => find_possible_julia_set_element(pixel).abs() < globalThis.state.pseudoInfinity)
+                pixels.filter(pixel => find_possible_julia_set_element(pixel).abs() < globalThis.pseudoInfinity)
             ).subscribe(({gl, objects}) => {
                 gl.clear( gl.COLOR_BUFFER_BIT );
                 objects.forEach(obj => obj.render?.());
