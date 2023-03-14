@@ -33,12 +33,16 @@ title:  "Exercise 7 - Julia Set"
     <p>Press Enter to execute. Check out <a href="https://github.com/infusion/Complex.js">ComplexJS</a> to use Complex numbers. </p>
     <div id="error"></div>
     <textarea id="code" rows="6">
-         globalThis.c = 0;
-         globalThis.f = function(complex) {
-            return complex.mul(complex).add(globalThis.c);
-         }
-         globalThis.pseudoInfinity = 100;
-         globalThis.iterations = 10;
+globalThis.state = {
+    c: 0,
+    f: function(complex) {
+        return complex.mul(complex).add(globalThis.state.c);
+    },
+    pseudoInfinity: 100,
+    n: 100,
+    m: 100,
+    num: 60
+};
     </textarea>
     <canvas id="gl-canvas">Your browser does not seem to support HTML canvas.</canvas>
 </section>
