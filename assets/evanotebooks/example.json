@@ -1,54 +1,9 @@
 [
   {
-    "id": "up7qmmDpJH",
-    "type": "paragraph",
-    "data": {
-      "text": ""
-    },
-    "index": 2,
-    "createdBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-    "topic": "dba6287d-e5b0-4d47-95f6-c84f6a0581a3",
-    "crdts": {
-      "operations": [
-        [
-          {
-            "creator": "kipnwkdswc",
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "id": "up7qmmDpJH",
-                    "type": "paragraph",
-                    "data": {
-                      "text": ""
-                    },
-                    "index": 1,
-                    "createdBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "topic": "dba6287d-e5b0-4d47-95f6-c84f6a0581a3"
-                  }
-                }
-              }
-            ],
-            "time": 1682191514795.01
-          }
-        ]
-      ],
-      "hash": "1f95f9a14620d7c79ffa1012479fe248438fee18ffbe4f99a15fe3abb2d48b90"
-    },
-    "_meta": {
-      "lwt": 1682191515218.01
-    },
-    "_deleted": false,
-    "_attachments": {},
-    "_rev": "2-wktknvbaca"
-  },
-  {
     "id": "y7ZtDvG9ew",
     "type": "code",
     "data": {
-      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to GitHub\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to GitHub\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
       "language": "javascript",
       "output": ""
     },
@@ -60,7 +15,7 @@
       "operations": [
         [
           {
-            "creator": "kipnwkdswc",
+            "creator": "ccjxjkenbk",
             "body": [
               {
                 "ifMatch": {
@@ -68,7 +23,7 @@
                     "id": "y7ZtDvG9ew",
                     "type": "code",
                     "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Write an example evanotebook\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content => btoa(unescape(encodeURIComponent(\n    JSON.stringify(content, null, 2).replace(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options),\n  log\n)",
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to GitHub\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
                       "language": "javascript",
                       "output": ""
                     },
@@ -80,777 +35,7 @@
                 }
               }
             ],
-            "time": 1682191204538.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Write an example evanotebook\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content => btoa(unescape(encodeURIComponent(\n    JSON.stringify(content, null, 2).replace(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191242694.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Write an example evanotebook\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content => btoa(unescape(encodeURIComponent(\n    JSON.stringify(content, null, 2).replace(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options),\n  log\n)",
-                      "language": "javascript",
-                      "output": "Error: Error while fetching the file\n"
-                    },
-                    "index": 1,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191244853.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Write an example evanotebook\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content => btoa(unescape(encodeURIComponent(\n    JSON.stringify(content, null, 2).replace(options.GITHUB_TOKEN, \"\"))))),\n  log\n)",
-                      "language": "javascript",
-                      "output": "Error: Error while fetching the file\n"
-                    },
-                    "index": 1,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191264210.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Write an example evanotebook\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content => btoa(unescape(encodeURIComponent(\n    JSON.stringify(content, null, 2).replace(options.GITHUB_TOKEN, \"\")))),\n  log\n)",
-                      "language": "javascript",
-                      "output": "Error: Error while fetching the file\n"
-                    },
-                    "index": 1,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191265598.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Write an example evanotebook\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content => btoa(unescape(encodeURIComponent\n    JSON.stringify(content, null, 2).replace(options.GITHUB_TOKEN, \"\")))),\n  log\n)",
-                      "language": "javascript",
-                      "output": "Error: Error while fetching the file\n"
-                    },
-                    "index": 1,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191266578.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Write an example evanotebook\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replace(options.GITHUB_TOKEN, \"\")))),\n  log\n)",
-                      "language": "javascript",
-                      "output": "Error: Error while fetching the file\n"
-                    },
-                    "index": 1,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191269253.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Write an example evanotebook\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replace(options.GITHUB_TOKEN, \"\"))),\n  log\n)",
-                      "language": "javascript",
-                      "output": "Error: Error while fetching the file\n"
-                    },
-                    "index": 1,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191269935.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Write an example evanotebook\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replace(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": "Error: Error while fetching the file\n"
-                    },
-                    "index": 1,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191271236.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Write an example evanotebook\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replace(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191272875.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Write an example evanotebook\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191409065.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Write an example evanoteboo\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191429726.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191431437.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"A \",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191432145.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"An example\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191435244.05
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"An example from a new versio\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191438932.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove \",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191442756.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove GitHub\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191444423.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove GitHubT\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191446040.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove \",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191447374.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191448479.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191451261.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to \",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191455876.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  log\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191472098.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  commit\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191486613.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  commitOn\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191488374.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  commitOnGitHub\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191501417.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"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\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  commitOnGitHub(options)\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191511177.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  commitOnGitHub(options)\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191593262.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    b,\n  commitOnGitHub(options)\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191648606.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    btoa(,\n  commitOnGitHub(options)\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191649720.05
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    btoa(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")),\n  commitOnGitHub(options)\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191650391.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    btoa(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))),\n  commitOnGitHub(options)\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191650863.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))),\n  commitOnGitHub(options)\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191666605.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\")))),\n  commitOnGitHub(options)\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191669945.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "kipnwkdswc",
-            "time": 1682191670707.04
+            "time": 1682192427722.01
           }
         ],
         [
@@ -871,18 +56,62 @@
                 }
               }
             ],
-            "creator": "kipnwkdswc",
-            "time": 1682191684497.01
+            "creator": "ccjxjkenbk",
+            "time": 1682192460055.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to GitHub\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first()\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "ccjxjkenbk",
+            "time": 1682192728517.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to GitHub\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "ccjxjkenbk",
+            "time": 1682192729344.01
           }
         ]
       ],
-      "hash": "8cd4492567c5be7fc54e6e3c07b0b0060ba1bbb4f1d503d0cbd904868fa41d6d"
+      "hash": "cd570c8fa15798e605fc213d0a0fd679d699f3568dd971af7ef653ed4eb14612"
     },
     "_meta": {
-      "lwt": 1682191684497.02
+      "lwt": 1682192729345.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "52-wktknvbaca"
+    "_rev": "5-cxsxrqxlbi"
   }
 ]
