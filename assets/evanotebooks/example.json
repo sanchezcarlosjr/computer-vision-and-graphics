@@ -48,7 +48,7 @@
     "id": "y7ZtDvG9ew",
     "type": "code",
     "data": {
-      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to JSON\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to GitHub\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
       "language": "javascript",
       "output": ""
     },
@@ -852,15 +852,37 @@
             "creator": "kipnwkdswc",
             "time": 1682191670707.04
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to GitHub\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  throttleTime(1000),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "1119a768-fbdd-4b88-b891-54eb42c6cf20",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "kipnwkdswc",
+            "time": 1682191684497.01
+          }
         ]
       ],
-      "hash": "75255ffc00aea3dd988a16c8a93371efd2cd7d539d571a0d72ba8a3e0addc13a"
+      "hash": "8cd4492567c5be7fc54e6e3c07b0b0060ba1bbb4f1d503d0cbd904868fa41d6d"
     },
     "_meta": {
-      "lwt": 1682191670708.01
+      "lwt": 1682191684497.02
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "51-wktknvbaca"
+    "_rev": "52-wktknvbaca"
   }
 ]
