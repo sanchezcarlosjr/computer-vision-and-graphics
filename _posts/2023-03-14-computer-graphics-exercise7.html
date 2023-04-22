@@ -33,7 +33,7 @@ title:  "Exercise 7 - Julia Set"
 <div id="error"></div>
 <textarea id="code" rows="6">
 globalThis.c = math.evaluate('0.7885e^i');
-globalThis.f = function(complex) {
+globalThis.complexFunction = function(complex) {
     return complex.mul(complex).add(globalThis.c);
 }
 globalThis.pseudoInfinity = 100;
@@ -54,7 +54,7 @@ globalThis.iterations = 4;
 <script type="module">
     import * as THREE from 'three';
 
-    globalThis.c = math.evaluate('0.7885e^i');
+    globalThis.c = 0;
     globalThis.complexFunction = (complex) => complex.mul(complex).add(globalThis.c)
     globalThis.threshold = 100;
     globalThis.iterations = 4;
@@ -62,7 +62,7 @@ globalThis.iterations = 4;
     globalThis.m = 1000;
     globalThis.num = 1500;
 
-    function matrix(m = 60, n = 60, num = 60, start = -5, stop = 5) {
+    function matrix(m = 60, n = 60, num = 60, start = -1, stop = 1) {
         const step = (stop - start) / num;
         const coordinate = (i) => start + step * i;
         return Array.from({
