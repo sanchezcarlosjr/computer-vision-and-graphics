@@ -1,0 +1,1348 @@
+[
+  {
+    "id": "wlaoUCOBkd",
+    "type": "header",
+    "data": {
+      "text": "Autosaving",
+      "level": 2
+    },
+    "index": 0,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "121115cd-0ba8-431e-9cfc-4edaab00277b",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "wlaoUCOBkd",
+                    "type": "header",
+                    "data": {
+                      "text": "",
+                      "level": 2
+                    },
+                    "index": 0,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "121115cd-0ba8-431e-9cfc-4edaab00277b"
+                  }
+                }
+              }
+            ],
+            "time": 1682698421037.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Autosaving",
+                      "level": 2
+                    },
+                    "index": 0,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698423998.01
+          }
+        ]
+      ],
+      "hash": "1757d16dbb9cdc7c88419f358171c33cb3863037adce2200975348f2db0823f6"
+    },
+    "_meta": {
+      "lwt": 1682698423998.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "3-rgmxmqcfms"
+  },
+  {
+    "id": "FRBHkujP-G",
+    "type": "code",
+    "data": {
+      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Apply MediaPipe models, open your webcam and write your algoritms with OpenCV\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 1,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "121115cd-0ba8-431e-9cfc-4edaab00277b",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "FRBHkujP-G",
+                    "type": "code",
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "121115cd-0ba8-431e-9cfc-4edaab00277b"
+                  }
+                }
+              }
+            ],
+            "time": 1682698429479.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/share-memory.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698430125.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698443820.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/save-.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698445820.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/save-your.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698449093.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/save-you.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698449636.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/save-your.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698451772.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/save-you.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698452308.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/s.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698453068.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698456148.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Share memory with your peer\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698459180.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698460788.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Open your \",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698464516.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Open your web\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698466196.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Open your webca\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698466828.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Open your webc\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698467340.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698468820.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Use Media\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698471244.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Use MediaP\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698471844.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Use MediaPipe\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698472732.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Ap MediaPipe\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698474996.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Apply MediaPipe\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698475844.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Apply MediaPipe \",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698478692.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Apply MediaPipe models, open your \",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698481684.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Apply MediaPipe models, open your we\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698482876.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Apply MediaPipe models, open your webcam and \",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698484693.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Apply MediaPipe models, open your webcam and write your \",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698500668.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Apply MediaPipe models, open your webcam and write your algoritms with \",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698505452.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/image-processing.json\",\n    commitMessage: \"Apply MediaPipe models, open your webcam and write your algoritms with OpenCV\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698506836.02
+          }
+        ]
+      ],
+      "hash": "002490fd5888ff5907992ea327eb477dee0857fc7fee6b40e96b206d82f28c7d"
+    },
+    "_meta": {
+      "lwt": 1682698506836.03
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "30-rgmxmqcfms"
+  },
+  {
+    "id": "R4g_a5Du9a",
+    "type": "header",
+    "data": {
+      "text": "Open your webcam (or whatever image stream)",
+      "level": 2
+    },
+    "index": 2,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "121115cd-0ba8-431e-9cfc-4edaab00277b",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "R4g_a5Du9a",
+                    "type": "header",
+                    "data": {
+                      "text": "",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "121115cd-0ba8-431e-9cfc-4edaab00277b"
+                  }
+                }
+              }
+            ],
+            "time": 1682698433220.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Open your notebook",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698439460.04
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Open your webcam",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698511076.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Open your webcam (you)",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698516172.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Open your webcam (your strea)",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698517684.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Open your webcam (your stream)",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698518556.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Open your webcam (your strea)",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698519244.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Open your webcam (your image stream)",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698523172.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Open your webcam (or wayour image stream)",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698528020.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Open your webcam (or whateveryour image stream)",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698530252.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Open your webcam (or whatever your image stream)",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698531932.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Open your webcam (or whatever image stream)",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698535005.01
+          }
+        ]
+      ],
+      "hash": "3a1376fd4a5e47125adddb2cf9cdb633588abe409ac9b6d1db9d01560497d4df"
+    },
+    "_meta": {
+      "lwt": 1682698535005.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "13-rgmxmqcfms"
+  },
+  {
+    "id": "mP07GtjkgW",
+    "type": "code",
+    "data": {
+      "code": "captureStream().pipe(\n  imshow()\n)",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 3,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "121115cd-0ba8-431e-9cfc-4edaab00277b",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "mP07GtjkgW",
+                    "type": "code",
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "121115cd-0ba8-431e-9cfc-4edaab00277b"
+                  }
+                }
+              }
+            ],
+            "time": 1682698537991.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/share-memory.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698539076.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698540348.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "editor.",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698542172.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698543692.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "captureStream",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698570300.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "captureStream.",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698572764.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "captureStream.pipe(\n  \n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698574244.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "captureStream.pipe(\n  imshow()\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698577932.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "captureStream.pipe(\n  imshow()\n)",
+                      "language": "javascript",
+                      "output": "<canvas></canvas><pre class=\"py-error\">TypeError: captureStream.pipe is not a function</pre>"
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698578612.03
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "captureStream().pipe(\n  imshow()\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698582620.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "captureStream().pipe(\n  imshow()\n)",
+                      "language": "javascript",
+                      "output": "<canvas></canvas>"
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698583356.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "captureStream().pipe(\n  imshow()\n)",
+                      "language": "javascript",
+                      "output": "<canvas width=\"640\" height=\"480\"></canvas>"
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698585188.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "captureStream().pipe(\n  imshow()\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682698590652.01
+          }
+        ]
+      ],
+      "hash": "46ccf810628eb825608d2c1498661ba8474a1b2bb7d50bad301749c1a95b1e5b"
+    },
+    "_meta": {
+      "lwt": 1682698590652.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "15-rgmxmqcfms"
+  }
+]
