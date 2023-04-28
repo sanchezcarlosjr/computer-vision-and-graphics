@@ -8,7 +8,7 @@
     },
     "index": 0,
     "createdBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
-    "lastEditedBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
+    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
     "topic": "b474e039-8eea-4d66-9832-6946b8b455ca",
     "crdts": {
       "operations": [
@@ -35,16 +35,32 @@
             ],
             "time": 1682706018482.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
+                    "index": 0
+                  }
+                }
+              }
+            ],
+            "creator": "ljiawbvuxk",
+            "time": 1682706789287.01
+          }
         ]
       ],
-      "hash": "dd225adfaa6e8a936b2febbb227b3e027b32583cf8818af9281b92e927a2125e"
+      "hash": "22c0e888a7271a6768c558b0b091f347f70d3c2f28c2e1d08fe916a2bda53d53"
     },
     "_meta": {
-      "lwt": 1682706018483.03
+      "lwt": 1682706789336.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "1-letclyidnb"
+    "_rev": "2-ogpprptibo"
   },
   {
     "id": "FRBHkujP-G",
@@ -56,7 +72,7 @@
     },
     "index": 1,
     "createdBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
-    "lastEditedBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
+    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
     "topic": "b474e039-8eea-4d66-9832-6946b8b455ca",
     "crdts": {
       "operations": [
@@ -106,16 +122,32 @@
             "creator": "ljiawbvuxk",
             "time": 1682706097833.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
+                    "index": 1
+                  }
+                }
+              }
+            ],
+            "creator": "ljiawbvuxk",
+            "time": 1682706789532.01
+          }
         ]
       ],
-      "hash": "22c0e888a7271a6768c558b0b091f347f70d3c2f28c2e1d08fe916a2bda53d53"
+      "hash": "48e32c3c65cabc837e708b08d56d557fdcfd7551196c5e867ec1be105e28fbc3"
     },
     "_meta": {
-      "lwt": 1682706097835.01
+      "lwt": 1682706789537.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "2-letclyidnb"
+    "_rev": "3-ogpprptibo"
   },
   {
     "id": "R4g_a5Du9a",
@@ -126,7 +158,7 @@
     },
     "index": 2,
     "createdBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
-    "lastEditedBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
+    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
     "topic": "b474e039-8eea-4d66-9832-6946b8b455ca",
     "crdts": {
       "operations": [
@@ -153,16 +185,32 @@
             ],
             "time": 1682706018482.03
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
+                    "index": 2
+                  }
+                }
+              }
+            ],
+            "creator": "ljiawbvuxk",
+            "time": 1682706789533.01
+          }
         ]
       ],
-      "hash": "dd225adfaa6e8a936b2febbb227b3e027b32583cf8818af9281b92e927a2125e"
+      "hash": "22c0e888a7271a6768c558b0b091f347f70d3c2f28c2e1d08fe916a2bda53d53"
     },
     "_meta": {
-      "lwt": 1682706018483.05
+      "lwt": 1682706789537.02
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "1-letclyidnb"
+    "_rev": "2-ogpprptibo"
   },
   {
     "id": "mP07GtjkgW",
@@ -174,7 +222,7 @@
     },
     "index": 3,
     "createdBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
-    "lastEditedBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
+    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
     "topic": "b474e039-8eea-4d66-9832-6946b8b455ca",
     "crdts": {
       "operations": [
@@ -202,16 +250,32 @@
             ],
             "time": 1682706018482.04
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "ljiawbvuxk",
+            "time": 1682706789534.01
+          }
         ]
       ],
-      "hash": "dd225adfaa6e8a936b2febbb227b3e027b32583cf8818af9281b92e927a2125e"
+      "hash": "22c0e888a7271a6768c558b0b091f347f70d3c2f28c2e1d08fe916a2bda53d53"
     },
     "_meta": {
-      "lwt": 1682706018483.06
+      "lwt": 1682706789537.03
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "1-letclyidnb"
+    "_rev": "2-ogpprptibo"
   },
   {
     "id": "NDEQydY8Is",
@@ -222,7 +286,7 @@
     },
     "index": 4,
     "createdBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
-    "lastEditedBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
+    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
     "topic": "b474e039-8eea-4d66-9832-6946b8b455ca",
     "crdts": {
       "operations": [
@@ -249,16 +313,32 @@
             ],
             "time": 1682706018482.05
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
+                    "index": 4
+                  }
+                }
+              }
+            ],
+            "creator": "ljiawbvuxk",
+            "time": 1682706789534.02
+          }
         ]
       ],
-      "hash": "dd225adfaa6e8a936b2febbb227b3e027b32583cf8818af9281b92e927a2125e"
+      "hash": "22c0e888a7271a6768c558b0b091f347f70d3c2f28c2e1d08fe916a2bda53d53"
     },
     "_meta": {
-      "lwt": 1682706018483.07
+      "lwt": 1682706789537.04
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "1-letclyidnb"
+    "_rev": "2-ogpprptibo"
   },
   {
     "id": "ppj2tO-btP",
@@ -270,7 +350,7 @@
     },
     "index": 5,
     "createdBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
-    "lastEditedBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
+    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
     "topic": "b474e039-8eea-4d66-9832-6946b8b455ca",
     "crdts": {
       "operations": [
@@ -320,16 +400,32 @@
             "creator": "ljiawbvuxk",
             "time": 1682706107850.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "ljiawbvuxk",
+            "time": 1682706789535.01
+          }
         ]
       ],
-      "hash": "22c0e888a7271a6768c558b0b091f347f70d3c2f28c2e1d08fe916a2bda53d53"
+      "hash": "48e32c3c65cabc837e708b08d56d557fdcfd7551196c5e867ec1be105e28fbc3"
     },
     "_meta": {
-      "lwt": 1682706107850.02
+      "lwt": 1682706789537.05
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "2-letclyidnb"
+    "_rev": "3-ogpprptibo"
   },
   {
     "id": "dk2ozjEMKB",
@@ -340,7 +436,7 @@
     },
     "index": 6,
     "createdBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
-    "lastEditedBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
+    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
     "topic": "b474e039-8eea-4d66-9832-6946b8b455ca",
     "crdts": {
       "operations": [
@@ -430,28 +526,44 @@
             "creator": "ljiawbvuxk",
             "time": 1682706120355.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
+                    "index": 6
+                  }
+                }
+              }
+            ],
+            "creator": "ljiawbvuxk",
+            "time": 1682706789535.02
+          }
         ]
       ],
-      "hash": "6d22cc75006789fc27393f61d8475240081a79a05e64d5bbc377dd46a1d6503d"
+      "hash": "1892644737de226f8db30527a371c71fc808a09a54759c1feb5c89e427d810ef"
     },
     "_meta": {
-      "lwt": 1682706120356.01
+      "lwt": 1682706789537.06
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "5-letclyidnb"
+    "_rev": "6-ogpprptibo"
   },
   {
     "id": "_xvsTTmEw6",
     "type": "code",
     "data": {
-      "code": "import Human from 'https://cdn.jsdelivr.net/npm/@vladmandic/human@3.0.5/+esm'\n\nconst humanConfig = { // user configuration for human, used to fine-tune behavior\n  debug: true,\n  modelBasePath: 'https://vladmandic.github.io/human-models/models/',\n  filter: { enabled: true, equalization: false, flip: true },\n  face: {\n    enabled: true,\n    detector: { enabled: false },\n    iris: { enabled: false },\n    description: { enabled: false },\n    emotion: { enabled: true },\n    antispoof: { enabled: false },\n    liveness: { enabled: false },\n  },\n  body: { enabled: false },\n  hand: { enabled: false },\n  object: { enabled: false },\n  gesture: { enabled: false },\n  segmentation: { enabled: false },\n}\n\nconst human = new Human(humanConfig)\ncaptureStream().pipe(\n  concatMap(x => human.detect(x.message)),\n  map(x => x.face[0].emotion),\n  display\n)",
+      "code": "import Human from 'https://cdn.jsdelivr.net/npm/@vladmandic/human@3.0.5/+esm'\n\nconst humanConfig = { // user configuration for human, used to fine-tune behavior\n  debug: true,\n  modelBasePath: 'https://vladmandic.github.io/human-models/models/',\n  filter: { enabled: true, equalization: false, flip: true },\n  face: {\n    enabled: true,\n    detector: { enabled: false },\n    iris: { enabled: false },\n    description: { enabled: false },\n    emotion: { enabled: true },\n    antispoof: { enabled: false },\n    liveness: { enabled: false },\n  },\n  body: { enabled: false },\n  hand: { enabled: false },\n  object: { enabled: false },\n  gesture: { enabled: false },\n  segmentation: { enabled: false },\n}\n\nconst human = new Human(humanConfig)\ncaptureStream().pipe(\n  first(),\n  concatMap(x => human.detect(x.message)),\n  map(x => x.face[0].emotion),\n  map(x => x.reduce((acc, value) => {\n    acc[value.emotion] = value.score\n    return acc\n  }, {})),\n  jsonToTree()\n)",
       "language": "javascript",
       "output": ""
     },
     "index": 7,
     "createdBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
-    "lastEditedBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
+    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
     "topic": "b474e039-8eea-4d66-9832-6946b8b455ca",
     "crdts": {
       "operations": [
@@ -523,16 +635,54 @@
             "creator": "ljiawbvuxk",
             "time": 1682706155605.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
+                    "index": 7
+                  }
+                }
+              }
+            ],
+            "creator": "ljiawbvuxk",
+            "time": 1682706789536.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import Human from 'https://cdn.jsdelivr.net/npm/@vladmandic/human@3.0.5/+esm'\n\nconst humanConfig = { // user configuration for human, used to fine-tune behavior\n  debug: true,\n  modelBasePath: 'https://vladmandic.github.io/human-models/models/',\n  filter: { enabled: true, equalization: false, flip: true },\n  face: {\n    enabled: true,\n    detector: { enabled: false },\n    iris: { enabled: false },\n    description: { enabled: false },\n    emotion: { enabled: true },\n    antispoof: { enabled: false },\n    liveness: { enabled: false },\n  },\n  body: { enabled: false },\n  hand: { enabled: false },\n  object: { enabled: false },\n  gesture: { enabled: false },\n  segmentation: { enabled: false },\n}\n\nconst human = new Human(humanConfig)\ncaptureStream().pipe(\n  first(),\n  concatMap(x => human.detect(x.message)),\n  map(x => x.face[0].emotion),\n  map(x => x.reduce((acc, value) => {\n    acc[value.emotion] = value.score\n    return acc\n  }, {})),\n  jsonToTree()\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 7,
+                    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "ljiawbvuxk",
+            "time": 1682706792952.01
+          }
         ]
       ],
-      "hash": "48e32c3c65cabc837e708b08d56d557fdcfd7551196c5e867ec1be105e28fbc3"
+      "hash": "1892644737de226f8db30527a371c71fc808a09a54759c1feb5c89e427d810ef"
     },
     "_meta": {
-      "lwt": 1682706155607.01
+      "lwt": 1682706792953.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "6-letclyidnb"
+    "_rev": "8-ogpprptibo"
   },
   {
     "id": "DYdM7xJNzK",
@@ -542,7 +692,7 @@
     },
     "index": 8,
     "createdBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
-    "lastEditedBy": "7103d071-bcc7-4af3-83e1-29b664d2e991",
+    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
     "topic": "b474e039-8eea-4d66-9832-6946b8b455ca",
     "crdts": {
       "operations": [
@@ -568,15 +718,31 @@
             ],
             "time": 1682706018483.02
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "f2440817-e02c-4cfe-81ee-d910a8c8921c",
+                    "index": 8
+                  }
+                }
+              }
+            ],
+            "creator": "ljiawbvuxk",
+            "time": 1682706789536.02
+          }
         ]
       ],
-      "hash": "dd225adfaa6e8a936b2febbb227b3e027b32583cf8818af9281b92e927a2125e"
+      "hash": "22c0e888a7271a6768c558b0b091f347f70d3c2f28c2e1d08fe916a2bda53d53"
     },
     "_meta": {
-      "lwt": 1682706150645.01
+      "lwt": 1682706789537.08
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "5-letclyidnb"
+    "_rev": "6-ogpprptibo"
   }
 ]
