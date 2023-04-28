@@ -1,0 +1,1640 @@
+[
+  {
+    "id": "G-_gID0Yx3",
+    "type": "header",
+    "data": {
+      "text": "Share memory between cells and P2P notebooks",
+      "level": 2
+    },
+    "index": 0,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "G-_gID0Yx3",
+                    "type": "header",
+                    "data": {
+                      "text": "Share memory between cells and P2P notebooks",
+                      "level": 2
+                    },
+                    "index": 0,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612476.03
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 0
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697656945.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 0
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674571.01
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697674588.01
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "4-uxoraxwfrx"
+  },
+  {
+    "id": "RMZa92Najf",
+    "type": "code",
+    "data": {
+      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/share-memory.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 0,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "RMZa92Najf",
+                    "type": "code",
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697681995.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to GitHub\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697810558.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Remove tokens and replicate to GitHu\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697814772.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Share memory \",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697819245.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/example.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697822580.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697839572.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/share-.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697841108.04
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/share-memory.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697842252.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/share-memory.json\",\n    commitMessage: \"Share memory with your peers\",\n    GITHUB_TOKEN: \"\"\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697912180.01
+          }
+        ]
+      ],
+      "hash": "47b5519d233d883353d0b5f694568882822d9e15f8a7a915e87c342ef5fa43b1"
+    },
+    "_meta": {
+      "lwt": 1682697912180.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "10-uxoraxwfrx"
+  },
+  {
+    "id": "jj6K-_MfA2",
+    "type": "code",
+    "data": {
+      "code": "environment.x = 0\nenvironment.wait()",
+      "language": "javascript",
+      "output": "true\n"
+    },
+    "index": 2,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "jj6K-_MfA2",
+                    "type": "code",
+                    "data": {
+                      "code": "environment.x = 0\nenvironment.wait()",
+                      "language": "javascript",
+                      "output": "true\n"
+                    },
+                    "index": 1,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612476.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.x = 0\nenvironment.wait()",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697616749.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.x = 0\nenvironment.wait()",
+                      "language": "javascript",
+                      "output": "true\n"
+                    },
+                    "index": 1,
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697619716.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 1
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657155.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 1
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674726.02
+          }
+        ]
+      ],
+      "hash": "c4a2a13887ef71f02e88abee282e7bd7547cc5cdae917d477e332a4bea5c9aae"
+    },
+    "_meta": {
+      "lwt": 1682697682033.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "8-uxoraxwfrx"
+  },
+  {
+    "id": "h3Gkw-a8-p",
+    "type": "code",
+    "data": {
+      "code": "environment.x++\nenvironment.wait()",
+      "language": "javascript",
+      "output": "true\n"
+    },
+    "index": 3,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "h3Gkw-a8-p",
+                    "type": "code",
+                    "data": {
+                      "code": "environment.x++\nenvironment.wait()",
+                      "language": "javascript",
+                      "output": "true\n"
+                    },
+                    "index": 2,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612476.07
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 2
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657159.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 2
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674727.01
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.03
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "yzPY7oZe1y",
+    "type": "code",
+    "data": {
+      "code": "environment.x$.pipe(rewrite())",
+      "language": "javascript",
+      "output": "2"
+    },
+    "index": 4,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "yzPY7oZe1y",
+                    "type": "code",
+                    "data": {
+                      "code": "environment.x$.pipe(rewrite())",
+                      "language": "javascript",
+                      "output": "2"
+                    },
+                    "index": 3,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612476.09
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657159.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674727.02
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.04
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "fA12tR77C2",
+    "type": "header",
+    "data": {
+      "text": "Nested objects",
+      "level": 2
+    },
+    "index": 5,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "fA12tR77C2",
+                    "type": "header",
+                    "data": {
+                      "text": "Nested objects",
+                      "level": 2
+                    },
+                    "index": 4,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612476.11
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 4
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657159.03
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 4
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674728.01
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.05
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "kJ0ATekArG",
+    "type": "code",
+    "data": {
+      "code": "environment.a0 = {\n  a0:  {\n    a1: {\n      a2: 0\n    }\n  },\n  b1: \"I am b1\"\n}\nenvironment.wait()",
+      "language": "javascript",
+      "output": "true\n"
+    },
+    "index": 6,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "kJ0ATekArG",
+                    "type": "code",
+                    "data": {
+                      "code": "environment.a0 = {\n  a0:  {\n    a1: {\n      a2: 0\n    }\n  },\n  b1: \"I am b1\"\n}\nenvironment.wait()",
+                      "language": "javascript",
+                      "output": "true\n"
+                    },
+                    "index": 5,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612476.13
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657159.04
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674728.02
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.06
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "_akHaowqyC",
+    "type": "code",
+    "data": {
+      "code": "environment['a0.a0.a1.a2$'].pipe(rewrite())",
+      "language": "javascript",
+      "output": "1"
+    },
+    "index": 7,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "_akHaowqyC",
+                    "type": "code",
+                    "data": {
+                      "code": "environment['a0.a0.a1.a2$'].pipe(rewrite())",
+                      "language": "javascript",
+                      "output": "1"
+                    },
+                    "index": 6,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612476.15
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 6
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657159.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 6
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674728.03
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.07
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "8bXWseIl7X",
+    "type": "code",
+    "data": {
+      "code": "environment['a0.a0.a1.a2'] = environment.a0.a0.a1.a2+1\nenvironment.wait()",
+      "language": "javascript",
+      "output": "true\n"
+    },
+    "index": 8,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "8bXWseIl7X",
+                    "type": "code",
+                    "data": {
+                      "code": "environment['a0.a0.a1.a2'] = environment.a0.a0.a1.a2+1\nenvironment.wait()",
+                      "language": "javascript",
+                      "output": "true\n"
+                    },
+                    "index": 7,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612477.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 7
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657160.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 7
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674728.04
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.08
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "ymGghDRGSx",
+    "type": "code",
+    "data": {
+      "code": "environment.a0.b1",
+      "language": "javascript",
+      "output": "I am b1"
+    },
+    "index": 9,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ymGghDRGSx",
+                    "type": "code",
+                    "data": {
+                      "code": "environment.a0.b1",
+                      "language": "javascript",
+                      "output": "I am b1"
+                    },
+                    "index": 8,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612477.04
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 8
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657160.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 8
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674729.01
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.09
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "3zOdFVbq1G",
+    "type": "header",
+    "data": {
+      "text": "Modify environment from an Observable",
+      "level": 2
+    },
+    "index": 10,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "3zOdFVbq1G",
+                    "type": "header",
+                    "data": {
+                      "text": "Modify environment from an Observable",
+                      "level": 2
+                    },
+                    "index": 9,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612477.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 9
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657160.03
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 9
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674729.02
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.1
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "jn3vdUkdxu",
+    "type": "code",
+    "data": {
+      "code": "environment.a0 = {\n  a0:  {\n    a1: {\n      counter: 0\n    }\n  }\n}",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 11,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "jn3vdUkdxu",
+                    "type": "code",
+                    "data": {
+                      "code": "environment.a0 = {\n  a0:  {\n    a1: {\n      counter: 0\n    }\n  }\n}",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 10,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612477.08
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 10
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657160.04
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 10
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674729.03
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.11
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "1PvKaIRF_Z",
+    "type": "code",
+    "data": {
+      "code": "interval(1000).pipe(\n  rewrite(),\n  concatMap(x => environment.set(\"a0.a0.a1.counter\", x))\n)",
+      "language": "javascript",
+      "output": "56"
+    },
+    "index": 12,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "1PvKaIRF_Z",
+                    "type": "code",
+                    "data": {
+                      "code": "interval(1000).pipe(\n  rewrite(),\n  concatMap(x => environment.set(\"a0.a0.a1.counter\", x))\n)",
+                      "language": "javascript",
+                      "output": "56"
+                    },
+                    "index": 11,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612477.1
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 11
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657160.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 11
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674729.04
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.12
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "lA6GyjvOiB",
+    "type": "code",
+    "data": {
+      "code": "environment['a0.a0.a1.counter$'].pipe(rewrite())",
+      "language": "javascript",
+      "output": "56"
+    },
+    "index": 13,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "lA6GyjvOiB",
+                    "type": "code",
+                    "data": {
+                      "code": "environment['a0.a0.a1.counter$'].pipe(rewrite())",
+                      "language": "javascript",
+                      "output": "56"
+                    },
+                    "index": 12,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612477.12
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 12
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657160.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 12
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674729.05
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.13
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "FFoVCrfVR3",
+    "type": "header",
+    "data": {
+      "text": "Apply&nbsp;<a href=\"https://github.com/lgandecki/modifyjs\">modifyjs</a>",
+      "level": 2
+    },
+    "index": 14,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "FFoVCrfVR3",
+                    "type": "header",
+                    "data": {
+                      "text": "Apply&nbsp;<a href=\"https://github.com/lgandecki/modifyjs\">modifyjs</a>",
+                      "level": 2
+                    },
+                    "index": 13,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612477.14
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 13
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657160.07
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 13
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674730.01
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.14
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "UfxE0WQnm7",
+    "type": "code",
+    "data": {
+      "code": "environment.scores = [1,2,3,4,5]\nenvironment.wait()",
+      "language": "javascript",
+      "output": "true\n"
+    },
+    "index": 15,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "UfxE0WQnm7",
+                    "type": "code",
+                    "data": {
+                      "code": "environment.scores = [1,2,3,4,5]\nenvironment.wait()",
+                      "language": "javascript",
+                      "output": "true\n"
+                    },
+                    "index": 14,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612477.16
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 14
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657160.08
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 14
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674730.02
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.15
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "61J5ODkgF6",
+    "type": "code",
+    "data": {
+      "code": "environment.pullAll('scores', [0,5])",
+      "language": "javascript",
+      "output": "[\n 0,\n 5\n]\n"
+    },
+    "index": 16,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "61J5ODkgF6",
+                    "type": "code",
+                    "data": {
+                      "code": "environment.pullAll('scores', [0,5])",
+                      "language": "javascript",
+                      "output": "[\n 0,\n 5\n]\n"
+                    },
+                    "index": 15,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612477.18
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 15
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657160.09
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 15
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674730.03
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.16
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-uxoraxwfrx"
+  },
+  {
+    "id": "KgQHZtKTwe",
+    "type": "code",
+    "data": {
+      "code": "environment.scores$.pipe(display)",
+      "language": "javascript",
+      "output": "[]\n"
+    },
+    "index": 17,
+    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "qzpfqrztju",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "KgQHZtKTwe",
+                    "type": "code",
+                    "data": {
+                      "code": "environment.scores$.pipe(display)",
+                      "language": "javascript",
+                      "output": "[]\n"
+                    },
+                    "index": 16,
+                    "createdBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "topic": "21a6ccf5-a6bb-4558-bd0d-c49dd21285f4"
+                  }
+                }
+              }
+            ],
+            "time": 1682697612477.2
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 16
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697657160.1
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "215b4c3a-a938-4d07-a13e-a469bbdd4a71",
+                    "index": 16
+                  }
+                }
+              }
+            ],
+            "creator": "qzpfqrztju",
+            "time": 1682697674730.04
+          }
+        ]
+      ],
+      "hash": "3bda005c97b7fed3c246f6f87e8120be2a005663675fb4e2a3c5275637d881bf"
+    },
+    "_meta": {
+      "lwt": 1682697682033.17
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "7-uxoraxwfrx"
+  }
+]
