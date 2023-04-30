@@ -27915,7 +27915,7 @@
     "id": "bE-0B2ilhG",
     "type": "code",
     "data": {
-      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\nreturn editor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? Promise.resolve() : save()",
       "language": "javascript",
       "output": ""
     },
@@ -29109,15 +29109,829 @@
             "creator": "pkhexmkwbs",
             "time": 1682834278265.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "function name(params) {\n  \n}",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834301081.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "function f(params) {\n  \n}",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834301616.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "function save(params) {\n  \n}",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834305257.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834306841.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "asfunction save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834311233.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "asunc function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834312473.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834314113.04
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\nreturn ",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834322201.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\n",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834323201.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrent",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834325121.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834326969.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParam",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834329674.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834330417.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834331169.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get\"",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834332913.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m2')",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834334697.04
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') ==",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834336441.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === ",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834337073.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\"",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834337777.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834340793.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" : ",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834341401.03
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" : save()",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834344481.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" : save(): ",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834346137.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" : save(): \"\"",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834347337.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? save(): \"\"",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834350009.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? save() : \"\"",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834352201.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? save() : Promise.resolve()",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834359209.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? save() : Promise.resolve()",
+                      "language": "javascript",
+                      "output": "undefined\n"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834361329.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? save() : Promise.resolve('')",
+                      "language": "javascript",
+                      "output": "undefined\n"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834362889.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? save() : Promise.resolve('')",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834363961.04
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') !+= \"2\" ? save() : Promise.resolve('')",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834376897.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') != \"2\" ? save() : Promise.resolve('')",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834378441.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m')  \"2\" ? save() : Promise.resolve('')",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834379497.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? save() : Promise.resolve('')",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834380329.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? Promise.resolve() : Promise.resolve('')",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834387169.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? Promise.resolve() : save()",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834389793.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\nreturn editor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? Promise.resolve() : save()",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834398281.01
+          }
         ]
       ],
-      "hash": "c519f7692f04e4146e257f366e78f0f41a42975601aefaf42c7ed5c116dc70ef"
+      "hash": "37d71d72e9a298116fe84c90e67f18697dad52458b0bcbbe5a7be255f94ad728"
     },
     "_meta": {
-      "lwt": 1682834278266.01
+      "lwt": 1682834398282.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "58-exrcyzpgzn"
+    "_rev": "95-exrcyzpgzn"
   }
 ]
