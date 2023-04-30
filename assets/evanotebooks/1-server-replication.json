@@ -1,100 +1,5 @@
 [
   {
-    "id": "n6N_BjzZn6",
-    "type": "header",
-    "data": {
-      "text": "Replicate your changes whatever you want",
-      "level": 2
-    },
-    "index": 0,
-    "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
-    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
-    "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c",
-    "crdts": {
-      "operations": [
-        [
-          {
-            "creator": "pkhexmkwbs",
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "id": "n6N_BjzZn6",
-                    "type": "header",
-                    "data": {
-                      "text": "Replicate your changes whatever you want",
-                      "level": 2
-                    },
-                    "index": 0,
-                    "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
-                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
-                    "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c"
-                  }
-                }
-              }
-            ],
-            "time": 1682836565037.03
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
-                    "index": 0
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682836569921.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
-                    "index": 0
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682836572926.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
-                    "index": 0
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682876504036.01
-          }
-        ]
-      ],
-      "hash": "0f44d93e6b3e55202ad5742a37ef1989e58ed497ba06d1d452520bcca093ce22"
-    },
-    "_meta": {
-      "lwt": 1682876504043.01
-    },
-    "_deleted": false,
-    "_attachments": {},
-    "_rev": "5-nubzgoywno"
-  },
-  {
     "id": "5KVzbW79Tc",
     "type": "paragraph",
     "data": {
@@ -176,16 +81,173 @@
             "creator": "pkhexmkwbs",
             "time": 1682876504126.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 1
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682885700944.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 1
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682886097697.03
+          }
         ]
       ],
-      "hash": "0f44d93e6b3e55202ad5742a37ef1989e58ed497ba06d1d452520bcca093ce22"
+      "hash": "0d9344d4efd2ec3738b06d629d44ced084cf27009822ea86d7ba3171584c6731"
     },
     "_meta": {
-      "lwt": 1682876504129.01
+      "lwt": 1682886097699.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "5-nubzgoywno"
+    "_rev": "8-szzsgoptvg"
+  },
+  {
+    "id": "Aym9al-dI4",
+    "type": "mermaid",
+    "data": {
+      "code": "mindmap\n  root((mindmap))\n    Origins\n      Long history\n      ::icon(fa fa-book)\n      Popularisation\n        British popular psychology author Tony Buzan\n    Research\n      On effectiveness<br/>and features\n      On Automatic creation\n        Uses\n            Creative techniques\n            Strategic planning\n            Argument mapping\n    Tools\n      Pen and paper\n      Mermaid",
+      "caption": "X"
+    },
+    "index": 2,
+    "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+    "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "Aym9al-dI4",
+                    "type": "mermaid",
+                    "data": {
+                      "caption": ""
+                    },
+                    "index": 0,
+                    "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c"
+                  }
+                }
+              }
+            ],
+            "time": 1682886080295.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "mindmap\n  root((mindmap))\n    Origins\n      Long history\n      ::icon(fa fa-book)\n      Popularisation\n        British popular psychology author Tony Buzan\n    Research\n      On effectiveness<br/>and features\n      On Automatic creation\n        Uses\n            Creative techniques\n            Strategic planning\n            Argument mapping\n    Tools\n      Pen and paper\n      Mermaid\n\n",
+                      "caption": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682886088607.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "mindmap\n  root((mindmap))\n    Origins\n      Long history\n      ::icon(fa fa-book)\n      Popularisation\n        British popular psychology author Tony Buzan\n    Research\n      On effectiveness<br/>and features\n      On Automatic creation\n        Uses\n            Creative techniques\n            Strategic planning\n            Argument mapping\n    Tools\n      Pen and paper\n      Mermaid",
+                      "caption": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682886089902.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "mindmap\n  root((mindmap))\n    Origins\n      Long history\n      ::icon(fa fa-book)\n      Popularisation\n        British popular psychology author Tony Buzan\n    Research\n      On effectiveness<br/>and features\n      On Automatic creation\n        Uses\n            Creative techniques\n            Strategic planning\n            Argument mapping\n    Tools\n      Pen and paper\n      Mermaid",
+                      "caption": "X"
+                    },
+                    "index": 0,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682886092566.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 2
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682886097743.01
+          }
+        ]
+      ],
+      "hash": "7e4ec67442423576a43271731b92d521541eeb82b144289b3c1f9341ada3d1ae"
+    },
+    "_meta": {
+      "lwt": 1682886097745.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-szzsgoptvg"
   },
   {
     "id": "ZOajTehCU2",
@@ -194,7 +256,7 @@
       "text": "GitHub's example",
       "level": 2
     },
-    "index": 2,
+    "index": 3,
     "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
     "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
     "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c",
@@ -271,16 +333,48 @@
             "creator": "pkhexmkwbs",
             "time": 1682876504126.02
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 2
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682885700944.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682886097743.02
+          }
         ]
       ],
-      "hash": "0f44d93e6b3e55202ad5742a37ef1989e58ed497ba06d1d452520bcca093ce22"
+      "hash": "0d9344d4efd2ec3738b06d629d44ced084cf27009822ea86d7ba3171584c6731"
     },
     "_meta": {
-      "lwt": 1682876504129.02
+      "lwt": 1682886097745.03
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "5-nubzgoywno"
+    "_rev": "8-szzsgoptvg"
   },
   {
     "id": "bNpRa9OAQ2",
@@ -290,7 +384,7 @@
       "language": "javascript",
       "output": ""
     },
-    "index": 3,
+    "index": 4,
     "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
     "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
     "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c",
@@ -1292,15 +1386,47 @@
             "creator": "pkhexmkwbs",
             "time": 1682885644534.02
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682885700945.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 4
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682886097743.03
+          }
         ]
       ],
-      "hash": "ab95fc48eb01806c52fd0ee2181b65610a80e94671b3da54d25709c2d2d11d30"
+      "hash": "ac7386fe4f9fd6df8d21fecd7939ad7328bad6d1f1420aff4ff663309d8e4b4d"
     },
     "_meta": {
-      "lwt": 1682885644535.01
+      "lwt": 1682886097745.04
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "47-nubzgoywno"
+    "_rev": "50-szzsgoptvg"
   }
 ]
