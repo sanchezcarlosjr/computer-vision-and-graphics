@@ -27915,7 +27915,7 @@
     "id": "bE-0B2ilhG",
     "type": "code",
     "data": {
-      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    console.log(blocks[-1])\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    console.log(blocks[blocks.length-1])\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
       "language": "javascript",
       "output": ""
     },
@@ -28933,15 +28933,37 @@
             "creator": "pkhexmkwbs",
             "time": 1682834242697.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    console.log(blocks[blocks.length-1])\n    return blocks\n  }),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834255161.01
+          }
         ]
       ],
-      "hash": "ab95fc48eb01806c52fd0ee2181b65610a80e94671b3da54d25709c2d2d11d30"
+      "hash": "ac3af00b15b6d43423b7e6da364c08fe5081fa2ea68593613df97f67ccb8b1d5"
     },
     "_meta": {
-      "lwt": 1682834242697.02
+      "lwt": 1682834255162.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "50-exrcyzpgzn"
+    "_rev": "51-exrcyzpgzn"
   }
 ]
