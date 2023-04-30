@@ -1,1 +1,190 @@
-[]
+[
+  {
+    "id": "cMyqwAxMtT",
+    "type": "header",
+    "data": {
+      "text": "Replicate your changes whatever you want",
+      "level": 2
+    },
+    "index": 1,
+    "createdBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+    "lastEditedBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+    "topic": "cfaabb03-3e37-4c2f-b0ed-23512b3116a8",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "cMyqwAxMtT",
+                    "type": "header",
+                    "data": {
+                      "text": "Replicate your changes whatever you want",
+                      "level": 2
+                    },
+                    "index": 0,
+                    "createdBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+                    "lastEditedBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+                    "topic": "cfaabb03-3e37-4c2f-b0ed-23512b3116a8"
+                  }
+                }
+              }
+            ],
+            "time": 1682886177806.04
+          }
+        ]
+      ],
+      "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
+    },
+    "_meta": {
+      "lwt": 1682886179580.03
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "2-arjugyvwrx"
+  },
+  {
+    "id": "BWvTYznBU2",
+    "type": "paragraph",
+    "data": {
+      "text": "Save your block changes to some node, and then share your changes with the query parameter ?u=url."
+    },
+    "index": 2,
+    "createdBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+    "lastEditedBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+    "topic": "cfaabb03-3e37-4c2f-b0ed-23512b3116a8",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "BWvTYznBU2",
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Save your block changes to some node, and then share your changes with the query parameter ?u=url."
+                    },
+                    "index": 1,
+                    "createdBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+                    "lastEditedBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+                    "topic": "cfaabb03-3e37-4c2f-b0ed-23512b3116a8"
+                  }
+                }
+              }
+            ],
+            "time": 1682886177806.06
+          }
+        ]
+      ],
+      "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
+    },
+    "_meta": {
+      "lwt": 1682886179420.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "2-arjugyvwrx"
+  },
+  {
+    "id": "Ww8lBMGsYh",
+    "type": "header",
+    "data": {
+      "text": "GitHub's example",
+      "level": 2
+    },
+    "index": 3,
+    "createdBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+    "lastEditedBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+    "topic": "cfaabb03-3e37-4c2f-b0ed-23512b3116a8",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "Ww8lBMGsYh",
+                    "type": "header",
+                    "data": {
+                      "text": "GitHub's example",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "createdBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+                    "lastEditedBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+                    "topic": "cfaabb03-3e37-4c2f-b0ed-23512b3116a8"
+                  }
+                }
+              }
+            ],
+            "time": 1682886177806.08
+          }
+        ]
+      ],
+      "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
+    },
+    "_meta": {
+      "lwt": 1682886179339.01
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "2-arjugyvwrx"
+  },
+  {
+    "id": "0hykb1TOgx",
+    "type": "code",
+    "data": {
+      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"feat: remove dead code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 4,
+    "createdBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+    "lastEditedBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+    "topic": "cfaabb03-3e37-4c2f-b0ed-23512b3116a8",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "0hykb1TOgx",
+                    "type": "code",
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"feat: remove dead code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "createdBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+                    "lastEditedBy": "cb427877-948c-48a9-8cd3-8fa58a5c1a85",
+                    "topic": "cfaabb03-3e37-4c2f-b0ed-23512b3116a8"
+                  }
+                }
+              }
+            ],
+            "time": 1682886177807.02
+          }
+        ]
+      ],
+      "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
+    },
+    "_meta": {
+      "lwt": 1682886179192.01
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "2-arjugyvwrx"
+  }
+]
