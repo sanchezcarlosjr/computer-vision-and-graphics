@@ -27915,7 +27915,7 @@
     "id": "bE-0B2ilhG",
     "type": "code",
     "data": {
-      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n  // It saves your token locally, so you need not generate new token.\n  environment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\n  await environment.wait()\n\n  const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n\n   return editor.blocks.get$.pipe(\n      first(),\n      map(blocks => {\n        blocks.pop()\n        return blocks\n      }),\n      map(content =>\n         btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n      commitOnGitHub(options)\n   )\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? Promise.resolve() : save()",
+      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n  // It saves your token locally, so you need not generate new token.\n  environment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\n  await environment.wait()\n\n  const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n\n   return editor.blocks.get$.pipe(\n      first(),\n      map(content =>\n         btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n      commitOnGitHub(options)\n   )\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? Promise.resolve() : save()",
       "language": "javascript",
       "output": ""
     },
@@ -30363,15 +30363,530 @@
             "creator": "pkhexmkwbs",
             "time": 1682834453697.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "async function save(params) {\n  // Generate new token on https://github.com/settings/tokens\n  // It saves your token locally, so you need not generate new token.\n  environment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\n  await environment.wait()\n\n  const options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/2-game-of-emotions.json\",\n    commitMessage: \"Play the game of emotions\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n\n   return editor.blocks.get$.pipe(\n      first(),\n      map(content =>\n         btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n      commitOnGitHub(options)\n   )\n}\n\ncurrentUrl.searchParams.get('m') === \"2\" ? Promise.resolve() : save()",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682834478561.01
+          }
         ]
       ],
-      "hash": "fc276d9887aa858808fcfee4253c64634f5c3b1f409f455c6dda66b9a6da4602"
+      "hash": "dca5f7fb0cea9f865f05a3b8d05c4a4d6c9da6cb3d79ddc93fcdfacc346599b6"
     },
     "_meta": {
-      "lwt": 1682834453698.01
+      "lwt": 1682834478562.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "115-exrcyzpgzn"
+    "_rev": "116-exrcyzpgzn"
+  },
+  {
+    "id": "9QAkdTvjZS",
+    "type": "paragraph",
+    "data": {
+      "text": ""
+    },
+    "index": 7,
+    "createdBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+    "topic": "e8e141dd-68a7-4c29-af2c-11559f457520",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "9QAkdTvjZS",
+                    "type": "paragraph",
+                    "data": {
+                      "text": ""
+                    },
+                    "index": 2,
+                    "createdBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "topic": "e8e141dd-68a7-4c29-af2c-11559f457520"
+                  }
+                }
+              }
+            ],
+            "time": 1682752073506.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682759073211.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682784467952.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 4
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682786075125.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682788979792.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682790280548.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682790315877.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682790356892.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682790418112.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682790421193.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 4
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682790609604.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682790739479.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682790878498.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682794463829.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682794475164.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682794582524.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682794588747.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682794630530.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682794642040.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682794693225.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682794722438.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682794756165.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682794962266.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682794969775.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682795031398.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 6
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682795117247.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 6
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682795356270.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "fd33e380-054e-4b05-a2f8-11bb382e6d3b",
+                    "index": 6
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682795404232.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "b182da71-1d1a-425c-b1f6-6ed39847e09b",
+                    "index": 7
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682833803003.02
+          }
+        ]
+      ],
+      "hash": "002490fd5888ff5907992ea327eb477dee0857fc7fee6b40e96b206d82f28c7d"
+    },
+    "_meta": {
+      "lwt": 1682834118987.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "55-exrcyzpgzn"
   }
 ]
