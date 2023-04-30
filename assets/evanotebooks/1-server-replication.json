@@ -1,1 +1,340 @@
-[]
+[
+  {
+    "id": "n6N_BjzZn6",
+    "type": "header",
+    "data": {
+      "text": "Replicate your changes whatever you want",
+      "level": 2
+    },
+    "index": 0,
+    "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+    "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "n6N_BjzZn6",
+                    "type": "header",
+                    "data": {
+                      "text": "Replicate your changes whatever you want",
+                      "level": 2
+                    },
+                    "index": 0,
+                    "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c"
+                  }
+                }
+              }
+            ],
+            "time": 1682836565037.03
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 0
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682836569921.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 0
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682836572926.01
+          }
+        ]
+      ],
+      "hash": "a45ab56e61b2b3ead25c95496b2f4fc6ac75660603f10125c2a4735c83756586"
+    },
+    "_meta": {
+      "lwt": 1682836572927.01
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "4-ljzstczfit"
+  },
+  {
+    "id": "5KVzbW79Tc",
+    "type": "paragraph",
+    "data": {
+      "text": "Save your block changes to some node, and then share your changes with the query parameter ?u=url."
+    },
+    "index": 1,
+    "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+    "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5KVzbW79Tc",
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Save your block changes to some node, and then share your changes with the query parameter ?u=url."
+                    },
+                    "index": 1,
+                    "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c"
+                  }
+                }
+              }
+            ],
+            "time": 1682836565037.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 1
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682836569968.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 1
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682836572984.02
+          }
+        ]
+      ],
+      "hash": "a45ab56e61b2b3ead25c95496b2f4fc6ac75660603f10125c2a4735c83756586"
+    },
+    "_meta": {
+      "lwt": 1682836572985.03
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "4-ljzstczfit"
+  },
+  {
+    "id": "ZOajTehCU2",
+    "type": "header",
+    "data": {
+      "text": "GitHub's example",
+      "level": 2
+    },
+    "index": 2,
+    "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+    "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ZOajTehCU2",
+                    "type": "header",
+                    "data": {
+                      "text": "GitHub's example",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c"
+                  }
+                }
+              }
+            ],
+            "time": 1682836565037.07
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 2
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682836569969.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 2
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682836572985.01
+          }
+        ]
+      ],
+      "hash": "a45ab56e61b2b3ead25c95496b2f4fc6ac75660603f10125c2a4735c83756586"
+    },
+    "_meta": {
+      "lwt": 1682836572985.04
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "4-ljzstczfit"
+  },
+  {
+    "id": "bNpRa9OAQ2",
+    "type": "code",
+    "data": {
+      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"Replicate your changes whatever you want\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 3,
+    "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+    "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "bNpRa9OAQ2",
+                    "type": "code",
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"Replicate your changes whatever you want\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": "0\n"
+                    },
+                    "index": 3,
+                    "createdBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "topic": "fa4b1d6b-3a2a-4aef-af13-700fb0c6879c"
+                  }
+                }
+              }
+            ],
+            "time": 1682836565037.09
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682836569969.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682836572985.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\nconst options = {\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"Replicate your changes whatever you want\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n}\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(options.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub(options)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682836575993.01
+          }
+        ]
+      ],
+      "hash": "0f44d93e6b3e55202ad5742a37ef1989e58ed497ba06d1d452520bcca093ce22"
+    },
+    "_meta": {
+      "lwt": 1682836575993.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "5-ljzstczfit"
+  }
+]
