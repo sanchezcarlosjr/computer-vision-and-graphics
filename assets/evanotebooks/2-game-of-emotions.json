@@ -3,9 +3,9 @@
     "id": "65dx7yCdLL",
     "type": "code",
     "data": {
-      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n   .output:nth-of-type(2) h2, img, canva {\n      opacity: 0;\n      animation-name: fadeIn;\n      animation-duration: 1s;\n      animation-fill-mode: forwards;\n   }\n   .output:has(.fa-spinner) {\n      align-items: center;\n      justify-content: center;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Game of emotions</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
+      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n   .output:nth-of-type(2) h2, img, canva {\n      opacity: 0;\n      animation-name: fadeIn;\n      animation-duration: 1s;\n      animation-fill-mode: forwards;\n   }\n   .output:has(.fa-spinner) {\n      align-items: center;\n      justify-content: center;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Game of emotions</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
       "language": "javascript",
-      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n   .output:nth-of-type(2) h2, img, canva {\n      opacity: 0;\n      animation-name: fadeIn;\n      animation-duration: 1s;\n      animation-fill-mode: forwards;\n   }\n   .output:has(.fa-spinner) {\n      align-items: center;\n      justify-content: center;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Game of emotions</h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
+      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n   .output:nth-of-type(2) h2, img, canva {\n      opacity: 0;\n      animation-name: fadeIn;\n      animation-duration: 1s;\n      animation-fill-mode: forwards;\n   }\n   .output:has(.fa-spinner) {\n      align-items: center;\n      justify-content: center;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Game of emotions</h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
     },
     "index": 0,
     "createdBy": "1efb5481-9eb3-4a7e-b6cd-59b9923feb13",
@@ -1643,16 +1643,60 @@
             "creator": "qntduspzag",
             "time": 1682876577650.02
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n   .output:nth-of-type(2) h2, img, canva {\n      opacity: 0;\n      animation-name: fadeIn;\n      animation-duration: 1s;\n      animation-fill-mode: forwards;\n   }\n   .output:has(.fa-spinner) {\n      align-items: center;\n      justify-content: center;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Game of emotions</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 0,
+                    "lastEditedBy": "1efb5481-9eb3-4a7e-b6cd-59b9923feb13",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1682876654238.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n   .output:nth-of-type(2) h2, img, canva {\n      opacity: 0;\n      animation-name: fadeIn;\n      animation-duration: 1s;\n      animation-fill-mode: forwards;\n   }\n   .output:has(.fa-spinner) {\n      align-items: center;\n      justify-content: center;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Game of emotions</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
+                      "language": "javascript",
+                      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n   .output:nth-of-type(2) h2, img, canva {\n      opacity: 0;\n      animation-name: fadeIn;\n      animation-duration: 1s;\n      animation-fill-mode: forwards;\n   }\n   .output:has(.fa-spinner) {\n      align-items: center;\n      justify-content: center;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Game of emotions</h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
+                    },
+                    "index": 0,
+                    "lastEditedBy": "1efb5481-9eb3-4a7e-b6cd-59b9923feb13",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1682876655030.06
+          }
         ]
       ],
-      "hash": "9fc14ce220bb2eda91ff6fe672cdc8c5e167b7272275132100e8bb95bc644989"
+      "hash": "fe71a7a4de2054cc25b6661973bdcfe90ee4ce1a70f96839fbf0ac122e556037"
     },
     "_meta": {
-      "lwt": 1682876577651.01
+      "lwt": 1682876655031.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "74-bpjdusvbnm"
+    "_rev": "76-bpjdusvbnm"
   },
   {
     "id": "0UKuZsEHdH",
