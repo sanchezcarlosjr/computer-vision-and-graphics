@@ -67,16 +67,32 @@
             "creator": "pkhexmkwbs",
             "time": 1682836572926.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 0
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682876504036.01
+          }
         ]
       ],
-      "hash": "a45ab56e61b2b3ead25c95496b2f4fc6ac75660603f10125c2a4735c83756586"
+      "hash": "0f44d93e6b3e55202ad5742a37ef1989e58ed497ba06d1d452520bcca093ce22"
     },
     "_meta": {
-      "lwt": 1682836572927.01
+      "lwt": 1682876504043.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "4-ljzstczfit"
+    "_rev": "5-nubzgoywno"
   },
   {
     "id": "5KVzbW79Tc",
@@ -144,16 +160,32 @@
             "creator": "pkhexmkwbs",
             "time": 1682836572984.02
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 1
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682876504126.01
+          }
         ]
       ],
-      "hash": "a45ab56e61b2b3ead25c95496b2f4fc6ac75660603f10125c2a4735c83756586"
+      "hash": "0f44d93e6b3e55202ad5742a37ef1989e58ed497ba06d1d452520bcca093ce22"
     },
     "_meta": {
-      "lwt": 1682836572985.03
+      "lwt": 1682876504129.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "4-ljzstczfit"
+    "_rev": "5-nubzgoywno"
   },
   {
     "id": "ZOajTehCU2",
@@ -223,22 +255,38 @@
             "creator": "pkhexmkwbs",
             "time": 1682836572985.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 2
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682876504126.02
+          }
         ]
       ],
-      "hash": "a45ab56e61b2b3ead25c95496b2f4fc6ac75660603f10125c2a4735c83756586"
+      "hash": "0f44d93e6b3e55202ad5742a37ef1989e58ed497ba06d1d452520bcca093ce22"
     },
     "_meta": {
-      "lwt": 1682836572985.04
+      "lwt": 1682876504129.02
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "4-ljzstczfit"
+    "_rev": "5-nubzgoywno"
   },
   {
     "id": "bNpRa9OAQ2",
     "type": "code",
     "data": {
-      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"refactor: reformat code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"refactor: reformat code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
       "language": "javascript",
       "output": ""
     },
@@ -1162,15 +1210,97 @@
             "creator": "pkhexmkwbs",
             "time": 1682838384081.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682876504127.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\ncommitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"refactor: reformat code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682885641414.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"refactor: reformat code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682885642078.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"refactor: reformat code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682885644534.02
+          }
         ]
       ],
-      "hash": "193830100c8793d070b3defc205f3c68f48e73d7e30d807b0856f48867f51b86"
+      "hash": "ab95fc48eb01806c52fd0ee2181b65610a80e94671b3da54d25709c2d2d11d30"
     },
     "_meta": {
-      "lwt": 1682838384081.02
+      "lwt": 1682885644535.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "43-ljzstczfit"
+    "_rev": "47-nubzgoywno"
   }
 ]
