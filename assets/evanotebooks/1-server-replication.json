@@ -238,7 +238,7 @@
     "id": "bNpRa9OAQ2",
     "type": "code",
     "data": {
-      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"refactor: remove unneeded variable\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"refactor: remove unneeded variable\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
       "language": "javascript",
       "output": ""
     },
@@ -590,15 +590,367 @@
             "creator": "pkhexmkwbs",
             "time": 1682836805425.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n   commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"refactor: remove unneeded variable\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838314809.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"refactor: remove unneeded variable\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838315745.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"refactor: remove unneeded variable\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838317265.04
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n     repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"refactor: remove unneeded variable\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838318329.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n     repo: \"computer-vision-and-graphics\",\n     filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"refactor: remove unneeded variable\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838319969.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n     repo: \"computer-vision-and-graphics\",\n     filePath: \"assets/evanotebooks/1-server-replication.json\",\n    c·ommitMessage: \"refactor: remove unneeded variable\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838320745.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n     repo: \"computer-vision-and-graphics\",\n     filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"refactor: remove unneeded variable\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838321281.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n     repo: \"computer-vision-and-graphics\",\n     filePath: \"assets/evanotebooks/1-server-replication.json\",\n     commitMessage: \"refactor: remove unneeded variable\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838322505.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n     repo: \"computer-vision-and-graphics\",\n     filePath: \"assets/evanotebooks/1-server-replication.json\",\n     commitMessage: \"refactor: remove unneeded variable\",\n     GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838323337.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n     repo: \"computer-vision-and-graphics\",\n     filePath: \"assets/evanotebooks/1-server-replication.json\",\n     commitMessage: \"refactor: remove unneeded variable\",\n     GITHUB_TOKEN: environment.GITHUB_TOKEN\n   })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838325705.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n     repo: \"computer-vision-and-graphics\",\n     filePath: \"assets/evanotebooks/1-server-replication.json\",\n     commitMessage: \"refactor: remove unneeded variable\",\n     GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838326705.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n     repo: \"computer-vision-and-graphics\",\n     filePath: \"assets/evanotebooks/1-server-replication.json\",\n     commitMessage: \"refactor: remove unneeded variable\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838328625.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n     repo: \"computer-vision-and-graphics\",\n     filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"refactor: remove unneeded variable\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838329329.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n     repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"refactor: remove unneeded variable\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838330465.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n     owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"refactor: remove unneeded variable\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838332089.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"refactor: remove unneeded variable\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 3,
+                    "lastEditedBy": "66d5fed6-df50-4604-9d9e-dfe63a452588",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1682838333057.01
+          }
         ]
       ],
-      "hash": "0a6410e1f4bbd4e97ca21fdceafe022596d52a06114e3efc8d2d7c0914bd7c29"
+      "hash": "76f33ec136a04d15b42a36e133a9f511c24319c70917914a762494b10ffd40ba"
     },
     "_meta": {
-      "lwt": 1682836805425.02
+      "lwt": 1682838333057.02
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "17-ljzstczfit"
+    "_rev": "33-ljzstczfit"
   }
 ]
