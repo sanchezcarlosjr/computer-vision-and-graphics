@@ -1,15 +1,98 @@
 [
   {
-    "id": "7DmeDFwDQG",
+    "id": "mXQuKVX_OQ",
+    "type": "toc",
+    "data": {
+      "items": [
+        {
+          "id": "35pqxqhkdc",
+          "reference": "sonNUtqxBa",
+          "text": "Documentation",
+          "level": 1
+        },
+        {
+          "id": "3obiogii77",
+          "reference": "jsi6F_7mqo",
+          "text": "References",
+          "level": 2
+        },
+        {
+          "id": "vtjxh2n5qn",
+          "reference": "scgfEezqlx",
+          "text": "Replication",
+          "level": 1
+        }
+      ]
+    },
+    "index": 1,
+    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "mXQuKVX_OQ",
+                    "type": "toc",
+                    "data": {
+                      "items": [
+                        {
+                          "id": "35pqxqhkdc",
+                          "reference": "sonNUtqxBa",
+                          "text": "Documentation",
+                          "level": 1
+                        },
+                        {
+                          "id": "3obiogii77",
+                          "reference": "jsi6F_7mqo",
+                          "text": "References",
+                          "level": 2
+                        },
+                        {
+                          "id": "vtjxh2n5qn",
+                          "reference": "scgfEezqlx",
+                          "text": "Replication",
+                          "level": 1
+                        }
+                      ]
+                    },
+                    "index": 0,
+                    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8"
+                  }
+                }
+              }
+            ],
+            "time": 1683099537468.06
+          }
+        ]
+      ],
+      "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
+    },
+    "_meta": {
+      "lwt": 1683099538104.01
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "2-pxtgtuaanv"
+  },
+  {
+    "id": "sonNUtqxBa",
     "type": "header",
     "data": {
       "text": "Documentation",
       "level": 1
     },
-    "index": 0,
-    "createdBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-    "topic": "e4abf9b7-7d09-4490-9945-5e6fe2ef907d",
+    "index": 2,
+    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8",
     "crdts": {
       "operations": [
         [
@@ -19,110 +102,21 @@
               {
                 "ifMatch": {
                   "$set": {
-                    "id": "7DmeDFwDQG",
+                    "id": "sonNUtqxBa",
                     "type": "header",
-                    "data": {
-                      "text": "",
-                      "level": 2
-                    },
-                    "index": 0,
-                    "createdBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "topic": "e4abf9b7-7d09-4490-9945-5e6fe2ef907d"
-                  }
-                }
-              }
-            ],
-            "time": 1682884342048.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "text": "",
-                      "level": 1
-                    },
-                    "index": 0,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884346191.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
                     "data": {
                       "text": "Documentation",
                       "level": 1
                     },
                     "index": 0,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
+                    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8"
                   }
                 }
               }
             ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884348806.06
-          }
-        ]
-      ],
-      "hash": "a45ab56e61b2b3ead25c95496b2f4fc6ac75660603f10125c2a4735c83756586"
-    },
-    "_meta": {
-      "lwt": 1682884348806.07
-    },
-    "_deleted": false,
-    "_attachments": {},
-    "_rev": "5-vmknyllnwf"
-  },
-  {
-    "id": "ciILSAqibg",
-    "type": "header",
-    "data": {
-      "text": "References",
-      "level": 2
-    },
-    "index": 1,
-    "createdBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-    "topic": "e4abf9b7-7d09-4490-9945-5e6fe2ef907d",
-    "crdts": {
-      "operations": [
-        [
-          {
-            "creator": "pkhexmkwbs",
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "id": "ciILSAqibg",
-                    "type": "header",
-                    "data": {
-                      "text": "",
-                      "level": 2
-                    },
-                    "index": 1,
-                    "createdBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "topic": "e4abf9b7-7d09-4490-9945-5e6fe2ef907d"
-                  }
-                }
-              }
-            ],
-            "time": 1682884424290.04
+            "time": 1683099514905.02
           }
         ],
         [
@@ -131,33 +125,91 @@
               {
                 "ifMatch": {
                   "$set": {
-                    "data": {
-                      "text": "References",
-                      "level": 2
-                    },
-                    "index": 1,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "index": 0
                   }
                 }
               }
             ],
             "creator": "pkhexmkwbs",
-            "time": 1682884426926.06
+            "time": 1683099521263.01
           }
         ]
       ],
       "hash": "1757d16dbb9cdc7c88419f358171c33cb3863037adce2200975348f2db0823f6"
     },
     "_meta": {
-      "lwt": 1682884426926.07
+      "lwt": 1683099538104.02
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "3-vmknyllnwf"
+    "_rev": "5-pxtgtuaanv"
   },
   {
-    "id": "C96b1M-91m",
+    "id": "jsi6F_7mqo",
+    "type": "header",
+    "data": {
+      "text": "References",
+      "level": 2
+    },
+    "index": 3,
+    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "jsi6F_7mqo",
+                    "type": "header",
+                    "data": {
+                      "text": "References",
+                      "level": 2
+                    },
+                    "index": 1,
+                    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8"
+                  }
+                }
+              }
+            ],
+            "time": 1683099514905.04
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "index": 1
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683099521318.01
+          }
+        ]
+      ],
+      "hash": "1757d16dbb9cdc7c88419f358171c33cb3863037adce2200975348f2db0823f6"
+    },
+    "_meta": {
+      "lwt": 1683099538104.03
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "5-pxtgtuaanv"
+  },
+  {
+    "id": "YeVyA7ZITz",
     "type": "list",
     "data": {
       "style": "ordered",
@@ -165,10 +217,10 @@
         "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment available in Web Workers</a>"
       ]
     },
-    "index": 2,
-    "createdBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-    "topic": "e4abf9b7-7d09-4490-9945-5e6fe2ef907d",
+    "index": 4,
+    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8",
     "crdts": {
       "operations": [
         [
@@ -178,479 +230,23 @@
               {
                 "ifMatch": {
                   "$set": {
-                    "id": "C96b1M-91m",
+                    "id": "YeVyA7ZITz",
                     "type": "list",
                     "data": {
                       "style": "ordered",
-                      "items": []
-                    },
-                    "index": 2,
-                    "createdBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "topic": "e4abf9b7-7d09-4490-9945-5e6fe2ef907d"
-                  }
-                }
-              }
-            ],
-            "time": 1682884439521.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "Rhttps://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884443911.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "R"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884450574.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "Process"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884451109.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": []
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884454502.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "Environment avaia"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884455622.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "Environment available"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884460398.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<span style=\"background-color: rgb(168, 214, 255);\">Environment available</span>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884461494.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment available</a>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884465254.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment availabline</a>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884468006.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment availablin</a>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884475894.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment availabl</a>e"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884477422.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment availabl</a>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884479622.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment avai availabl</a>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884480198.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment available availabl</a>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884482502.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment avai availabl</a>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884484238.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment available  availabl</a>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884484862.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment available in  availabl</a>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884485494.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment available in Workers availabl</a>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884486566.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment available in Workers</a>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884488022.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "style": "ordered",
                       "items": [
                         "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment available in Web Workers</a>"
                       ]
                     },
                     "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
+                    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8"
                   }
                 }
               }
             ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884489878.06
+            "time": 1683099514905.06
           }
         ],
         [
@@ -659,44 +255,37 @@
               {
                 "ifMatch": {
                   "$set": {
-                    "data": {
-                      "style": "ordered",
-                      "items": [
-                        "<a href=\"https://github.com/sanchezcarlosjr/evanotebook/blob/c0d2b510f81184bb23d738b5f348b3f1e173795c/src/app/notebook/shell/process.worker.ts#L632\">Environment available in Web Workers</a>"
-                      ]
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "index": 2
                   }
                 }
               }
             ],
             "creator": "pkhexmkwbs",
-            "time": 1682884491888.01
+            "time": 1683099521321.01
           }
         ]
       ],
-      "hash": "07c984e999ed4cf95f36be311c5ea35031a92c2d2fd5caa07a35d82ae9171c37"
+      "hash": "1757d16dbb9cdc7c88419f358171c33cb3863037adce2200975348f2db0823f6"
     },
     "_meta": {
-      "lwt": 1682884491888.02
+      "lwt": 1683099538104.04
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "23-vmknyllnwf"
+    "_rev": "5-pxtgtuaanv"
   },
   {
-    "id": "SVDCOKTa1z",
+    "id": "scgfEezqlx",
     "type": "header",
     "data": {
       "text": "Replication",
       "level": 1
     },
-    "index": 4,
-    "createdBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-    "topic": "e4abf9b7-7d09-4490-9945-5e6fe2ef907d",
+    "index": 5,
+    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8",
     "crdts": {
       "operations": [
         [
@@ -706,87 +295,61 @@
               {
                 "ifMatch": {
                   "$set": {
-                    "id": "SVDCOKTa1z",
+                    "id": "scgfEezqlx",
                     "type": "header",
-                    "data": {
-                      "text": "",
-                      "level": 2
-                    },
-                    "index": 1,
-                    "createdBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "topic": "e4abf9b7-7d09-4490-9945-5e6fe2ef907d"
-                  }
-                }
-              }
-            ],
-            "time": 1682884356378.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "text": "Replication",
-                      "level": 2
-                    },
-                    "index": 1,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884358782.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
                     "data": {
                       "text": "Replication",
                       "level": 1
                     },
-                    "index": 1,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
+                    "index": 3,
+                    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8"
+                  }
+                }
+              }
+            ],
+            "time": 1683099514905.08
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "index": 3
                   }
                 }
               }
             ],
             "creator": "pkhexmkwbs",
-            "time": 1682884361910.06
+            "time": 1683099521321.02
           }
         ]
       ],
-      "hash": "a45ab56e61b2b3ead25c95496b2f4fc6ac75660603f10125c2a4735c83756586"
+      "hash": "1757d16dbb9cdc7c88419f358171c33cb3863037adce2200975348f2db0823f6"
     },
     "_meta": {
-      "lwt": 1682884439698.02
+      "lwt": 1683099538104.05
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "11-vmknyllnwf"
+    "_rev": "5-pxtgtuaanv"
   },
   {
-    "id": "eHee3-eO1U",
+    "id": "ziygKqRf4p",
     "type": "code",
     "data": {
-      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"chore: we've started to documentate notebook\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"feat: we've added a table of contents\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
       "language": "javascript",
       "output": ""
     },
     "index": 5,
-    "createdBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-    "topic": "e4abf9b7-7d09-4490-9945-5e6fe2ef907d",
+    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8",
     "crdts": {
       "operations": [
         [
@@ -796,384 +359,269 @@
               {
                 "ifMatch": {
                   "$set": {
-                    "id": "eHee3-eO1U",
+                    "id": "ziygKqRf4p",
                     "type": "code",
-                    "data": {
-                      "code": "",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "createdBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "topic": "e4abf9b7-7d09-4490-9945-5e6fe2ef907d"
-                  }
-                }
-              }
-            ],
-            "time": 1682884351962.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replication.json\",\n      commitMessage: \"refactor: reformat code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884352855.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/1-server-replicatio.json\",\n      commitMessage: \"refactor: reformat code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884375534.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/.json\",\n      commitMessage: \"refactor: reformat code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884376870.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/documentation.json\",\n      commitMessage: \"refactor: reformat code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884379214.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/odocumentation.json\",\n      commitMessage: \"refactor: reformat code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884380950.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"refactor: reformat code\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884382774.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"refactor: reformat cod\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884389350.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884390766.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"feat: replicate to \",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884397150.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"feat: replicate to no\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884398582.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"feat: replicate to \",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884399190.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"feat: replicate to githu\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884400782.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"chore: \",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884404102.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"chore: we've started to \",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884407366.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"chore: we've started to documentate \",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1682884409118.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
                     "data": {
                       "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n    commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"chore: we've started to documentate notebook\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
                       "language": "javascript",
                       "output": ""
                     },
-                    "index": 2,
-                    "lastEditedBy": "35a68c51-bf5e-4e85-8fc7-210894b0360b",
+                    "index": 4,
+                    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8"
+                  }
+                }
+              }
+            ],
+            "time": 1683099514905.1
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "index": 4
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683099521321.03
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"chore: we've started to documentate notebook\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n    })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 5,
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
                     "_deleted": false
                   }
                 }
               }
             ],
             "creator": "pkhexmkwbs",
-            "time": 1682884410870.06
+            "time": 1683099555816.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"chore: we've started to documentate notebook\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 5,
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683099559232.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: ,\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 5,
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683099566080.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"feat: \",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 5,
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683099568120.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"feat: TOC\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 5,
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683099571448.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"feat: Table of contents\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 5,
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683099575320.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"feat: we've added a Table of contents\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 5,
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683099579336.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"feat: we've added a table of contents\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 5,
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683099580024.06
           }
         ]
       ],
-      "hash": "a454a393f6e56a5339450ae09fbaac7234fd392d985d6f5839c08e5470e00531"
+      "hash": "8298e9b297a5a0950f358fef7de97ded333758e7d065a5ac79ef5bd9ddbdc47f"
     },
     "_meta": {
-      "lwt": 1682884439698.03
+      "lwt": 1683099580025.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "26-vmknyllnwf"
+    "_rev": "13-pxtgtuaanv"
+  },
+  {
+    "id": "h8Q-kKPajz",
+    "type": "paragraph",
+    "data": {
+      "text": ""
+    },
+    "index": 7,
+    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "h8Q-kKPajz",
+                    "type": "paragraph",
+                    "data": {
+                      "text": ""
+                    },
+                    "index": 6,
+                    "createdBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "lastEditedBy": "05e91a1a-2be6-4f23-8b69-d4f68820e452",
+                    "topic": "bdf53a57-09c6-4a15-9d06-d9a5edac1ec8"
+                  }
+                }
+              }
+            ],
+            "time": 1683099557254.01
+          }
+        ]
+      ],
+      "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
+    },
+    "_meta": {
+      "lwt": 1683099557341.03
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "2-pxtgtuaanv"
   }
 ]
