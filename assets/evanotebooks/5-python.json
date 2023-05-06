@@ -1,0 +1,3194 @@
+[
+  {
+    "id": "bNTubd6VM9",
+    "type": "toc",
+    "data": {
+      "items": [
+        {
+          "id": "fawb9w9z6c",
+          "reference": "xiGVqrKuG2",
+          "text": "Python",
+          "level": 1
+        },
+        {
+          "id": "eqohrjrzkk",
+          "reference": "HygwANQxlf",
+          "text": "Fetch synchronously",
+          "level": 2
+        },
+        {
+          "id": "vnwht1yoko",
+          "reference": "cIZ-hXQPGi",
+          "text": "Create a counter and event listener",
+          "level": 2
+        }
+      ]
+    },
+    "index": 0,
+    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "bNTubd6VM9",
+                    "type": "toc",
+                    "data": {
+                      "items": [
+                        {
+                          "id": "tt34y8f318",
+                          "reference": "xiGVqrKuG2",
+                          "text": "Python",
+                          "level": 1
+                        },
+                        {
+                          "id": "kjnjars9v2",
+                          "reference": "GEg9bf2cSh",
+                          "text": "Pandas and fetch data",
+                          "level": 2
+                        },
+                        {
+                          "id": "gay270ph31",
+                          "reference": "_BEpbhZDN1",
+                          "text": "Create a counter and event listener",
+                          "level": 2
+                        },
+                        {
+                          "id": "5d5tpf8fqk",
+                          "reference": "7hbE9ZM9sM",
+                          "text": "Plot with Matplotlib",
+                          "level": 2
+                        },
+                        {
+                          "id": "boebb8zzav",
+                          "reference": "Aq7kZJYuIW",
+                          "text": "Connect Pyscript to WebWorker\n",
+                          "level": 2
+                        }
+                      ]
+                    },
+                    "index": 0,
+                    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca"
+                  }
+                }
+              }
+            ],
+            "time": 1683327899031.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "index": 0
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683327962566.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "index": 0
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328366518.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "items": [
+                        {
+                          "id": "xo4dhmsg2q",
+                          "reference": "xiGVqrKuG2",
+                          "text": "Python",
+                          "level": 1
+                        },
+                        {
+                          "id": "vf2j1ojwdx",
+                          "reference": "HygwANQxlf",
+                          "text": "Fetch synchronously",
+                          "level": 2
+                        },
+                        {
+                          "id": "6phcelmclr",
+                          "reference": "cIZ-hXQPGi",
+                          "text": "Create a counter and event listener",
+                          "level": 2
+                        }
+                      ]
+                    },
+                    "index": 0,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328479430.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "index": 0
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340934067.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "items": [
+                        {
+                          "id": "fawb9w9z6c",
+                          "reference": "xiGVqrKuG2",
+                          "text": "Python",
+                          "level": 1
+                        },
+                        {
+                          "id": "eqohrjrzkk",
+                          "reference": "HygwANQxlf",
+                          "text": "Fetch synchronously",
+                          "level": 2
+                        },
+                        {
+                          "id": "vnwht1yoko",
+                          "reference": "cIZ-hXQPGi",
+                          "text": "Create a counter and event listener",
+                          "level": 2
+                        }
+                      ]
+                    },
+                    "index": 0,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340957401.01
+          }
+        ]
+      ],
+      "hash": "0d9344d4efd2ec3738b06d629d44ced084cf27009822ea86d7ba3171584c6731"
+    },
+    "_meta": {
+      "lwt": 1683340957401.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "7-jathzychxq"
+  },
+  {
+    "id": "xiGVqrKuG2",
+    "type": "header",
+    "data": {
+      "text": "Python",
+      "level": 1
+    },
+    "index": 1,
+    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "xiGVqrKuG2",
+                    "type": "header",
+                    "data": {
+                      "text": "",
+                      "level": 2
+                    },
+                    "index": 0,
+                    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca"
+                  }
+                }
+              }
+            ],
+            "time": 1683327883778.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "",
+                      "level": 1
+                    },
+                    "index": 0,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683327885697.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Python",
+                      "level": 1
+                    },
+                    "index": 0,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683327887573.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "index": 1
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683327962588.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "index": 1
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328366628.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "index": 1
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340934207.01
+          }
+        ]
+      ],
+      "hash": "0d9344d4efd2ec3738b06d629d44ced084cf27009822ea86d7ba3171584c6731"
+    },
+    "_meta": {
+      "lwt": 1683340934221.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "9-jathzychxq"
+  },
+  {
+    "id": "XQQa5j-z9K",
+    "type": "alert",
+    "data": {
+      "type": "primary",
+      "message": "<span style=\"letter-spacing: normal;\">Please be patient the first time. We're loading&nbsp;Python interpreter lazily --Pyodide.</span>"
+    },
+    "index": 2,
+    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "XQQa5j-z9K",
+                    "type": "alert",
+                    "data": {
+                      "type": "primary",
+                      "message": ""
+                    },
+                    "index": 1,
+                    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca"
+                  }
+                }
+              }
+            ],
+            "time": 1683327892132.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "type": "primary",
+                      "message": "<span style=\"letter-spacing: normal;\">Please be patient the first time. We're loading&nbsp;Python interpreter lazily --Pyodide.</span>"
+                    },
+                    "index": 1,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683327892921.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "index": 2
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683327962588.03
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "index": 2
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328366629.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "index": 2
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340934208.01
+          }
+        ]
+      ],
+      "hash": "7e4ec67442423576a43271731b92d521541eeb82b144289b3c1f9341ada3d1ae"
+    },
+    "_meta": {
+      "lwt": 1683340934221.03
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "8-jathzychxq"
+  },
+  {
+    "id": "HygwANQxlf",
+    "type": "header",
+    "data": {
+      "text": "Fetch synchronously",
+      "level": 2
+    },
+    "index": 3,
+    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "HygwANQxlf",
+                    "type": "header",
+                    "data": {
+                      "text": "",
+                      "level": 2
+                    },
+                    "index": 4,
+                    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca"
+                  }
+                }
+              }
+            ],
+            "time": 1683328057239.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "X",
+                      "level": 2
+                    },
+                    "index": 4,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328074905.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Py",
+                      "level": 2
+                    },
+                    "index": 3,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328097761.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Pyodide",
+                      "level": 2
+                    },
+                    "index": 3,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328099425.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "F",
+                      "level": 2
+                    },
+                    "index": 3,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328147897.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Fe",
+                      "level": 2
+                    },
+                    "index": 3,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328148425.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Fetx",
+                      "level": 2
+                    },
+                    "index": 3,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328149249.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Fet",
+                      "level": 2
+                    },
+                    "index": 3,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328150025.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Feth",
+                      "level": 2
+                    },
+                    "index": 3,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328150981.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Fe",
+                      "level": 2
+                    },
+                    "index": 3,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328151713.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Fetch",
+                      "level": 2
+                    },
+                    "index": 3,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328152681.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Fetch sync",
+                      "level": 2
+                    },
+                    "index": 3,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328199457.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Fetch syncronously",
+                      "level": 2
+                    },
+                    "index": 3,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328201753.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Fetch synchronously",
+                      "level": 2
+                    },
+                    "index": 3,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328208201.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328366629.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "index": 3
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340934208.02
+          }
+        ]
+      ],
+      "hash": "0a6410e1f4bbd4e97ca21fdceafe022596d52a06114e3efc8d2d7c0914bd7c29"
+    },
+    "_meta": {
+      "lwt": 1683340934221.04
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "18-jathzychxq"
+  },
+  {
+    "id": "NKCRx1LZO8",
+    "type": "code",
+    "data": {
+      "code": "import pandas as pd\nfrom pyodide.http import open_url\n\npd.read_csv(open_url(\"https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv\")).head()",
+      "language": "python",
+      "output": "key  ...                                        ingredients\n0  0_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n1  1_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n2  2_bj  ...  CREAM, LIQUID SUGAR (SUGAR, WATER), SKIM MILK,...\n3  3_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n4  4_bj  ...  CREAM, SKIM MILK, WATER, LIQUID SUGAR (SUGAR, ...\n\n[5 rows x 7 columns]"
+    },
+    "index": 4,
+    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "NKCRx1LZO8",
+                    "type": "code",
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca"
+                  }
+                }
+              }
+            ],
+            "time": 1683328102116.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import pandas as pd\nfrom pyodide.http import open_url\n\nurl = (\n   \"https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv\"\n)\n\npd.read_csv(open_url(url)).head()",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328102779.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328103697.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "",
+                      "language": "python",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328106025.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import pandas as pd\nfrom pyodide.http import open_url\n\nurl = (\n   \"https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv\"\n)\n\npd.read_csv(open_url(url)).head()",
+                      "language": "python",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328106921.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import pandas as pd\nfrom pyodide.http import open_url\n\nurl = (\n   \"https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv\"\n)\n\npd.read_csv(open_url(url)).head()",
+                      "language": "python",
+                      "output": "key  ...                                        ingredients\n0  0_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n1  1_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n2  2_bj  ...  CREAM, LIQUID SUGAR (SUGAR, WATER), SKIM MILK,...\n3  3_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n4  4_bj  ...  CREAM, SKIM MILK, WATER, LIQUID SUGAR (SUGAR, ...\n\n[5 rows x 7 columns]"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328107673.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "index": 4
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328366630.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import pandas as pd\nfrom pyodide.http import open_url\n\nurl = (\"https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv\"\n)\n\npd.read_csv(open_url(url)).head()",
+                      "language": "python",
+                      "output": "key  ...                                        ingredients\n0  0_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n1  1_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n2  2_bj  ...  CREAM, LIQUID SUGAR (SUGAR, WATER), SKIM MILK,...\n3  3_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n4  4_bj  ...  CREAM, SKIM MILK, WATER, LIQUID SUGAR (SUGAR, ...\n\n[5 rows x 7 columns]"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328530528.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import pandas as pd\nfrom pyodide.http import open_url\n\nurl = (\"https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv\")\n\npd.read_csv(open_url(url)).head()",
+                      "language": "python",
+                      "output": "key  ...                                        ingredients\n0  0_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n1  1_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n2  2_bj  ...  CREAM, LIQUID SUGAR (SUGAR, WATER), SKIM MILK,...\n3  3_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n4  4_bj  ...  CREAM, SKIM MILK, WATER, LIQUID SUGAR (SUGAR, ...\n\n[5 rows x 7 columns]"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328533307.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import pandas as pd\nfrom pyodide.http import open_url\n\nurl = (\"https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv\"\n\npd.read_csv(open_url(url)).head()",
+                      "language": "python",
+                      "output": "key  ...                                        ingredients\n0  0_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n1  1_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n2  2_bj  ...  CREAM, LIQUID SUGAR (SUGAR, WATER), SKIM MILK,...\n3  3_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n4  4_bj  ...  CREAM, SKIM MILK, WATER, LIQUID SUGAR (SUGAR, ...\n\n[5 rows x 7 columns]"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328534025.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import pandas as pd\nfrom pyodide.http import open_url\n\nurl = \"https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv\"\n\npd.read_csv(open_url(url)).head()",
+                      "language": "python",
+                      "output": "key  ...                                        ingredients\n0  0_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n1  1_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n2  2_bj  ...  CREAM, LIQUID SUGAR (SUGAR, WATER), SKIM MILK,...\n3  3_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n4  4_bj  ...  CREAM, SKIM MILK, WATER, LIQUID SUGAR (SUGAR, ...\n\n[5 rows x 7 columns]"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328539713.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import pandas as pd\nfrom pyodide.http import open_url\n\nurl = \n\npd.read_csv(open_url(url)).head()",
+                      "language": "python",
+                      "output": "key  ...                                        ingredients\n0  0_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n1  1_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n2  2_bj  ...  CREAM, LIQUID SUGAR (SUGAR, WATER), SKIM MILK,...\n3  3_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n4  4_bj  ...  CREAM, SKIM MILK, WATER, LIQUID SUGAR (SUGAR, ...\n\n[5 rows x 7 columns]"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328547135.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import pandas as pd\nfrom pyodide.http import open_url\n\nurl = \n\npd.read_csv(open_url(\"https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv\")).head()",
+                      "language": "python",
+                      "output": "key  ...                                        ingredients\n0  0_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n1  1_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n2  2_bj  ...  CREAM, LIQUID SUGAR (SUGAR, WATER), SKIM MILK,...\n3  3_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n4  4_bj  ...  CREAM, SKIM MILK, WATER, LIQUID SUGAR (SUGAR, ...\n\n[5 rows x 7 columns]"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328548489.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import pandas as pd\nfrom pyodide.http import open_url\n\nurl \npd.read_csv(open_url(\"https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv\")).head()",
+                      "language": "python",
+                      "output": "key  ...                                        ingredients\n0  0_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n1  1_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n2  2_bj  ...  CREAM, LIQUID SUGAR (SUGAR, WATER), SKIM MILK,...\n3  3_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n4  4_bj  ...  CREAM, SKIM MILK, WATER, LIQUID SUGAR (SUGAR, ...\n\n[5 rows x 7 columns]"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328549408.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import pandas as pd\nfrom pyodide.http import open_url\n\npd.read_csv(open_url(\"https://raw.githubusercontent.com/Cheukting/pyscript-ice-cream/main/bj-products.csv\")).head()",
+                      "language": "python",
+                      "output": "key  ...                                        ingredients\n0  0_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n1  1_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n2  2_bj  ...  CREAM, LIQUID SUGAR (SUGAR, WATER), SKIM MILK,...\n3  3_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n4  4_bj  ...  CREAM, SKIM MILK, WATER, LIQUID SUGAR (SUGAR, ...\n\n[5 rows x 7 columns]"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328550081.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "index": 4
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340934209.01
+          }
+        ]
+      ],
+      "hash": "0a6410e1f4bbd4e97ca21fdceafe022596d52a06114e3efc8d2d7c0914bd7c29"
+    },
+    "_meta": {
+      "lwt": 1683340934221.05
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "17-jathzychxq"
+  },
+  {
+    "id": "cIZ-hXQPGi",
+    "type": "header",
+    "data": {
+      "text": "Create a counter and event listener",
+      "level": 2
+    },
+    "index": 5,
+    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "cIZ-hXQPGi",
+                    "type": "header",
+                    "data": {
+                      "text": "",
+                      "level": 2
+                    },
+                    "index": 5,
+                    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca"
+                  }
+                }
+              }
+            ],
+            "time": 1683328184625.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Fetch",
+                      "level": 2
+                    },
+                    "index": 5,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328187441.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Create a counter and event listener",
+                      "level": 2
+                    },
+                    "index": 5,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328193881.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328366630.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "index": 5
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340934213.01
+          }
+        ]
+      ],
+      "hash": "7e4ec67442423576a43271731b92d521541eeb82b144289b3c1f9341ada3d1ae"
+    },
+    "_meta": {
+      "lwt": 1683340934221.06
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-jathzychxq"
+  },
+  {
+    "id": "6gM7RQrn-4",
+    "type": "code",
+    "data": {
+      "code": "`<nk-button mat-raised-button color=\"primary\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+      "language": "javascript",
+      "output": "<nk-button mat-raised-button=\"\" color=\"primary\" class=\"button mdc-button mdc-button--raised mat-mdc-raised-button mat-primary mat-mdc-button-base\" type=\"button\" id=\"someuniqueid\" ng-version=\"15.2.5\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">Click Me</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>"
+    },
+    "index": 6,
+    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "6gM7RQrn-4",
+                    "type": "code",
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca"
+                  }
+                }
+              }
+            ],
+            "time": 1683328223749.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<button class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328224463.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<button class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>`",
+                      "language": "javascript",
+                      "output": "<button class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328225991.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<button mat-button class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>`",
+                      "language": "javascript",
+                      "output": "<button class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328230673.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<button mat-button class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328232130.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<button mat-button class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>`",
+                      "language": "javascript",
+                      "output": "<button mat-button=\"\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328232824.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nkbutton mat-button class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>`",
+                      "language": "javascript",
+                      "output": "<button mat-button=\"\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328238008.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-button class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>`",
+                      "language": "javascript",
+                      "output": "<button mat-button=\"\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328238577.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-button class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nbutton>`",
+                      "language": "javascript",
+                      "output": "<button mat-button=\"\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328241353.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-button class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328242905.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-button class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+                      "language": "javascript",
+                      "output": "<nk-button mat-button=\"\" class=\"button mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\" type=\"button\" id=\"someuniqueid\" ng-version=\"15.2.5\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">Click Me</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328243609.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-button color=\"primary\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328250297.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-button color=\"primary\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+                      "language": "javascript",
+                      "output": "<nk-button mat-button=\"\" color=\"primary\" class=\"button mdc-button mat-mdc-button mat-primary mat-mdc-button-base\" type=\"button\" id=\"someuniqueid\" ng-version=\"15.2.5\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">Click Me</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328251097.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-raised-button color=\"primary\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+                      "language": "javascript",
+                      "output": "<nk-button mat-button=\"\" color=\"primary\" class=\"button mdc-button mat-mdc-button mat-primary mat-mdc-button-base\" type=\"button\" id=\"someuniqueid\" ng-version=\"15.2.5\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">Click Me</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328271865.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-raised-button color=\"primary\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328272745.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-raised-button color=\"primary\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+                      "language": "javascript",
+                      "output": "<nk-button mat-raised-button=\"\" color=\"primary\" class=\"button mdc-button mdc-button--raised mat-mdc-raised-button mat-primary mat-mdc-button-base\" type=\"button\" id=\"someuniqueid\" ng-version=\"15.2.5\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">Click Me</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328273417.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "index": 6
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328366631.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-raised-button color=\"primary\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+                      "language": "javascript",
+                      "output": "<nk-button mat-raised-button=\"\" color=\"primary\" class=\"button mdc-button mdc-button--raised mat-mdc-raised-button mat-primary mat-mdc-button-base\" type=\"button\" id=\"someuniqueid\" ng-version=\"15.2.5\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">Click Me</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328371945.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-raised-button color=\"primary\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328372625.04
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-raised-button color=\"primary\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+                      "language": "javascript",
+                      "output": "<nk-button mat-raised-button=\"\" color=\"primary\" class=\"button mdc-button mdc-button--raised mat-mdc-raised-button mat-primary mat-mdc-button-base\" type=\"button\" id=\"someuniqueid\" ng-version=\"15.2.5\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">Click Me</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328373321.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-raised-button color=\"primary\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 6,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328601643.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "`<nk-button mat-raised-button color=\"primary\" class=\"button\" type=\"button\" id=\"someuniqueid\">Click Me</nk-button>`",
+                      "language": "javascript",
+                      "output": "<nk-button mat-raised-button=\"\" color=\"primary\" class=\"button mdc-button mdc-button--raised mat-mdc-raised-button mat-primary mat-mdc-button-base\" type=\"button\" id=\"someuniqueid\" ng-version=\"15.2.5\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">Click Me</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>"
+                    },
+                    "index": 6,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328602337.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "index": 6
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340934214.01
+          }
+        ]
+      ],
+      "hash": "8ede983364afc82b460783a2b020f9d873bfa39798319a215ca2774872a022ee"
+    },
+    "_meta": {
+      "lwt": 1683340934221.07
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "25-jathzychxq"
+  },
+  {
+    "id": "lirmM2ZNvi",
+    "type": "code",
+    "data": {
+      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\n\"<section id='norunjvqdw'></section>\"",
+      "language": "python",
+      "output": "<section id=\"norunjvqdw\">3</section>"
+    },
+    "index": 7,
+    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "lirmM2ZNvi",
+                    "type": "code",
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 8,
+                    "createdBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca"
+                  }
+                }
+              }
+            ],
+            "time": 1683328300845.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    display(str(counter), target=\"norunjvqdw\", append=False)\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 8,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328305713.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    display(str(counter), target=\"norunjvqdw\", append=False)\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "python",
+                      "output": ""
+                    },
+                    "index": 8,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328308833.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    display(str(counter), target=\"norunjvqdw\", append=False)\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328312521.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"someuniqueid\")\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328326705.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"someuniqueid\")  = \n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328328281.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\")  = \n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328336171.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\") \n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328342457.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328343665.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = \n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328346393.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "0cbd7a00-e9cf-4f81-a43e-6cc07718ec8c",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328348257.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "index": 8
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328366632.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "python",
+                      "output": ""
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328377242.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328381354.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328558049.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328559233.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328581073.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328582801.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"<div>\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328584225.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"<div><\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328585049.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"<div></div>\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328586153.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"<div id=\"></div>\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328588401.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"<div id=\"1></div>\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328588873.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n`<div id=\"1></div>\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328590873.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n`<section id=\"norunjvqdw\"></section>`",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328593938.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\n`<section id=\"norunjvqdw\"></section>`",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 8,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328595113.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n`<section id=\"norunjvqdw\"></section>`",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 7,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328605897.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n`<section id=\"norunjvqdw\"></section>",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 7,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328609089.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n`<section id=\"norunjvqdw\"></section>\"\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 7,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328610529.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"\"<section id=\"norunjvqdw\"></section>\"\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 7,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328611649.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"<section id=\"norunjvqdw\"></section>\"\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 7,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328612249.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"<section id=\"norunjvqdw\"></section>\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 7,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328612769.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"<section id=\\\"norunjvqdw\"></section>\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 7,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328614913.03
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"<section id=\\\"norunjvqdw'></section>\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 7,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328617804.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"<section id='norunjvqdw'></section>\"",
+                      "language": "python",
+                      "output": "undefined"
+                    },
+                    "index": 7,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328619729.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"<section id='norunjvqdw'></section>\"",
+                      "language": "python",
+                      "output": "<section id=\"norunjvqdw\"></section>"
+                    },
+                    "index": 7,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328620873.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\"<section id='norunjvqdw'></section>\"",
+                      "language": "python",
+                      "output": "<section id=\"norunjvqdw\">3</section>"
+                    },
+                    "index": 7,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328626529.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "from js import document\nfrom pyodide.ffi import create_proxy\n\ncounter = 0\ndef count(*args):\n    global counter\n    counter += 1\n    document.getElementById(\"norunjvqdw\").textContent = counter\n\ndocument.getElementById(\"someuniqueid\").addEventListener(\"click\", create_proxy(count))\n\n\"<section id='norunjvqdw'></section>\"",
+                      "language": "python",
+                      "output": "<section id=\"norunjvqdw\">3</section>"
+                    },
+                    "index": 7,
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683328642913.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "index": 7
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340934214.02
+          }
+        ]
+      ],
+      "hash": "db510823d34d20d250fc48732642c52bbea163a72a4d57099ab56a3fe2011e9e"
+    },
+    "_meta": {
+      "lwt": 1683340934221.08
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "41-jathzychxq"
+  },
+  {
+    "id": "XZIGrTjZbv",
+    "type": "header",
+    "data": {
+      "text": "Replication",
+      "level": 1
+    },
+    "index": 8,
+    "createdBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "XZIGrTjZbv",
+                    "type": "header",
+                    "data": {
+                      "text": "",
+                      "level": 2
+                    },
+                    "index": 8,
+                    "createdBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca"
+                  }
+                }
+              }
+            ],
+            "time": 1683340969375.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Refetc",
+                      "level": 2
+                    },
+                    "index": 8,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340972520.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Replication",
+                      "level": 2
+                    },
+                    "index": 8,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340990433.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Replication",
+                      "level": 1
+                    },
+                    "index": 8,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340995777.01
+          }
+        ]
+      ],
+      "hash": "0f44d93e6b3e55202ad5742a37ef1989e58ed497ba06d1d452520bcca093ce22"
+    },
+    "_meta": {
+      "lwt": 1683340995777.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "5-jathzychxq"
+  },
+  {
+    "id": "aDoHOhMa6U",
+    "type": "code",
+    "data": {
+      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/5-python.json\",\n      commitMessage: \"feat(python): documentate how python works\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 9,
+    "createdBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "aDoHOhMa6U",
+                    "type": "code",
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "createdBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca"
+                  }
+                }
+              }
+            ],
+            "time": 1683341000240.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/notebook-documentation.json\",\n      commitMessage: \"feat(toc): documentation\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683341001537.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/.py.json\",\n      commitMessage: \"feat(toc): documentation\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683341023433.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/5.python.json\",\n      commitMessage: \"feat(toc): documentation\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683341025657.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/5-python.json\",\n      commitMessage: \"feat(toc): documentation\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683341031305.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/5-python.json\",\n      commitMessage: \"feat(toc): documentatio\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683341034457.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/5-python.json\",\n      commitMessage: \"feat(python): \",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683341037809.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/5-python.json\",\n      commitMessage: \"feat(python): calculate\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683341039913.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/5-python.json\",\n      commitMessage: \"feat(python): documentate how \",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683341044153.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/5-python.json\",\n      commitMessage: \"feat(python): documentate how python ho\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683341046585.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/5-python.json\",\n      commitMessage: \"feat(python): documentate how python how\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683341047904.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/5-python.json\",\n      commitMessage: \"feat(python): documentate how python how it work\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683341050153.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content => \n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))\n  ),\n  commitOnGitHub({\n      owner: \"sanchezcarlosjr\",\n      repo: \"computer-vision-and-graphics\",\n      filePath: \"assets/evanotebooks/5-python.json\",\n      commitMessage: \"feat(python): documentate how python works\",\n      GITHUB_TOKEN: environment.GITHUB_TOKEN\n  })\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683341052065.01
+          }
+        ]
+      ],
+      "hash": "3b7a48943fd5883a9a8f5a59b9c78e4b1ff20133c81cfa93d310cc7d44c4cf98"
+    },
+    "_meta": {
+      "lwt": 1683341052065.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "14-jathzychxq"
+  },
+  {
+    "id": "iO3fA3pq__",
+    "type": "paragraph",
+    "data": {
+      "text": ""
+    },
+    "index": 10,
+    "createdBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "iO3fA3pq__",
+                    "type": "paragraph",
+                    "data": {
+                      "text": ""
+                    },
+                    "index": 11,
+                    "createdBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "lastEditedBy": "1b1aa088-12da-490e-93bb-d841f385b7c5",
+                    "topic": "c355aeed-07bc-49f1-88f6-384c31f5dfca"
+                  }
+                }
+              }
+            ],
+            "time": 1683337288188.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "lastEditedBy": "41132a81-751b-4c84-baec-9fd817ff233b",
+                    "index": 11
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1683340934221.01
+          }
+        ]
+      ],
+      "hash": "1757d16dbb9cdc7c88419f358171c33cb3863037adce2200975348f2db0823f6"
+    },
+    "_meta": {
+      "lwt": 1683341000351.04
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "10-jathzychxq"
+  }
+]
