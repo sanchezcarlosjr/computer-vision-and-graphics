@@ -3004,9 +3004,9 @@
     "id": "FLdnmCi91E",
     "type": "code",
     "data": {
-      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, []))\n)",
+      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => math.mean(x, 0)),\n  display\n)",
       "language": "javascript",
-      "output": ""
+      "output": "[\n 0.05714285714285715,\n 66.27142857142859,\n 51.228571428571435\n]\n"
     },
     "index": 4,
     "createdBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
@@ -5524,16 +5524,500 @@
             "creator": "qntduspzag",
             "time": 1683566541778.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     return acc\n  }, []))\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566774033.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.((acc, _, index) => {\n     return acc\n  }, []))\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566776081.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => \n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566779153.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => )\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566779777.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.((acc, _, index) => {\n     return acc\n  }, []))\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566808537.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, []))\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566809482.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  display\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566812902.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n [\n  0,\n  68.1,\n  48.5\n ],\n [\n  0,\n  65.5,\n  48.4\n ],\n [\n  0.4,\n  62,\n  50.4\n ],\n [\n  0,\n  62.7,\n  49.4\n ],\n [\n  0,\n  65.4,\n  51\n ],\n [\n  0,\n  69.8,\n  54.8\n ],\n [\n  0,\n  70.4,\n  56.1\n ]\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566813825.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  \n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n [\n  0,\n  68.1,\n  48.5\n ],\n [\n  0,\n  65.5,\n  48.4\n ],\n [\n  0.4,\n  62,\n  50.4\n ],\n [\n  0,\n  62.7,\n  49.4\n ],\n [\n  0,\n  65.4,\n  51\n ],\n [\n  0,\n  69.8,\n  54.8\n ],\n [\n  0,\n  70.4,\n  56.1\n ]\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566817897.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => xy)\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n [\n  0,\n  68.1,\n  48.5\n ],\n [\n  0,\n  65.5,\n  48.4\n ],\n [\n  0.4,\n  62,\n  50.4\n ],\n [\n  0,\n  62.7,\n  49.4\n ],\n [\n  0,\n  65.4,\n  51\n ],\n [\n  0,\n  69.8,\n  54.8\n ],\n [\n  0,\n  70.4,\n  56.1\n ]\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566820521.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => xy.)\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n [\n  0,\n  68.1,\n  48.5\n ],\n [\n  0,\n  65.5,\n  48.4\n ],\n [\n  0.4,\n  62,\n  50.4\n ],\n [\n  0,\n  62.7,\n  49.4\n ],\n [\n  0,\n  65.4,\n  51\n ],\n [\n  0,\n  69.8,\n  54.8\n ],\n [\n  0,\n  70.4,\n  56.1\n ]\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566822145.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => x.v)\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n [\n  0,\n  68.1,\n  48.5\n ],\n [\n  0,\n  65.5,\n  48.4\n ],\n [\n  0.4,\n  62,\n  50.4\n ],\n [\n  0,\n  62.7,\n  49.4\n ],\n [\n  0,\n  65.4,\n  51\n ],\n [\n  0,\n  69.8,\n  54.8\n ],\n [\n  0,\n  70.4,\n  56.1\n ]\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566823521.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => math.mean())\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n [\n  0,\n  68.1,\n  48.5\n ],\n [\n  0,\n  65.5,\n  48.4\n ],\n [\n  0.4,\n  62,\n  50.4\n ],\n [\n  0,\n  62.7,\n  49.4\n ],\n [\n  0,\n  65.4,\n  51\n ],\n [\n  0,\n  69.8,\n  54.8\n ],\n [\n  0,\n  70.4,\n  56.1\n ]\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566825801.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => math.mean(x))\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n [\n  0,\n  68.1,\n  48.5\n ],\n [\n  0,\n  65.5,\n  48.4\n ],\n [\n  0.4,\n  62,\n  50.4\n ],\n [\n  0,\n  62.7,\n  49.4\n ],\n [\n  0,\n  65.4,\n  51\n ],\n [\n  0,\n  69.8,\n  54.8\n ],\n [\n  0,\n  70.4,\n  56.1\n ]\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566827657.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => math.mean(x, ))\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n [\n  0,\n  68.1,\n  48.5\n ],\n [\n  0,\n  65.5,\n  48.4\n ],\n [\n  0.4,\n  62,\n  50.4\n ],\n [\n  0,\n  62.7,\n  49.4\n ],\n [\n  0,\n  65.4,\n  51\n ],\n [\n  0,\n  69.8,\n  54.8\n ],\n [\n  0,\n  70.4,\n  56.1\n ]\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566828306.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => math.mean(x, 0))\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n [\n  0,\n  68.1,\n  48.5\n ],\n [\n  0,\n  65.5,\n  48.4\n ],\n [\n  0.4,\n  62,\n  50.4\n ],\n [\n  0,\n  62.7,\n  49.4\n ],\n [\n  0,\n  65.4,\n  51\n ],\n [\n  0,\n  69.8,\n  54.8\n ],\n [\n  0,\n  70.4,\n  56.1\n ]\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566829049.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => math.mean(x, 1))\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n [\n  0,\n  68.1,\n  48.5\n ],\n [\n  0,\n  65.5,\n  48.4\n ],\n [\n  0.4,\n  62,\n  50.4\n ],\n [\n  0,\n  62.7,\n  49.4\n ],\n [\n  0,\n  65.4,\n  51\n ],\n [\n  0,\n  69.8,\n  54.8\n ],\n [\n  0,\n  70.4,\n  56.1\n ]\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566831385.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => math.mean(x, 1)),\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n 38.86666666666667,\n 37.96666666666667,\n 37.6,\n 37.36666666666667,\n 38.800000000000004,\n 41.53333333333333,\n 42.166666666666664\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566834057.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => math.mean(x, 10)),\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n 38.86666666666667,\n 37.96666666666667,\n 37.6,\n 37.36666666666667,\n 38.800000000000004,\n 41.53333333333333,\n 42.166666666666664\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566839321.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => math.mean(x, 1)),\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n 38.86666666666667,\n 37.96666666666667,\n 37.6,\n 37.36666666666667,\n 38.800000000000004,\n 41.53333333333333,\n 42.166666666666664\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566839929.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => math.mean(x, 0)),\n  display\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566856681.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "fromFetch(\"https://api.open-meteo.com/v1/forecast?latitude=31.88&longitude=-116.64&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles\")\n.pipe(\n  map(x => x.daily),\n  map(x => x.time.reduce((acc, _, index) => {\n     acc.push([\n       x[\"precipitation_sum\"][index],\n       x[\"temperature_2m_max\"][index],\n       x[\"temperature_2m_min\"][index]\n     ])\n     return acc\n  }, [])),\n  map(x => math.mean(x, 0)),\n  display\n)",
+                      "language": "javascript",
+                      "output": "[\n 0.05714285714285715,\n 66.27142857142859,\n 51.228571428571435\n]\n"
+                    },
+                    "index": 4,
+                    "lastEditedBy": "7cebc45c-a6a4-462d-a0ef-22db997f1cab",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "qntduspzag",
+            "time": 1683566857362.01
+          }
         ]
       ],
-      "hash": "d39e07cfab19cdb10a48a14e29f5bf59f5dafef0f9dbc87620107f3940a450a5"
+      "hash": "0395e905fe4cef8e703b55fc0225ef81ff8380a030117b233bd0b0a0d0c7836f"
     },
     "_meta": {
-      "lwt": 1683566541779.01
+      "lwt": 1683566857363.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "116-bywqazvbwk"
+    "_rev": "138-bywqazvbwk"
   },
   {
     "id": "vOD4h3n75q",
