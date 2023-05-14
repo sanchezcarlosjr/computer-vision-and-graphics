@@ -4722,7 +4722,7 @@
     "data": {
       "code": "form({\n  schema: {\n   \"type\": \"object\",\n   \"properties\": {\n      \"your_evaluation\": {\n        type: \"number\",\n        minimum: 0,\n        maximum: 5\n      },\n      \"done\": {\n         \"type\": \"boolean\",\n         \"const\": true\n       }\n   },\n    \"required\": [\n       \"your_evaluation\",\n       \"done\"\n     ]\n  }\n}).pipe(\n  concatMap(x => fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${currentUrl.searchParams.get(\"imdbid\")}/rating`, {\n    method: \"POST\",\n  headers: {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  },\n    body: JSON.stringify({\n        local_rating: x.your_evaluation\n    })\n})),\n  rewrite(_ => `<h3>Thank you! 🙏</h3>`)\n)",
       "language": "javascript",
-      "output": "<nk-form class=\"w100\" _nghost-serverapp-c69=\"\" ng-version=\"15.2.5\"><jsonforms _ngcontent-serverapp-c69=\"\" class=\"ng-star-inserted\"><jsonforms-outlet></jsonforms-outlet><verticallayoutrenderer class=\"ng-star-inserted\"><div fxlayout=\"column\" fxlayoutgap=\"16px\" style=\"flex-direction: column; box-sizing: border-box; display: flex;\"><div fxflex=\"\" style=\"flex: 1 1 1e-09px; box-sizing: border-box; margin-bottom: 16px;\" class=\"ng-star-inserted\"><jsonforms-outlet></jsonforms-outlet><numbercontrolrenderer style=\"flex-direction: row; box-sizing: border-box; display: flex;\" class=\"ng-star-inserted\"><mat-form-field fxflex=\"\" class=\"mat-mdc-form-field ng-tns-c6-10 mat-mdc-form-field-type-mat-input mat-form-field-appearance-fill mat-primary ng-touched ng-pristine ng-valid ng-star-inserted mat-form-field-hide-placeholder\" style=\"flex: 1 1 0%; box-sizing: border-box;\"><!----><div class=\"mat-mdc-text-field-wrapper mdc-text-field ng-tns-c6-10 mdc-text-field--filled\"><div class=\"mat-mdc-form-field-focus-overlay ng-tns-c6-10 ng-star-inserted\"></div><!----><div class=\"mat-mdc-form-field-flex ng-tns-c6-10\"><!----><!----><!----><div class=\"mat-mdc-form-field-infix ng-tns-c6-10\"><label matformfieldfloatinglabel=\"\" class=\"mdc-floating-label mat-mdc-floating-label ng-tns-c6-10 ng-star-inserted\" id=\"mat-mdc-form-field-label-10\" for=\"#/properties/your_evaluation6\" aria-owns=\"#/properties/your_evaluation6\"><mat-label class=\"ng-tns-c6-10\">Your Evaluation*</mat-label><!----></label><!----><!----><!----><input matinput=\"\" class=\"mat-mdc-input-element ng-tns-c6-10 mat-mdc-form-field-input-control mdc-text-field__input ng-touched ng-pristine ng-valid cdk-text-field-autofill-monitored\" min=\"0\" max=\"5\" step=\"0.1\" id=\"#/properties/your_evaluation6\" aria-invalid=\"false\" aria-required=\"false\"></div><!----><!----></div><div matformfieldlineripple=\"\" class=\"mdc-line-ripple ng-tns-c6-10 ng-star-inserted\"></div><!----></div><div class=\"mat-mdc-form-field-subscript-wrapper mat-mdc-form-field-bottom-align ng-tns-c6-10\"><!----><div class=\"mat-mdc-form-field-hint-wrapper ng-tns-c6-10 ng-trigger ng-trigger-transitionMessages ng-star-inserted\" style=\"opacity: 1; transform: translateY(0%);\"><!----><!----><div class=\"mat-mdc-form-field-hint-spacer ng-tns-c6-10\"></div></div><!----></div></mat-form-field></numbercontrolrenderer><!----></div><div fxflex=\"\" style=\"flex: 1 1 1e-09px; box-sizing: border-box;\" class=\"ng-star-inserted\"><jsonforms-outlet></jsonforms-outlet><booleancontrolrenderer class=\"ng-star-inserted\"><div fxlayout=\"column\" fxlayoutalign=\"center\" style=\"height: 100%; flex-direction: column; box-sizing: border-box; display: flex; place-content: stretch center; align-items: stretch;\"><mat-checkbox class=\"mat-mdc-checkbox mat-accent\" id=\"#/properties/done2\"><div class=\"mdc-form-field\"><div class=\"mdc-checkbox\"><div class=\"mat-mdc-checkbox-touch-target\"></div><input type=\"checkbox\" class=\"mdc-checkbox__native-control\" id=\"#/properties/done2-input\" tabindex=\"0\"><div class=\"mdc-checkbox__ripple\"></div><div class=\"mdc-checkbox__background\"><svg focusable=\"false\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" class=\"mdc-checkbox__checkmark\"><path fill=\"none\" d=\"M1.73,12.91 8.1,19.28 22.79,4.59\" class=\"mdc-checkbox__checkmark-path\"></path></svg><div class=\"mdc-checkbox__mixedmark\"></div></div><div mat-ripple=\"\" class=\"mat-ripple mat-mdc-checkbox-ripple mat-mdc-focus-indicator\"></div></div><label for=\"#/properties/done2-input\"> Done* </label></div></mat-checkbox><!----><mat-error aria-atomic=\"true\" class=\"mat-mdc-form-field-error mat-mdc-form-field-bottom-align mat-caption\" aria-live=\"polite\" id=\"mat-mdc-error-7\"></mat-error></div></booleancontrolrenderer><!----></div><!----></div></verticallayoutrenderer><!----></jsonforms><!----></nk-form>"
+      "output": ""
     },
     "index": 4,
     "createdBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
@@ -7900,15 +7900,37 @@
             "creator": "pkhexmkwbs",
             "time": 1684038973902.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "form({\n  schema: {\n   \"type\": \"object\",\n   \"properties\": {\n      \"your_evaluation\": {\n        type: \"number\",\n        minimum: 0,\n        maximum: 5\n      },\n      \"done\": {\n         \"type\": \"boolean\",\n         \"const\": true\n       }\n   },\n    \"required\": [\n       \"your_evaluation\",\n       \"done\"\n     ]\n  }\n}).pipe(\n  concatMap(x => fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${currentUrl.searchParams.get(\"imdbid\")}/rating`, {\n    method: \"POST\",\n  headers: {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  },\n    body: JSON.stringify({\n        local_rating: x.your_evaluation\n    })\n})),\n  rewrite(_ => `<h3>Thank you! 🙏</h3>`)\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684039056900.06
+          }
         ]
       ],
-      "hash": "1bb46ee774e452662411086032ebd2a47c0ed50baebe842a16562e0ec53c784e"
+      "hash": "69468c0dc3ae00a85fce408c24a2096188debb6100f81ab4d21f7b95bd7b34c7"
     },
     "_meta": {
-      "lwt": 1684038973903.01
+      "lwt": 1684039056903.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "145-adplyzaimt"
+    "_rev": "146-adplyzaimt"
   }
 ]
