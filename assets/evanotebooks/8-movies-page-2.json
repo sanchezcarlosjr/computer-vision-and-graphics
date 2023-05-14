@@ -1,505 +1,16 @@
 [
   {
-    "id": "mBdYYj9vus",
+    "id": "4btMNUQPmv",
     "type": "code",
     "data": {
       "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - ${currentUrl.searchParams.get(\"title\")}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
       "language": "javascript",
-      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies - </h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
-    },
-    "index": 0,
-    "createdBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-    "topic": "542bffe4-ee99-487d-924f-a9a995c389fe",
-    "crdts": {
-      "operations": [
-        [
-          {
-            "creator": "pkhexmkwbs",
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "id": "mBdYYj9vus",
-                    "type": "code",
-                    "data": {
-                      "code": "",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "createdBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "topic": "542bffe4-ee99-487d-924f-a9a995c389fe"
-                  }
-                }
-              }
-            ],
-            "time": 1684036489821.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036493622.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - </h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036620766.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - $(</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036621677.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - ${}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036623590.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - ${currentUrl.searchParams.get(\"\")}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036630758.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - ${currentUrl.searchParams.get(\"mo\")}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036632550.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - ${currentUrl.searchParams.get(\"title\")}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036634670.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies -</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036693677.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies -</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies -</h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036695007.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies -  ${currentUrl.searchParams.get(\"title\")}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies -</h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036696014.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - </h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies -</h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036698981.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies -</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies -</h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036699589.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - ${currentUrl.searchParams.get(\"title\")}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies -</h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036700190.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 0%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - ${currentUrl.searchParams.get(\"title\")}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies -</h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036704069.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - ${currentUrl.searchParams.get(\"title\")}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036704974.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - ${currentUrl.searchParams.get(\"title\")}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies - null</h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036705571.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - </h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies - null</h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036708493.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - </h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036710917.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - ${currentUrl.searchParams.get(\"title\")}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies - </h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036712598.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - ${currentUrl.searchParams.get(\"title\")}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
-                      "language": "javascript",
-                      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies - </h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
-                    },
-                    "index": 0,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036714094.01
-          }
-        ]
-      ],
-      "hash": "1d71953db18592a2f89b656b8139004b38125d4ecb71e19301dbc6ad082ea924"
-    },
-    "_meta": {
-      "lwt": 1684036714095.01
-    },
-    "_deleted": false,
-    "_attachments": {},
-    "_rev": "22-wbudrzbexc"
-  },
-  {
-    "id": "OaJM-zVRyv",
-    "type": "code",
-    "data": {
-      "code": "fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${currentUrl.searchParams.get(\"imdbid\")}`, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n}).pipe(\n  display\n)",
-      "language": "javascript",
-      "output": "{\n \"error\": true,\n \"message\": \"The HTTP status is 404. function text() { [native code] }\"\n}\n"
+      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies - </h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
     },
     "index": 1,
-    "createdBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-    "topic": "542bffe4-ee99-487d-924f-a9a995c389fe",
+    "createdBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+    "lastEditedBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+    "topic": "c3b29500-d1a9-4254-aa06-6395a175d457",
     "crdts": {
       "operations": [
         [
@@ -509,318 +20,177 @@
               {
                 "ifMatch": {
                   "$set": {
-                    "id": "OaJM-zVRyv",
+                    "id": "4btMNUQPmv",
                     "type": "code",
                     "data": {
-                      "code": "",
+                      "code": "`\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 100%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\">\n    <h1>Movies - ${currentUrl.searchParams.get(\"title\")}</h1>\n    <div>\n      <nk-button mat-button onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\">GitHub</nk-button>\n    </div>\n </nk-toolbar>\n`",
                       "language": "javascript",
-                      "output": ""
+                      "output": "\n <style>\n   .ce-block:first-of-type .ce-block__content,\n   .ce-toolbar__content {\n      max-width: 70%;\n   }\n </style>\n <nk-toolbar style=\"display: flex;justify-content:space-between;\" class=\"mat-toolbar mat-toolbar-single-row\" ng-version=\"15.2.5\">\n    <h1>Movies - </h1>\n    <div>\n      <nk-button mat-button=\"\" onclick=\"window.location.href='https://github.com/sanchezcarlosjr/evanotebook'\" target=\"_blank\" ng-version=\"15.2.5\" class=\"mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">GitHub</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>\n    </div>\n </nk-toolbar>\n"
                     },
-                    "index": 1,
-                    "createdBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "topic": "542bffe4-ee99-487d-924f-a9a995c389fe"
+                    "index": 0,
+                    "createdBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+                    "lastEditedBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+                    "topic": "c3b29500-d1a9-4254-aa06-6395a175d457"
                   }
                 }
               }
             ],
-            "time": 1684036732993.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(\"https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies\", {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n})",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036753350.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(\"https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/\", {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n})",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036756173.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(\"https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${}\", {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n})",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036759669.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(\"https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${}``, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n})",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036761725.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(\"https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${}`, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n})",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036762633.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${}`, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n})",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036764525.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${v}`, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n})",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036771029.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${{currentUrl.searchParams.get(\"title\")}`, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n})",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036771822.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${currentUrl.searchParams.get(\"title\")}`, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n})",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036774038.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${currentUrl.searchParams.get(\"imd\")}`, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n})",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036776941.02
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${currentUrl.searchParams.get(\"imdbid\")}`, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n})",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036777941.06
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${currentUrl.searchParams.get(\"imdbid\")}`, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n}).pipe(\n  display\n)",
-                      "language": "javascript",
-                      "output": ""
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036783542.01
-          }
-        ],
-        [
-          {
-            "body": [
-              {
-                "ifMatch": {
-                  "$set": {
-                    "data": {
-                      "code": "fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${currentUrl.searchParams.get(\"imdbid\")}`, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n}).pipe(\n  display\n)",
-                      "language": "javascript",
-                      "output": "{\n \"error\": true,\n \"message\": \"The HTTP status is 404. function text() { [native code] }\"\n}\n"
-                    },
-                    "index": 1,
-                    "lastEditedBy": "a344c91d-741c-48fa-84a4-ad4a4ff291a1",
-                    "_deleted": false
-                  }
-                }
-              }
-            ],
-            "creator": "pkhexmkwbs",
-            "time": 1684036784381.06
+            "time": 1684037592775.04
           }
         ]
       ],
-      "hash": "46ccf810628eb825608d2c1498661ba8474a1b2bb7d50bad301749c1a95b1e5b"
+      "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684036784382.01
+      "lwt": 1684037598143.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "15-wbudrzbexc"
+    "_rev": "2-ussjldeeel"
+  },
+  {
+    "id": "9LMGJd7xVM",
+    "type": "code",
+    "data": {
+      "code": "currentUrl.searchParams.get(\"imdbid\")",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 3,
+    "createdBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+    "lastEditedBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+    "topic": "c3b29500-d1a9-4254-aa06-6395a175d457",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "9LMGJd7xVM",
+                    "type": "code",
+                    "data": {
+                      "code": "currentUrl.searchParams.get(\"imdbid\")",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "createdBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+                    "lastEditedBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+                    "topic": "c3b29500-d1a9-4254-aa06-6395a175d457"
+                  }
+                }
+              }
+            ],
+            "time": 1684037592775.06
+          }
+        ]
+      ],
+      "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
+    },
+    "_meta": {
+      "lwt": 1684037598143.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "3-ussjldeeel"
+  },
+  {
+    "id": "5pSlQ901NQ",
+    "type": "header",
+    "data": {
+      "text": "The current information",
+      "level": 1
+    },
+    "index": 4,
+    "createdBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+    "lastEditedBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+    "topic": "c3b29500-d1a9-4254-aa06-6395a175d457",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5pSlQ901NQ",
+                    "type": "header",
+                    "data": {
+                      "text": "The current information",
+                      "level": 1
+                    },
+                    "index": 2,
+                    "createdBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+                    "lastEditedBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+                    "topic": "c3b29500-d1a9-4254-aa06-6395a175d457"
+                  }
+                }
+              }
+            ],
+            "time": 1684037592775.08
+          }
+        ]
+      ],
+      "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
+    },
+    "_meta": {
+      "lwt": 1684037598143.03
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "3-ussjldeeel"
+  },
+  {
+    "id": "2JOfTKWEfI",
+    "type": "code",
+    "data": {
+      "code": "fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${currentUrl.searchParams.get(\"imdbid\")}/global`, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n}).pipe(\n  display\n)",
+      "language": "javascript",
+      "output": "{\n \"error\": true,\n \"message\": \"The HTTP status is 504. function text() { [native code] }\"\n}\n"
+    },
+    "index": 5,
+    "createdBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+    "lastEditedBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+    "topic": "c3b29500-d1a9-4254-aa06-6395a175d457",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "2JOfTKWEfI",
+                    "type": "code",
+                    "data": {
+                      "code": "fromFetch(`https://distributed-systems-movies.sanchezcarlosjr.repl.co/movies/${currentUrl.searchParams.get(\"imdbid\")}/global`, {\n  headers: {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.S2ZL7D-D3VeduQ44Cy2qLRFxHV43gRGSZtlfJ2MJ57g\"\n  }\n}).pipe(\n  display\n)",
+                      "language": "javascript",
+                      "output": "{\n \"error\": true,\n \"message\": \"The HTTP status is 504. function text() { [native code] }\"\n}\n"
+                    },
+                    "index": 3,
+                    "createdBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+                    "lastEditedBy": "5351eda8-00eb-4895-944e-b66c8ce44bba",
+                    "topic": "c3b29500-d1a9-4254-aa06-6395a175d457"
+                  }
+                }
+              }
+            ],
+            "time": 1684037592775.1
+          }
+        ]
+      ],
+      "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
+    },
+    "_meta": {
+      "lwt": 1684037598143.04
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "3-ussjldeeel"
   }
 ]
