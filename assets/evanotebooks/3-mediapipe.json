@@ -3,7 +3,7 @@
     "id": "negxRoDLtW",
     "type": "header",
     "data": {
-      "text": "Centroid",
+      "text": "Follow face",
       "level": 2
     },
     "index": 2,
@@ -56,16 +56,58 @@
             "creator": "pkhexmkwbs",
             "time": 1684459232862.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Follow&nbsp;",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "7b42974e-d37d-432a-947b-23ea89583699",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684459258861.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Follow face",
+                      "level": 2
+                    },
+                    "index": 2,
+                    "lastEditedBy": "7b42974e-d37d-432a-947b-23ea89583699",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684459259749.06
+          }
         ]
       ],
-      "hash": "1757d16dbb9cdc7c88419f358171c33cb3863037adce2200975348f2db0823f6"
+      "hash": "0f44d93e6b3e55202ad5742a37ef1989e58ed497ba06d1d452520bcca093ce22"
     },
     "_meta": {
-      "lwt": 1684459232862.02
+      "lwt": 1684459259750.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "3-pqcuxyvmqw"
+    "_rev": "5-pqcuxyvmqw"
   },
   {
     "id": "5xcAT6FZ_T",
