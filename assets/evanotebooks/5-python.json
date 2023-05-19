@@ -466,7 +466,7 @@
     "id": "mJRDjGo_bc",
     "type": "code",
     "data": {
-      "code": "import numpy as np\nfrom matplotlib import pyplot as plt\nfrom js import document\n\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\nf = plt.figure()\nplt.plot(x,y)\n\ndisplay(f)",
+      "code": "import numpy as np\nfrom matplotlib import pyplot as plt\n\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\nf = plt.figure()\nplt.plot(x,y)\n\ndisplay(f)",
       "language": "python",
       "output": ""
     },
@@ -632,16 +632,38 @@
             "creator": "pkhexmkwbs",
             "time": 1684472431173.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import numpy as np\nfrom matplotlib import pyplot as plt\n\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\nf = plt.figure()\nplt.plot(x,y)\n\ndisplay(f)",
+                      "language": "python",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684472695862.01
+          }
         ]
       ],
-      "hash": "5f79c8793ce28a4f1268f7a953cd6e9d51c247aaec0ce668f89a82c8917745ae"
+      "hash": "7d9cd81ba04072c56508e8529c5f3b80fb6151beb4360c1db714f3d60de3415b"
     },
     "_meta": {
-      "lwt": 1684472431173.02
+      "lwt": 1684472695863.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "8-nhauenmbrn"
+    "_rev": "9-nhauenmbrn"
   },
   {
     "id": "mDk8Zzf1Zq",
@@ -735,11 +757,11 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472398354.03
+      "lwt": 1684472693320.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "10-nhauenmbrn"
+    "_rev": "12-nhauenmbrn"
   },
   {
     "id": "bnmAVIxpAM",
@@ -782,11 +804,11 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472398354.04
+      "lwt": 1684472693320.02
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "10-nhauenmbrn"
+    "_rev": "12-nhauenmbrn"
   },
   {
     "id": "axNuT3pbSJ",
@@ -831,10 +853,10 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472398354.05
+      "lwt": 1684472693320.03
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "10-nhauenmbrn"
+    "_rev": "12-nhauenmbrn"
   }
 ]
