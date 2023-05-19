@@ -30,7 +30,7 @@
         }
       ]
     },
-    "index": 0,
+    "index": 1,
     "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1",
@@ -88,11 +88,11 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472328397.04
+      "lwt": 1684472345130.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "1-nhauenmbrn"
+    "_rev": "2-nhauenmbrn"
   },
   {
     "id": "nJyYB4J7xJ",
@@ -101,7 +101,7 @@
       "text": "Python",
       "level": 1
     },
-    "index": 1,
+    "index": 3,
     "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1",
@@ -135,11 +135,11 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472328397.06
+      "lwt": 1684472345130.02
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "1-nhauenmbrn"
+    "_rev": "3-nhauenmbrn"
   },
   {
     "id": "ygGJQxnS1N",
@@ -148,7 +148,7 @@
       "type": "primary",
       "message": "<span style=\"letter-spacing: normal;\">Please be patient the first time. We're loading&nbsp;Python interpreter lazily --Pyodide.</span>"
     },
-    "index": 2,
+    "index": 4,
     "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1",
@@ -182,11 +182,11 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472328397.08
+      "lwt": 1684472345130.03
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "1-nhauenmbrn"
+    "_rev": "3-nhauenmbrn"
   },
   {
     "id": "kGHe1Ef1am",
@@ -195,7 +195,7 @@
       "text": "Fetch synchronously",
       "level": 2
     },
-    "index": 3,
+    "index": 5,
     "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1",
@@ -229,11 +229,11 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472328397.1
+      "lwt": 1684472345130.04
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "1-nhauenmbrn"
+    "_rev": "3-nhauenmbrn"
   },
   {
     "id": "r7eKE-XsYj",
@@ -243,7 +243,7 @@
       "language": "python",
       "output": "key  ...                                        ingredients\n0  0_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n1  1_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n2  2_bj  ...  CREAM, LIQUID SUGAR (SUGAR, WATER), SKIM MILK,...\n3  3_bj  ...  CREAM, SKIM MILK, LIQUID SUGAR (SUGAR, WATER),...\n4  4_bj  ...  CREAM, SKIM MILK, WATER, LIQUID SUGAR (SUGAR, ...\n\n[5 rows x 7 columns]"
     },
-    "index": 5,
+    "index": 6,
     "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1",
@@ -278,11 +278,11 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472335668.01
+      "lwt": 1684472345130.05
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "2-nhauenmbrn"
+    "_rev": "3-nhauenmbrn"
   },
   {
     "id": "IGO9yOlY_P",
@@ -291,7 +291,7 @@
       "text": "Create a counter and event listener",
       "level": 2
     },
-    "index": 6,
+    "index": 7,
     "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1",
@@ -325,11 +325,323 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472334934.02
+      "lwt": 1684472345130.06
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "2-nhauenmbrn"
+    "_rev": "3-nhauenmbrn"
+  },
+  {
+    "id": "eN5A9USGaA",
+    "type": "header",
+    "data": {
+      "text": "Matplotlib",
+      "level": 2
+    },
+    "index": 8,
+    "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+    "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "eN5A9USGaA",
+                    "type": "header",
+                    "data": {
+                      "text": "",
+                      "level": 2
+                    },
+                    "index": 8,
+                    "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1"
+                  }
+                }
+              }
+            ],
+            "time": 1684472389687.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "H",
+                      "level": 2
+                    },
+                    "index": 8,
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684472392284.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Mat",
+                      "level": 2
+                    },
+                    "index": 8,
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684472393388.03
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Matplot",
+                      "level": 2
+                    },
+                    "index": 8,
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684472394516.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "text": "Matplotlib",
+                      "level": 2
+                    },
+                    "index": 8,
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684472395228.06
+          }
+        ]
+      ],
+      "hash": "7e4ec67442423576a43271731b92d521541eeb82b144289b3c1f9341ada3d1ae"
+    },
+    "_meta": {
+      "lwt": 1684472395229.01
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "6-nhauenmbrn"
+  },
+  {
+    "id": "mJRDjGo_bc",
+    "type": "code",
+    "data": {
+      "code": "import numpy as np\nfrom matplotlib import pyplot as plt\nfrom js import document\n\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\nf = plt.figure()\nplt.plot(x,y)\n\ndisplay(f)",
+      "language": "python",
+      "output": ""
+    },
+    "index": 9,
+    "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+    "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "pkhexmkwbs",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "mJRDjGo_bc",
+                    "type": "code",
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1"
+                  }
+                }
+              }
+            ],
+            "time": 1684472397816.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import numpy as np\nfrom matplotlib import pyplot as plt\nfrom js import document\n\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\nf = plt.figure()\nplt.plot(x,y)\n\ndisplay(f)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684472399068.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import numpy as np\nfrom matplotlib import pyplot as plt\nfrom js import document\n\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\nf = plt.figure()\nplt.plot(x,y)\n\ndisplay(f)",
+                      "language": "javascript",
+                      "output": "<pre class=\"py-error wrap\">SyntaxError: Unexpected identifier 'as'</pre>"
+                    },
+                    "index": 9,
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684472400244.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import numpy as np\nfrom matplotlib import pyplot as plt\nfrom js import document\n\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\nf = plt.figure()\nplt.plot(x,y)\n\ndisplay(f)",
+                      "language": "python",
+                      "output": "<pre class=\"py-error wrap\">SyntaxError: Unexpected identifier 'as'</pre>"
+                    },
+                    "index": 9,
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684472404236.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import numpy as np\nfrom matplotlib import pyplot as plt\nfrom js import document\n\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\nf = plt.figure()\nplt.plot(x,y)\n\ndisplay(f)",
+                      "language": "python",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684472404804.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import numpy as np\nfrom matplotlib import pyplot as plt\nfrom js import document\n\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\nf = plt.figure()\nplt.plot(x,y)\n\ndisplay(f)",
+                      "language": "python",
+                      "output": "<pre class=\"py-error wrap\">Traceback (most recent call last):\n  File \"/lib/python311.zip/_pyodide/_base.py\", line 540, in eval_code_async\n    await CodeRunner(\n  File \"/lib/python311.zip/_pyodide/_base.py\", line 363, in run_async\n    coroutine = eval(self.code, globals, locals)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<exec>\", line 12, in <module>\nNameError: name 'display' is not defined\n</module></exec></pre>"
+                    },
+                    "index": 9,
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684472419784.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "import numpy as np\nfrom matplotlib import pyplot as plt\nfrom js import document\n\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\nf = plt.figure()\nplt.plot(x,y)\n\ndisplay(f)",
+                      "language": "python",
+                      "output": ""
+                    },
+                    "index": 9,
+                    "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "pkhexmkwbs",
+            "time": 1684472431173.01
+          }
+        ]
+      ],
+      "hash": "5f79c8793ce28a4f1268f7a953cd6e9d51c247aaec0ce668f89a82c8917745ae"
+    },
+    "_meta": {
+      "lwt": 1684472431173.02
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "8-nhauenmbrn"
   },
   {
     "id": "mDk8Zzf1Zq",
@@ -339,7 +651,7 @@
       "language": "javascript",
       "output": "<nk-button mat-raised-button=\"\" color=\"primary\" class=\"button mdc-button mdc-button--raised mat-mdc-raised-button mat-primary mat-mdc-button-base\" type=\"button\" id=\"someuniqueid\" ng-version=\"15.2.5\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\"><span class=\"mat-mdc-button-persistent-ripple mdc-button__ripple\"></span><span class=\"mdc-button__label\">Click Me</span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></span><span class=\"mat-mdc-focus-indicator\"></span><span matripple=\"\" class=\"mat-ripple mat-mdc-button-ripple\"></span><span class=\"mat-mdc-button-touch-target\"></span></nk-button>"
     },
-    "index": 7,
+    "index": 11,
     "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1",
@@ -374,11 +686,11 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472334718.01
+      "lwt": 1684472398354.02
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "2-nhauenmbrn"
+    "_rev": "10-nhauenmbrn"
   },
   {
     "id": "z9CqJi1S7I",
@@ -388,7 +700,7 @@
       "language": "python",
       "output": "<section id=\"norunjvqdw\">3</section>"
     },
-    "index": 8,
+    "index": 12,
     "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1",
@@ -423,11 +735,11 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472334390.02
+      "lwt": 1684472398354.03
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "2-nhauenmbrn"
+    "_rev": "10-nhauenmbrn"
   },
   {
     "id": "bnmAVIxpAM",
@@ -436,7 +748,7 @@
       "text": "Replication",
       "level": 1
     },
-    "index": 9,
+    "index": 13,
     "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1",
@@ -470,11 +782,11 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472333852.02
+      "lwt": 1684472398354.04
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "2-nhauenmbrn"
+    "_rev": "10-nhauenmbrn"
   },
   {
     "id": "axNuT3pbSJ",
@@ -484,7 +796,7 @@
       "language": "javascript",
       "output": ""
     },
-    "index": 11,
+    "index": 14,
     "createdBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "lastEditedBy": "16b9c641-6f52-486a-942a-6dc2c04e393e",
     "topic": "bd7fc746-a9f2-4a26-93f7-6cbd871185b1",
@@ -519,10 +831,10 @@
       "hash": "c38f034b4211d95d8c7112f3ab63c9bd0449b6514210149d470042b2d931c71d"
     },
     "_meta": {
-      "lwt": 1684472335668.06
+      "lwt": 1684472398354.05
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "3-nhauenmbrn"
+    "_rev": "10-nhauenmbrn"
   }
 ]
