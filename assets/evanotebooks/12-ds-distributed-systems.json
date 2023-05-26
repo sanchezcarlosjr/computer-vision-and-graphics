@@ -1,0 +1,315 @@
+[
+  {
+    "id": "fB6MjF_HVw",
+    "type": "code",
+    "data": {
+      "code": "environment.GITHUB_TOKEN = \"\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/12-ds-distributed-systems.json\",\n    commitMessage: \"feat: replicate movies\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 4,
+    "createdBy": "qmiapcvzgl",
+    "lastEditedBy": "qmiapcvzgl",
+    "topic": "wyjvdgmbav",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "lrcvotmjdy",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "fB6MjF_HVw",
+                    "type": "code",
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "createdBy": "qmiapcvzgl",
+                    "lastEditedBy": "qmiapcvzgl",
+                    "topic": "wyjvdgmbav"
+                  }
+                }
+              }
+            ],
+            "time": 1685067211877.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "qmiapcvzgl",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "lrcvotmjdy",
+            "time": 1685067212923.04
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "qmiapcvzgl",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "lrcvotmjdy",
+            "time": 1685067217567.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.GITHUB_TOKEN = environment.GITHUB_TOKEN\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "qmiapcvzgl",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "lrcvotmjdy",
+            "time": 1685067221122.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.GITHUB_TOKEN = \"\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "qmiapcvzgl",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "lrcvotmjdy",
+            "time": 1685067226834.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.GITHUB_TOKEN = \"\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/12-server-replication.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "qmiapcvzgl",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "lrcvotmjdy",
+            "time": 1685067228882.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.GITHUB_TOKEN = \"\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/12-ds.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "qmiapcvzgl",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "lrcvotmjdy",
+            "time": 1685067231602.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.GITHUB_TOKEN = \"\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/12-ds-.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "qmiapcvzgl",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "lrcvotmjdy",
+            "time": 1685067232683.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.GITHUB_TOKEN = \"\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/12-ds-distributed-systems.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "qmiapcvzgl",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "lrcvotmjdy",
+            "time": 1685067235994.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.GITHUB_TOKEN = \"\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/12-ds-distributed-systems.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "qmiapcvzgl",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "lrcvotmjdy",
+            "time": 1685067251778.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.GITHUB_TOKEN = \"\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/12-ds-distributed-systems.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your toke\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "qmiapcvzgl",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "lrcvotmjdy",
+            "time": 1685067256018.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.GITHUB_TOKEN = \"\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/12-ds-distributed-systems.json\",\n    commitMessage: \"feat: replicate \",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "qmiapcvzgl",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "lrcvotmjdy",
+            "time": 1685067258930.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "data": {
+                      "code": "environment.GITHUB_TOKEN = \"\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/12-ds-distributed-systems.json\",\n    commitMessage: \"feat: replicate movies\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 4,
+                    "lastEditedBy": "qmiapcvzgl",
+                    "_deleted": false
+                  }
+                }
+              }
+            ],
+            "creator": "lrcvotmjdy",
+            "time": 1685067261058.06
+          }
+        ]
+      ],
+      "hash": "6e8741788d3f71336d54eeaba3069b7ab4b83b58c736b5780d9b4b7b7a50fc52"
+    },
+    "_meta": {
+      "lwt": 1685067261059.01
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "14-azqepcghgf"
+  }
+]
