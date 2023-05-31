@@ -160,7 +160,7 @@
     "id": "ITLOGnH8Mm",
     "type": "code",
     "data": {
-      "code": "<video id=\"peerjs\" autoplay class=\"w100\"></video>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       videoElement.autoplay = true;\n       videoElement.style.flex = \"1 200px\";\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
       "language": "html",
       "output": ""
     },
@@ -414,15 +414,1697 @@
             "creator": "zvcgogpirq",
             "time": 1685548864158.06
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"w10\"></video>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549929847.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"fade-in\" style=\"flex: 1 100px;\"></video>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549931231.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"fade-in\" style=\"flex: 1 100px;\"></video>\n\n\n\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549955423.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"fade-in\" style=\"flex: 1 100px;\"></video>\n<div\n\n\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549956526.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"fade-in\" style=\"flex: 1 100px;\"></video>\n<div></div>\n\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549958350.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"fade-in\" style=\"flex: 1 100px;\"></video>\n<div></div>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549959126.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"fade-in\" style=\"flex: 1 100px;\"></video>\n<div></section>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549961806.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"fade-in\" style=\"flex: 1 100px;\"></video>\n<section id=></section>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549965078.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"fade-in\" style=\"flex: 1 100px;\"></video>\n<section id=\"peers\">\n  \n</section>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549967118.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\">\n\n</section>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549970703.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "section id=\"peers\">\n\n</section>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549971622.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\">\n\n</section>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549974126.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549975342.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  \n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549989666.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549990710.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       videoElement.srcObject = remoteStream\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549995727.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       videoElement.srcObject = remoteStream;\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549996847.03
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       \n       videoElement.srcObject = remoteStream;\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550001376.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       cons\n       videoElement.srcObject = remoteStream;\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550002326.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const \n       videoElement.srcObject = remoteStream;\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550003494.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const video\n       videoElement.srcObject = remoteStream;\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550020751.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = \n       videoElement.srcObject = remoteStream;\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550022334.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.\n       videoElement.srcObject = remoteStream;\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550024286.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.C\n       videoElement.srcObject = remoteStream;\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550025542.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement()\n       videoElement.srcObject = remoteStream;\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550028134.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\")\n       videoElement.srcObject = remoteStream;\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550029462.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.srcObject = remoteStream;\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550037407.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.srcObject = remoteStream;\n       \n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550041311.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.srcObject = remoteStream;\n       document.\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550050991.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.srcObject = remoteStream;\n       document.getElementBy\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550054658.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"\")\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550055926.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"x\")\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550057158.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"\")\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550057623.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550059982.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild()\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550065071.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement)\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550066918.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550068414.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       \n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550069038.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550070262.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElementElement.\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550071958.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElementElement\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550075302.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550076486.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550096223.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"\")\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550098038.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"\");\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550099734.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550103326.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       vide\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550106675.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       videoElement.\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550107374.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       videoElement.styles\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550109054.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       video.autoplay = true;\nvideo.className = \"fade-in\";\nvideo.style.flex = \"1 100px\";\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550207071.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       video.autoplay = true;\n       video.className = \"fade-in\";\nvideo.style.flex = \"1 100px\";\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550208383.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       video.autoplay = true;\n       video.className = \"fade-in\";\n       video.style.flex = \"1 100px\";\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550209486.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       video.autoplay = true;\n       video.className = \"fade-in\";\n       video.style.flex = \"1 200px\";\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550212393.03
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       videoElement.autoplay = true;\n       videoElement.className = \"fade-in\";\n       video.style.flex = \"1 200px\";\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550228783.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       videoElement.autoplay = true;\n       videoElement.className = \"fade-in\";\n       videoElement.style.flex = \"1 200px\";\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550229674.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       videoElement.autoplay = true;\n       videoElement.style.flex = \"1 200px\";\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550255223.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay></video>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "rtapszcupa"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551009892.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay></video>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551105762.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"w100\"></video>\n<script type=\"module\">\n  const videoElement = document.getElementById(\"peerjs\");\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => videoElement.srcObject = remoteStream);\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "bodmcrdjnv"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551409076.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "ITLOGnH8Mm",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n  peer.on('call', async function(call) {\n     const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n     call.answer(stream);\n     call.on(\"stream\", remoteStream => {\n       const videoElement = document.createElement(\"video\");\n       videoElement.classList.add(\"fade-in\");\n       videoElement.autoplay = true;\n       videoElement.style.flex = \"1 200px\";\n       videoElement.srcObject = remoteStream;\n       document.getElementById(\"peers\").appendChild(videoElement);\n     });\n  });\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551979135.01
+          }
         ]
       ],
-      "hash": "e21a741ad231ffec4e430c746326a396d82c447f37fb1b728c04636a3af2fe85"
+      "hash": "891f612a184af04031dd9c865aae51657b943faa6ae6f254130283b2a77b595b"
     },
     "_meta": {
-      "lwt": 1685548864161.01
+      "lwt": 1685551979173.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "11-hhpyuknxzs"
+    "_rev": "71-kayrkpvvym"
+  },
+  {
+    "id": "QzIQrIqdkc",
+    "type": "code",
+    "data": {
+      "code": "`<div><h2>Share</h2><p>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}</p></div>`",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 2,
+    "createdBy": "ymiaznhzdw",
+    "lastEditedBy": "ymiaznhzdw",
+    "topic": "cqppqqtgcl",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "zvcgogpirq",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-starter.json",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "createdBy": "ymiaznhzdw",
+                    "lastEditedBy": "ymiaznhzdw",
+                    "topic": "cqppqqtgcl"
+                  }
+                }
+              }
+            ],
+            "time": 1685551444127.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551444942.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "``",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551453088.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "`<`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551453848.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "`<https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-starter.json`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551454326.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "`<`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551455590.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551456352.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "\"`<div><h2>Share</h2><p>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\\\"p\\\")}</p></div>`\"\n",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551529871.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "`<div><h2>Share</h2><p>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\\\"p\\\")}</p></div>`\"\n",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551534766.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "`<div><h2>Share</h2><p>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\\\"p\\\")}</p></div>`\n",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551536354.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "`<div><h2>Share</h2><p>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\\\"p\\\")}</p></div>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551537487.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "`<div><h2>Share</h2><p>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}</p></div>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551542263.01
+          }
+        ]
+      ],
+      "hash": "4a9b1063bb2887037f151fc88503e2c9f2911ec978c5d32dbee64b47b2a4bf37"
+    },
+    "_meta": {
+      "lwt": 1685551542266.01
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "12-kayrkpvvym"
   }
 ]
