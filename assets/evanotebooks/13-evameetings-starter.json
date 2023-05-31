@@ -2407,9 +2407,9 @@
     "id": "QzIQrIqdkc",
     "type": "code",
     "data": {
-      "code": "`<div><h2>Share</h2><pre>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}&m=2</pre></div>`",
+      "code": "`<div><h2>Share</h2><p>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}&m=2</p></div>`",
       "language": "javascript",
-      "output": ""
+      "output": "<div><h2>Share</h2><p>https://notebook.sanchezcarlosjr.com?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&amp;meeting=ymiaznhzdw&amp;m=2</p></div>"
     },
     "index": 2,
     "createdBy": "ymiaznhzdw",
@@ -2786,15 +2786,245 @@
             "creator": "zvcgogpirq",
             "time": 1685553153975.01
           }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "\n`<div><h2>Share</h2><pre>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}&m=2</pre></div>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685553194157.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "// TODO\n`<div><h2>Share</h2><pre>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}&m=2</pre></div>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685553196206.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "// TODO: \n`<div><h2>Share</h2><pre>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}&m=2</pre></div>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685553197126.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "// TODO: W\n`<div><h2>Share</h2><pre>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}&m=2</pre></div>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685553197657.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "// TODO: Notify when \n`<div><h2>Share</h2><pre>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}&m=2</pre></div>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685553201247.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "\n`<div><h2>Share</h2><pre>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}&m=2</pre></div>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685553206096.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "`<div><h2>Share</h2><pre>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}&m=2</pre></div>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685553207471.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "`<div><h2>Share</h2><pre>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}&m=2</p></div>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685553233807.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "`<div><h2>Share</h2><p>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}&m=2</p></div>`",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685553236590.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "QzIQrIqdkc",
+                    "type": "code",
+                    "data": {
+                      "code": "`<div><h2>Share</h2><p>${currentUrl.origin}?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&meeting=${currentUrl.searchParams.get(\"p\")}&m=2</p></div>`",
+                      "language": "javascript",
+                      "output": "<div><h2>Share</h2><p>https://notebook.sanchezcarlosjr.com?u=https://raw.githubusercontent.com/sanchezcarlosjr/computer-vision-and-graphics/main/assets/evanotebooks/13-evameetings-joiner.json&amp;meeting=ymiaznhzdw&amp;m=2</p></div>"
+                    },
+                    "index": 2,
+                    "lastEditedBy": "ymiaznhzdw"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685553239497.02
+          }
         ]
       ],
-      "hash": "6b127e8833f07964128da1bf043ffe85ddb4f36c72b6332dcd5f99005aa3607a"
+      "hash": "a58d3fc7002653acd5065e3d66c05a46fc2f5cea31e1e0986fff383d91e13057"
     },
     "_meta": {
-      "lwt": 1685553153977.01
+      "lwt": 1685553239502.01
     },
     "_deleted": false,
     "_attachments": {},
-    "_rev": "16-kayrkpvvym"
+    "_rev": "26-kayrkpvvym"
   }
 ]
