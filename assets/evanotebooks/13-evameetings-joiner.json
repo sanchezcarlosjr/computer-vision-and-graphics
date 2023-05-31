@@ -1,0 +1,670 @@
+[
+  {
+    "id": "DWOrhbyYkg",
+    "type": "header",
+    "data": {
+      "text": "EvaMeetings",
+      "level": 2
+    },
+    "index": 0,
+    "createdBy": "vatmizxlul",
+    "lastEditedBy": "vatmizxlul",
+    "topic": "mcgnuwqekh",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "zvcgogpirq",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "DWOrhbyYkg",
+                    "type": "header",
+                    "data": {
+                      "text": "",
+                      "level": 2
+                    },
+                    "index": 0,
+                    "createdBy": "vatmizxlul",
+                    "lastEditedBy": "vatmizxlul",
+                    "topic": "mcgnuwqekh"
+                  }
+                }
+              }
+            ],
+            "time": 1685549105519.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "DWOrhbyYkg",
+                    "type": "header",
+                    "data": {
+                      "text": "Eva",
+                      "level": 2
+                    },
+                    "index": 0,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549107080.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "DWOrhbyYkg",
+                    "type": "header",
+                    "data": {
+                      "text": "EvaMeeting",
+                      "level": 2
+                    },
+                    "index": 0,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549109183.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "DWOrhbyYkg",
+                    "type": "header",
+                    "data": {
+                      "text": "EvaMeetings",
+                      "level": 2
+                    },
+                    "index": 0,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549674421.01
+          }
+        ]
+      ],
+      "hash": "1f610ec2c9abdc5bb5c40875f04e51bfac03a1a563361f57636c69798c504011"
+    },
+    "_meta": {
+      "lwt": 1685549674422.01
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "4-lqywsargyt"
+  },
+  {
+    "id": "5XiKkRAmu-",
+    "type": "code",
+    "data": {
+      "code": "<video id=\"peerjs\" autoplay></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"meeting\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+      "language": "html",
+      "output": ""
+    },
+    "index": 1,
+    "createdBy": "vatmizxlul",
+    "lastEditedBy": "vatmizxlul",
+    "topic": "mcgnuwqekh",
+    "crdts": {
+      "operations": [
+        [
+          {
+            "creator": "zvcgogpirq",
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "createdBy": "vatmizxlul",
+                    "lastEditedBy": "vatmizxlul",
+                    "topic": "mcgnuwqekh"
+                  }
+                }
+              }
+            ],
+            "time": 1685549680880.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"peer\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "javascript",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549692399.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"peer\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549696335.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"ps\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549746479.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"\"></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"ps\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549768303.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"meetings\"></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"ps\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549770118.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"meeting\"></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"ps\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549775391.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"cl\"></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"ps\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549777166.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"c100\"></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"ps\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549779062.05
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"c100\"></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"ps\").split(\",\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549786455.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"c100\"></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"ps\").split(\",\")[0];\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549787942.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"c100\"></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"ps\").split(\",\")[];\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549788590.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay class=\"c100\"></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"ps\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685549789862.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"ps\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550321928.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"p\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550350547.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"peer\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550351278.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"mww\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550360731.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<section id=\"peers\"></section>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"meeting\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550362286.06
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peers\"></section>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"meeting\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550430687.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peers\"></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"meeting\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550434118.02
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\"></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"meeting\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685550945040.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"peer\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551081522.01
+          }
+        ],
+        [
+          {
+            "body": [
+              {
+                "ifMatch": {
+                  "$set": {
+                    "id": "5XiKkRAmu-",
+                    "type": "code",
+                    "data": {
+                      "code": "<video id=\"peerjs\" autoplay></video>\n<script type=\"module\">\n   const peerId = new URL(window.location).searchParams.get(\"meeting\");\n   const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});\n   const videoElement = document.getElementById(\"peerjs\");\n   peer.call(peerId, stream).on('stream', peerStream => videoElement.srcObject = peerStream);\n</script>",
+                      "language": "html",
+                      "output": ""
+                    },
+                    "index": 1,
+                    "lastEditedBy": "vatmizxlul"
+                  }
+                }
+              }
+            ],
+            "creator": "zvcgogpirq",
+            "time": 1685551085318.01
+          }
+        ]
+      ],
+      "hash": "0c61c4872d0c03e139d88c7a61cead3a4951f5bcf5cf8d41b6686a8daa2edc10"
+    },
+    "_meta": {
+      "lwt": 1685551085323.01
+    },
+    "_deleted": false,
+    "_attachments": {},
+    "_rev": "23-uyegielwxg"
+  }
+]
