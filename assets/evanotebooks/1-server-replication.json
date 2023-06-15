@@ -1,41 +1,41 @@
 [
   {
-    "id": "P0SSX8CnRb",
+    "id": "-bG2ZoFUMZ",
     "type": "header",
     "data": {
       "text": "Replicate your changes whatever you want and wherever you want",
       "level": 1
     },
     "index": 0,
-    "createdBy": "tvhaugjazf",
-    "lastEditedBy": "tvhaugjazf",
-    "topic": "nmhfpzjsev"
+    "createdBy": "pzcncokcfs",
+    "lastEditedBy": "pzcncokcfs",
+    "topic": "pxgtrjirfj"
   },
   {
-    "id": "xjYLRZyTdm",
+    "id": "mzcTuDeQ69",
     "type": "paragraph",
     "data": {
       "text": "Save your block changes to some node, and then share your changes with the query parameter ?u=url."
     },
     "index": 1,
-    "createdBy": "tvhaugjazf",
-    "lastEditedBy": "tvhaugjazf",
-    "topic": "nmhfpzjsev"
+    "createdBy": "pzcncokcfs",
+    "lastEditedBy": "pzcncokcfs",
+    "topic": "pxgtrjirfj"
   },
   {
-    "id": "In9inBsQRW",
+    "id": "CF6HDyx5eo",
     "type": "header",
     "data": {
       "text": "Metaprogramming",
       "level": 2
     },
     "index": 2,
-    "createdBy": "tvhaugjazf",
-    "lastEditedBy": "tvhaugjazf",
-    "topic": "nmhfpzjsev"
+    "createdBy": "pzcncokcfs",
+    "lastEditedBy": "pzcncokcfs",
+    "topic": "pxgtrjirfj"
   },
   {
-    "id": "JKegOQGgTS",
+    "id": "gEw-MOercB",
     "type": "code",
     "data": {
       "code": "editor.blocks.get$.pipe(\n  first(),\n  map(x => x.map(y => y.index+\" \"+y.id+\" \"+y.type)),\n  display\n)",
@@ -43,45 +43,45 @@
       "output": "[\n \"0 P0SSX8CnRb header\",\n \"1 xjYLRZyTdm paragraph\",\n \"2 In9inBsQRW header\",\n \"3 JKegOQGgTS code\",\n \"4 e1lG4caesc header\",\n \"5 X1wyRWUi9C code\",\n \"6 2hmctzjqkv header\",\n \"7 Je8GdNIBlB code\"\n]\n"
     },
     "index": 3,
-    "createdBy": "tvhaugjazf",
-    "lastEditedBy": "tvhaugjazf",
-    "topic": "nmhfpzjsev"
+    "createdBy": "pzcncokcfs",
+    "lastEditedBy": "pzcncokcfs",
+    "topic": "pxgtrjirfj"
   },
   {
-    "id": "e1lG4caesc",
+    "id": "rjeONF_WJf",
     "type": "header",
     "data": {
       "text": "Save crdts",
       "level": 2
     },
     "index": 4,
-    "createdBy": "tvhaugjazf",
-    "lastEditedBy": "tvhaugjazf",
-    "topic": "nmhfpzjsev"
+    "createdBy": "pzcncokcfs",
+    "lastEditedBy": "pzcncokcfs",
+    "topic": "pxgtrjirfj"
   },
   {
-    "id": "X1wyRWUi9C",
+    "id": "POb1WaNY3Q",
     "type": "code",
     "data": {
-      "code": "// If you are prototyping you might not want to do Replication\nif (currentUrl.searchParams.get(\"m\") === \"2\")\n  exit(\"<div>Hello</div>\")\n\n// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(content =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+      "code": "// If you are prototyping you might not want to do Replication\nif (currentUrl.searchParams.get(\"m\") === \"2\")\n  exit(\"<div>Hello</div>\")\n\n// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(blocks, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
       "language": "javascript",
       "output": ""
     },
     "index": 5,
-    "createdBy": "tvhaugjazf",
-    "lastEditedBy": "tvhaugjazf",
-    "topic": "nmhfpzjsev"
+    "createdBy": "pzcncokcfs",
+    "lastEditedBy": "pzcncokcfs",
+    "topic": "pxgtrjirfj"
   },
   {
-    "id": "2hmctzjqkv",
+    "id": "2ZFXj1ASUa",
     "type": "header",
     "data": {
       "text": "Remove crdts and another metadata",
       "level": 2
     },
     "index": 6,
-    "createdBy": "tvhaugjazf",
-    "lastEditedBy": "tvhaugjazf",
-    "topic": "nmhfpzjsev"
+    "createdBy": "pzcncokcfs",
+    "lastEditedBy": "pzcncokcfs",
+    "topic": "pxgtrjirfj"
   }
 ]
