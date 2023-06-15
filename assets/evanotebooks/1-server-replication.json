@@ -83,5 +83,30 @@
     "createdBy": "pzcncokcfs",
     "lastEditedBy": "pzcncokcfs",
     "topic": "pxgtrjirfj"
+  },
+  {
+    "id": "-iYl0WXuiN",
+    "type": "code",
+    "data": {
+      "code": "editor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks.map(doc => {\n      delete doc._data.crdts\n      delete doc._data._deleted\n      delete doc._data._deleted\n      delete doc._data._attachments\n      delete doc._data._rev\n      delete doc._data._meta\n      return doc._data\n    })\n  }),\n  map(blocks =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(blocks, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 7,
+    "createdBy": "pzcncokcfs",
+    "lastEditedBy": "pzcncokcfs",
+    "topic": "pxgtrjirfj"
+  },
+  {
+    "id": "nihpPmNN1M",
+    "type": "header",
+    "data": {
+      "text": "Replicate on IPFS",
+      "level": 2
+    },
+    "index": 8,
+    "createdBy": "pzcncokcfs",
+    "lastEditedBy": "pzcncokcfs",
+    "topic": "pxgtrjirfj"
   }
 ]
