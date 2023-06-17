@@ -1,0 +1,89 @@
+[
+  {
+    "id": "XuFhpLTdN-",
+    "type": "header",
+    "data": {
+      "text": "Procrustes Analysis",
+      "level": 1
+    },
+    "index": 0,
+    "createdBy": "prizeiskrp",
+    "lastEditedBy": "prizeiskrp",
+    "topic": "dypjmnttvw"
+  },
+  {
+    "id": "HEWgNTEOOM",
+    "type": "header",
+    "data": {
+      "text": "",
+      "level": 2
+    },
+    "index": 1,
+    "createdBy": "prizeiskrp",
+    "lastEditedBy": "prizeiskrp",
+    "topic": "dypjmnttvw"
+  },
+  {
+    "id": "Rw2itgH6Tg",
+    "type": "code",
+    "data": {
+      "code": "import numpy as np\nfrom scipy.linalg import orthogonal_procrustes\nimport matplotlib.pyplot as plt\n\ndef translation_matrix_3d(dx, dy):\n    return np.array([\n        [1, 0, dx],\n        [0, 1, dy],\n        [0, 0, 0],\n    ])\n\ndef rotation_matrix(angle_rad):\n    cos_angle = np.cos(angle_rad)\n    sin_angle = np.sin(angle_rad)\n    return np.array([[cos_angle, -sin_angle], [sin_angle, cos_angle]])\n\ndef scaling_matrix_3d(sx, sy):\n    return np.array([\n        [sx, 0],\n        [0, sy]\n    ])\n\ndef min_max_normalization(data):\n    return (data - np.min(data)) / (np.max(data) - np.min(data))\n\ndef standard_normalization(landmarks):\n    mean_val = np.mean(landmarks, axis=0)\n    std_val = np.std(landmarks, axis=0)\n    return (landmarks - mean_val) / std_val\n\n# https://en.wikipedia.org/wiki/Procrustes_analysis\ndef compute_procrustes_similarity(shape1, shape2):\n  procrustes_distance = np.sqrt(((shape2 - shape1)**2).sum())\n  return max(1-round(procrustes_distance,3),0)\n\ndef compute_procrustes(shape1, shape2):\n    shape1 = shape1.astype(float)\n    shape2 = shape2.astype(float)\n    R, scale = orthogonal_procrustes(shape1, shape2)\n    transformed_shape1 = scale * shape1.dot(R)\n    return transformed_shape1, compute_procrustes_similarity(shape2,transformed_shape1)\n\ndef standard_normalization(shape):\n    shape = shape.astype(float)\n    # centering the shape\n    shape -= np.mean(shape, axis=0)\n    # scale the shape\n    shape /= np.sqrt((shape**2).sum())\n    return shape",
+      "language": "python",
+      "output": "undefined"
+    },
+    "index": 1,
+    "createdBy": "prizeiskrp",
+    "lastEditedBy": "prizeiskrp",
+    "topic": "dypjmnttvw"
+  },
+  {
+    "id": "Eu53D-ftPW",
+    "type": "code",
+    "data": {
+      "code": "# Landmarks\nlandmarks1 = np.array([\n    [\n        0.3862111568450928,\n        0.9403453469276428\n    ],\n    [\n        0.444118857383728,\n        0.8816303610801697\n    ],\n    [\n        0.4814566373825073,\n        0.7915549278259277\n    ],\n    [\n        0.4956647753715515,\n        0.7123805284500122\n    ],\n    [\n        0.508569598197937,\n        0.6401602625846863\n    ],\n    [\n        0.3920263648033142,\n        0.6721675395965576\n    ],\n    [\n        0.36959102749824524,\n        0.566619336605072\n    ],\n    [\n        0.35014912486076355,\n        0.5084306001663208\n    ],\n    [\n        0.330780029296875,\n        0.45730119943618774\n    ],\n    [\n        0.3367011249065399,\n        0.6862635612487793\n    ],\n    [\n        0.2997554540634155,\n        0.5753514766693115\n    ],\n    [\n        0.27116623520851135,\n        0.5118122100830078\n    ],\n    [\n        0.24341821670532227,\n        0.45756709575653076\n    ],\n    [\n        0.29331904649734497,\n        0.7259061932563782\n    ],\n    [\n        0.2509540319442749,\n        0.6312907338142395\n    ],\n    [\n        0.22074800729751587,\n        0.5784557461738586\n    ],\n    [\n        0.19168047606945038,\n        0.5311246514320374\n    ],\n    [\n        0.2582094669342041,\n        0.7830571532249451\n    ],\n    [\n        0.21213380992412567,\n        0.7309069633483887\n    ],\n    [\n        0.17972202599048615,\n        0.6970048546791077\n    ],\n    [\n        0.14870686829090118,\n        0.6620938777923584\n    ]\n])\nlandmarks2 = np.array([\n    [\n        0.4117359519004822,\n        0.5998134613037109\n    ],\n    [\n        0.5093539953231812,\n        0.5775389671325684\n    ],\n    [\n        0.5902365446090698,\n        0.49847930669784546\n    ],\n    [\n        0.5695813894271851,\n        0.4026269316673279\n    ],\n    [\n        0.5057461261749268,\n        0.3637675344944\n    ],\n    [\n        0.5569444298744202,\n        0.308925062417984\n    ],\n    [\n        0.5795729756355286,\n        0.24448806047439575\n    ],\n    [\n        0.5619804263114929,\n        0.31692954897880554\n    ],\n    [\n        0.5519618391990662,\n        0.3586289882659912\n    ],\n    [\n        0.4841597080230713,\n        0.2924221158027649\n    ],\n    [\n        0.4802171587944031,\n        0.27897703647613525\n    ],\n    [\n        0.47457078099250793,\n        0.3872222900390625\n    ],\n    [\n        0.4831964373588562,\n        0.4001385569572449\n    ],\n    [\n        0.41872039437294006,\n        0.3014800548553467\n    ],\n    [\n        0.40768006443977356,\n        0.3034840226173401\n    ],\n    [\n        0.416713148355484,\n        0.40322113037109375\n    ],\n    [\n        0.4312133193016052,\n        0.4102737009525299\n    ],\n    [\n        0.3565177321434021,\n        0.3213789463043213\n    ],\n    [\n        0.3557544946670532,\n        0.32675492763519287\n    ],\n    [\n        0.3669155538082123,\n        0.3973359167575836\n    ],\n    [\n        0.37862086296081543,\n        0.40693482756614685\n    ]\n])\nlandmarks3 = np.array([\n    [\n        0.46676886081695557,\n        0.5703670978546143\n    ],\n    [\n        0.5202527046203613,\n        0.5312864780426025\n    ],\n    [\n        0.5362282991409302,\n        0.4381374716758728\n    ],\n    [\n        0.5115202069282532,\n        0.3533180356025696\n    ],\n    [\n        0.4631277322769165,\n        0.2865605652332306\n    ],\n    [\n        0.5759615898132324,\n        0.27488452196121216\n    ],\n    [\n        0.5442883372306824,\n        0.23811140656471252\n    ],\n    [\n        0.53537517786026,\n        0.31322482228279114\n    ],\n    [\n        0.5411896705627441,\n        0.35214900970458984\n    ],\n    [\n        0.5041837692260742,\n        0.27350232005119324\n    ],\n    [\n        0.4765840172767639,\n        0.2190810739994049\n    ],\n    [\n        0.47664761543273926,\n        0.3253878355026245\n    ],\n    [\n        0.5060861706733704,\n        0.3254202604293823\n    ],\n    [\n        0.43975377082824707,\n        0.2910648286342621\n    ],\n    [\n        0.41905638575553894,\n        0.22802433371543884\n    ],\n    [\n        0.43468400835990906,\n        0.322488397359848\n    ],\n    [\n        0.45765048265457153,\n        0.3551551401615143\n    ],\n    [\n        0.3876073360443115,\n        0.3203282952308655\n    ],\n    [\n        0.3577616810798645,\n        0.2991795539855957\n    ],\n    [\n        0.3336262106895447,\n        0.2803027033805847\n    ],\n    [\n        0.3100126385688782,\n        0.23320695757865906\n    ]\n])\nlandmarks4 = np.array([\n    [\n        0.4888247847557068,\n        0.32686662673950195\n    ],\n    [\n        0.4089530110359192,\n        0.28398457169532776\n    ],\n    [\n        0.31418895721435547,\n        0.31204742193222046\n    ],\n    [\n        0.23767149448394775,\n        0.35336029529571533\n    ],\n    [\n        0.1751742959022522,\n        0.37663692235946655\n    ],\n    [\n        0.305968701839447,\n        0.4930546283721924\n    ],\n    [\n        0.2649118900299072,\n        0.6152259707450867\n    ],\n    [\n        0.24937739968299866,\n        0.7007547616958618\n    ],\n    [\n        0.23823446035385132,\n        0.776442289352417\n    ],\n    [\n        0.3580963611602783,\n        0.5372011661529541\n    ],\n    [\n        0.3255644738674164,\n        0.7019790410995483\n    ],\n    [\n        0.31333279609680176,\n        0.8016607165336609\n    ],\n    [\n        0.30518385767936707,\n        0.8841562271118164\n    ],\n    [\n        0.41469499468803406,\n        0.5414690971374512\n    ],\n    [\n        0.4064633250236511,\n        0.6725249290466309\n    ],\n    [\n        0.4104057252407074,\n        0.7544740438461304\n    ],\n    [\n        0.4139344096183777,\n        0.8267900943756104\n    ],\n    [\n        0.46912360191345215,\n        0.5183666944503784\n    ],\n    [\n        0.5002368092536926,\n        0.5865434408187866\n    ],\n    [\n        0.5271325707435608,\n        0.6344040036201477\n    ],\n    [\n        0.5467642545700073,\n        0.6829334497451782\n    ]\n])\nlandmarks5 = np.array([\n    [\n        0.5089673399925232,\n        0.5743484497070312\n    ],\n    [\n        0.5011266469955444,\n        0.6348450779914856\n    ],\n    [\n        0.43901047110557556,\n        0.6813596487045288\n    ],\n    [\n        0.3769790828227997,\n        0.7362055778503418\n    ],\n    [\n        0.3116132318973541,\n        0.7835409641265869\n    ],\n    [\n        0.3552758991718292,\n        0.5540654063224792\n    ],\n    [\n        0.24968528747558594,\n        0.6233828067779541\n    ],\n    [\n        0.20607322454452515,\n        0.6964874267578125\n    ],\n    [\n        0.17509283125400543,\n        0.7634069323539734\n    ],\n    [\n        0.3295378088951111,\n        0.5435293912887573\n    ],\n    [\n        0.211056649684906,\n        0.5912041068077087\n    ],\n    [\n        0.16013355553150177,\n        0.6615754961967468\n    ],\n    [\n        0.12420418858528137,\n        0.7293554544448853\n    ],\n    [\n        0.3160472810268402,\n        0.5568662881851196\n    ],\n    [\n        0.22162988781929016,\n        0.5954126119613647\n    ],\n    [\n        0.17964306473731995,\n        0.6596625447273254\n    ],\n    [\n        0.1451103240251541,\n        0.7163693308830261\n    ],\n    [\n        0.3138035237789154,\n        0.5783882737159729\n    ],\n    [\n        0.24529433250427246,\n        0.6164613962173462\n    ],\n    [\n        0.21524402499198914,\n        0.6619811654090881\n    ],\n    [\n        0.19021858274936676,\n        0.7086756229400635\n    ]\n])",
+      "language": "python",
+      "output": "undefined"
+    },
+    "index": 2,
+    "createdBy": "prizeiskrp",
+    "lastEditedBy": "prizeiskrp",
+    "topic": "dypjmnttvw"
+  },
+  {
+    "id": "zZaJuJ08SZ",
+    "type": "code",
+    "data": {
+      "code": "goal_pose = standard_normalization((rotation_matrix(np.pi)@landmarks1.T).T)\ninput_pose = standard_normalization(landmarks1)\n_, procrustes_similarity = compute_procrustes(input_pose, goal_pose)\nprocrustes_similarity",
+      "language": "python",
+      "output": "1"
+    },
+    "index": 3,
+    "createdBy": "prizeiskrp",
+    "lastEditedBy": "prizeiskrp",
+    "topic": "dypjmnttvw"
+  },
+  {
+    "id": "fddCXn-1TB",
+    "type": "header",
+    "data": {
+      "text": "Real Time Finder Counter",
+      "level": 2
+    },
+    "index": 4,
+    "createdBy": "prizeiskrp",
+    "lastEditedBy": "prizeiskrp",
+    "topic": "dypjmnttvw"
+  },
+  {
+    "id": "NgZG3mvUzA",
+    "type": "header",
+    "data": {
+      "text": "Replication",
+      "level": 2
+    },
+    "index": 5,
+    "createdBy": "prizeiskrp",
+    "lastEditedBy": "prizeiskrp",
+    "topic": "dypjmnttvw"
+  }
+]
