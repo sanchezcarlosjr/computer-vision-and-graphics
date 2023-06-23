@@ -1,112 +1,164 @@
 [
   {
-    "id": "-bG2ZoFUMZ",
+    "id": "cihXe4D3Op",
     "type": "header",
     "data": {
-      "text": "Replicate your changes whatever you want and wherever you want",
+      "text": "Procrustes Analysis",
       "level": 1
     },
     "index": 0,
-    "createdBy": "pzcncokcfs",
-    "lastEditedBy": "pzcncokcfs",
-    "topic": "pxgtrjirfj"
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
   },
   {
-    "id": "mzcTuDeQ69",
-    "type": "paragraph",
-    "data": {
-      "text": "Save your block changes to some node, and then share your changes with the query parameter ?u=url."
-    },
-    "index": 1,
-    "createdBy": "pzcncokcfs",
-    "lastEditedBy": "pzcncokcfs",
-    "topic": "pxgtrjirfj"
-  },
-  {
-    "id": "CF6HDyx5eo",
-    "type": "header",
-    "data": {
-      "text": "Metaprogramming",
-      "level": 2
-    },
-    "index": 2,
-    "createdBy": "pzcncokcfs",
-    "lastEditedBy": "pzcncokcfs",
-    "topic": "pxgtrjirfj"
-  },
-  {
-    "id": "gEw-MOercB",
+    "id": "Ua30gSiVEo",
     "type": "code",
     "data": {
-      "code": "editor.blocks.get$.pipe(\n  first(),\n  map(x => x.map(y => y.index+\" \"+y.id+\" \"+y.type)),\n  display\n)",
-      "language": "javascript",
-      "output": "[\n \"0 P0SSX8CnRb header\",\n \"1 xjYLRZyTdm paragraph\",\n \"2 In9inBsQRW header\",\n \"3 JKegOQGgTS code\",\n \"4 e1lG4caesc header\",\n \"5 X1wyRWUi9C code\",\n \"6 2hmctzjqkv header\",\n \"7 Je8GdNIBlB code\"\n]\n"
+      "code": "import numpy as np\nfrom scipy.linalg import orthogonal_procrustes\nimport matplotlib.pyplot as plt\n\ndef translation_matrix_3d(dx, dy):\n    return np.array([\n        [1, 0, dx],\n        [0, 1, dy],\n        [0, 0, 0],\n    ])\n\ndef rotation_matrix(angle_rad):\n    cos_angle = np.cos(angle_rad)\n    sin_angle = np.sin(angle_rad)\n    return np.array([[cos_angle, -sin_angle], [sin_angle, cos_angle]])\n\ndef scaling_matrix_3d(sx, sy):\n    return np.array([\n        [sx, 0],\n        [0, sy]\n    ])\n\ndef min_max_normalization(data):\n    return (data - np.min(data)) / (np.max(data) - np.min(data))\n\ndef standard_normalization(landmarks):\n    mean_val = np.mean(landmarks, axis=0)\n    std_val = np.std(landmarks, axis=0)\n    return (landmarks - mean_val) / std_val\n\n# https://en.wikipedia.org/wiki/Procrustes_analysis\ndef compute_procrustes_similarity(shape1, shape2):\n  procrustes_distance = np.sqrt(((shape2 - shape1)**2).sum())\n  return max(1-round(procrustes_distance,3),0)\n\ndef compute_procrustes(shape1, shape2):\n    shape1 = shape1.astype(float)\n    shape2 = shape2.astype(float)\n    R, scale = orthogonal_procrustes(shape1, shape2)\n    transformed_shape1 = scale * shape1.dot(R)\n    return compute_procrustes_similarity(shape2,transformed_shape1)\n\ndef standard_normalization(shape):\n    shape = shape.astype(float)\n    # centering the shape\n    shape -= np.mean(shape, axis=0)\n    # scale the shape\n    shape /= np.sqrt((shape**2).sum())\n    return shape",
+      "language": "python",
+      "output": "undefined"
     },
-    "index": 3,
-    "createdBy": "pzcncokcfs",
-    "lastEditedBy": "pzcncokcfs",
-    "topic": "pxgtrjirfj"
+    "index": 1,
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
   },
   {
-    "id": "rjeONF_WJf",
+    "id": "Od4Bqxg6Qq",
+    "type": "code",
+    "data": {
+      "code": "goals = [\n  np.array([\n    [\n        0.3862111568450928,\n        0.9403453469276428,\n    ],\n    [\n        0.444118857383728,\n        0.8816303610801697\n    ],\n    [\n        0.4814566373825073,\n        0.7915549278259277\n    ],\n    [\n        0.4956647753715515,\n        0.7123805284500122\n    ],\n    [\n        0.508569598197937,\n        0.6401602625846863\n    ],\n    [\n        0.3920263648033142,\n        0.6721675395965576\n    ],\n    [\n        0.36959102749824524,\n        0.566619336605072\n    ],\n    [\n        0.35014912486076355,\n        0.5084306001663208\n    ],\n    [\n        0.330780029296875,\n        0.45730119943618774\n    ],\n    [\n        0.3367011249065399,\n        0.6862635612487793\n    ],\n    [\n        0.2997554540634155,\n        0.5753514766693115\n    ],\n    [\n        0.27116623520851135,\n        0.5118122100830078\n    ],\n    [\n        0.24341821670532227,\n        0.45756709575653076\n    ],\n    [\n        0.29331904649734497,\n        0.7259061932563782\n    ],\n    [\n        0.2509540319442749,\n        0.6312907338142395\n    ],\n    [\n        0.22074800729751587,\n        0.5784557461738586\n    ],\n    [\n        0.19168047606945038,\n        0.5311246514320374\n    ],\n    [\n        0.2582094669342041,\n        0.7830571532249451\n    ],\n    [\n        0.21213380992412567,\n        0.7309069633483887\n    ],\n    [\n        0.17972202599048615,\n        0.6970048546791077\n    ],\n    [\n        0.14870686829090118,\n        0.6620938777923584\n    ]\n]),\n  np.array([\n    [\n        0.47961506247520447,\n        0.6634080410003662\n    ],\n    [\n        0.5003896355628967,\n        0.5310173034667969\n    ],\n    [\n        0.5200755596160889,\n        0.39546501636505127\n    ],\n    [\n        0.527176022529602,\n        0.30165529251098633\n    ],\n    [\n        0.5164738297462463,\n        0.2173381894826889\n    ],\n    [\n        0.46152153611183167,\n        0.408028244972229\n    ],\n    [\n        0.5898987054824829,\n        0.3764548897743225\n    ],\n    [\n        0.5808848738670349,\n        0.41711553931236267\n    ],\n    [\n        0.5419919490814209,\n        0.42502275109291077\n    ],\n    [\n        0.4650738537311554,\n        0.4940113425254822\n    ],\n    [\n        0.6153272390365601,\n        0.4447786211967468\n    ],\n    [\n        0.5919276475906372,\n        0.48239779472351074\n    ],\n    [\n        0.5514453649520874,\n        0.4943277835845947\n    ],\n    [\n        0.4817067086696625,\n        0.5748986601829529\n    ],\n    [\n        0.6244078874588013,\n        0.5196711421012878\n    ],\n    [\n        0.5982979536056519,\n        0.5557615160942078\n    ],\n    [\n        0.5617075562477112,\n        0.5681958198547363\n    ],\n    [\n        0.5050870776176453,\n        0.6464592814445496\n    ],\n    [\n        0.6218507289886475,\n        0.595839262008667\n    ],\n    [\n        0.6011964082717896,\n        0.6154616475105286\n    ],\n    [\n        0.5614906549453735,\n        0.6295645236968994\n    ]\n]),\n  np.array([\n    [\n        0.3974202871322632,\n        0.7539671659469604\n    ],\n    [\n        0.4198145568370819,\n        0.6103951334953308\n    ],\n    [\n        0.42430731654167175,\n        0.47107994556427\n    ],\n    [\n        0.41519129276275635,\n        0.36811384558677673\n    ],\n    [\n        0.4035513997077942,\n        0.2741296589374542\n    ],\n    [\n        0.36345788836479187,\n        0.48265209794044495\n    ],\n    [\n        0.4909384250640869,\n        0.48648595809936523\n    ],\n    [\n        0.47254157066345215,\n        0.5299753546714783\n    ],\n    [\n        0.43189987540245056,\n        0.5278431177139282\n    ],\n    [\n        0.35465043783187866,\n        0.5606994032859802\n    ],\n    [\n        0.5010643601417542,\n        0.5575475692749023\n    ],\n    [\n        0.4654942750930786,\n        0.5875293612480164\n    ],\n    [\n        0.4252013564109802,\n        0.5880046486854553\n    ],\n    [\n        0.3598322570323944,\n        0.6412149667739868\n    ],\n    [\n        0.49840834736824036,\n        0.6351668834686279\n    ],\n    [\n        0.4656428396701813,\n        0.6640678644180298\n    ],\n    [\n        0.43146398663520813,\n        0.6626753807067871\n    ],\n    [\n        0.37551844120025635,\n        0.7132309675216675\n    ],\n    [\n        0.48393428325653076,\n        0.7056625485420227\n    ],\n    [\n        0.4608951210975647,\n        0.720247209072113\n    ],\n    [\n        0.4218056797981262,\n        0.7204363346099854\n    ]\n]),\n  np.array([\n    [\n        0.37721800804138184,\n        0.7176666259765625\n    ],\n    [\n        0.41425999999046326,\n        0.6392748951911926\n    ],\n    [\n        0.4197361171245575,\n        0.5330178141593933\n    ],\n    [\n        0.4285779595375061,\n        0.4499278962612152\n    ],\n    [\n        0.44142454862594604,\n        0.37575727701187134\n    ],\n    [\n        0.29439103603363037,\n        0.5000479817390442\n    ],\n    [\n        0.3429051637649536,\n        0.5702530145645142\n    ],\n    [\n        0.37634336948394775,\n        0.6159896850585938\n    ],\n    [\n        0.36803996562957764,\n        0.6137611269950867\n    ],\n    [\n        0.24683745205402374,\n        0.5600085258483887\n    ],\n    [\n        0.3046782910823822,\n        0.6325881481170654\n    ],\n    [\n        0.3474002480506897,\n        0.6664552092552185\n    ],\n    [\n        0.3439624011516571,\n        0.6570782661437988\n    ],\n    [\n        0.221921905875206,\n        0.6269699931144714\n    ],\n    [\n        0.2721138298511505,\n        0.688225269317627\n    ],\n    [\n        0.3169545531272888,\n        0.7085941433906555\n    ],\n    [\n        0.31951603293418884,\n        0.6911536455154419\n    ],\n    [\n        0.20887720584869385,\n        0.6919736862182617\n    ],\n    [\n        0.24662500619888306,\n        0.7346565127372742\n    ],\n    [\n        0.2885426878929138,\n        0.7467823028564453\n    ],\n    [\n        0.29907160997390747,\n        0.7332390546798706\n    ]\n])\n]\ngoals[0] = standard_normalization((rotation_matrix(np.pi)@goals[0].T).T)\ngoals[1] = standard_normalization((rotation_matrix(np.pi)@goals[1].T).T)\ngoals[2] = standard_normalization((rotation_matrix(np.pi)@goals[2].T).T)\ngoals[3] = standard_normalization((rotation_matrix(np.pi)@goals[3].T).T)",
+      "language": "python",
+      "output": "undefined"
+    },
+    "index": 2,
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
+  },
+  {
+    "id": "2pzXMmltgP",
+    "type": "code",
+    "data": {
+      "code": "import js\n\ndef choose_close_goal_pose(landmarks):\n input_pose = standard_normalization(np.array(landmarks.to_py()))\n index, best_similarity = max(enumerate(compute_procrustes(input_pose, goal) for goal in goals), key=lambda x: x[1])\n return index if best_similarity >= 0.7 else -1\n\njs.window.choose_close_goal_pose = choose_close_goal_pose",
+      "language": "python",
+      "output": "undefined"
+    },
+    "index": 3,
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
+  },
+  {
+    "id": "lRIv_FMtAZ",
     "type": "header",
     "data": {
-      "text": "Save crdts",
+      "text": "Non verbal language",
       "level": 2
     },
     "index": 4,
-    "createdBy": "pzcncokcfs",
-    "lastEditedBy": "pzcncokcfs",
-    "topic": "pxgtrjirfj"
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
   },
   {
-    "id": "POb1WaNY3Q",
+    "id": "sXX4QgfDId",
     "type": "code",
     "data": {
-      "code": "// If you are prototyping you might not want to do Replication\nif (currentUrl.searchParams.get(\"m\") === \"2\")\n  exit(\"<div>Hello</div>\")\n\n// Generate new token on https://github.com/settings/tokens\n// It saves your token locally, so you need not generate new token.\nenvironment.GITHUB_TOKEN = environment.GITHUB_TOKEN || \"REPLACE YOUR TOKEN HERE\"\nawait environment.wait()\n\neditor.blocks.get$.pipe(\n  first(),\n  map(blocks =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(blocks, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
-      "language": "javascript",
-      "output": ""
+      "code": "<script type=\"module\">\nclass Lexer {\n  constructor(rules) {\n    this.state = '';\n    this.rules = rules;\n    // TODO: Implement large match\n    this.policies = {\n     'first_match': (input) => {\n       for (let rule of this.rules) {\n        if (rule.match(this.state, input)) {\n          this.state = '';\n          return rule.apply(input);\n        }\n       }\n      },\n      'all_matches': (input) => {\n        const matches = []\n        for (let rule of this.rules) {\n         if (rule.match(this.state, input)) {\n          matches.push(rule.apply(input));\n         }\n        }\n        if (matches.length > 0) {\n          this.state = '';\n        }\n        return matches;\n      }\n    }\n  }\n  analyze = (input, policy='first_match') => {\n    this.state += input;\n    return this.policies[policy](input)\n  };\n}\n\nwindow.lexer = new Lexer([\n  {\n    match: (state, input) => /0(-1)*(1|2|3)/g.test(state),\n    apply: (input) => 'A',\n  }\n]);\n  \nwindow.startVideo = async (videoElement, peerId) => {\n  const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: false});\n  if (peerId) {\n    peer.call(peerId, stream).on('stream', peerStream => {\n      videoElement.srcObject = peerStream;\n      videoElement.play();\n    });\n  } else {\n    videoElement.srcObject = stream;\n    videoElement.play();\n  }\n}\n</script>",
+      "language": "html",
+      "output": "<script type=\"module\">\nclass Lexer {\n  constructor(rules) {\n    this.state = '';\n    this.rules = rules;\n    // TODO: Implement large match\n    this.policies = {\n     'first_match': (input) => {\n       for (let rule of this.rules) {\n        if (rule.match(this.state, input)) {\n          this.state = '';\n          return rule.apply(input);\n        }\n       }\n      },\n      'all_matches': (input) => {\n        const matches = []\n        for (let rule of this.rules) {\n         if (rule.match(this.state, input)) {\n          matches.push(rule.apply(input));\n         }\n        }\n        if (matches.length > 0) {\n          this.state = '';\n        }\n        return matches;\n      }\n    }\n  }\n  analyze = (input, policy='first_match') => {\n    this.state += input;\n    return this.policies[policy](input)\n  };\n}\n\nwindow.lexer = new Lexer([\n  {\n    match: (state, input) => /0(-1)*(1|2|3)/g.test(state),\n    apply: (input) => 'A',\n  }\n]);\n  \nwindow.startVideo = async (videoElement, peerId) => {\n  const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: false});\n  if (peerId) {\n    peer.call(peerId, stream).on('stream', peerStream => {\n      videoElement.srcObject = peerStream;\n      videoElement.play();\n    });\n  } else {\n    videoElement.srcObject = stream;\n    videoElement.play();\n  }\n}\n</script>"
     },
     "index": 5,
-    "createdBy": "pzcncokcfs",
-    "lastEditedBy": "pzcncokcfs",
-    "topic": "pxgtrjirfj"
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
   },
   {
-    "id": "2ZFXj1ASUa",
+    "id": "FSj3Moigrk",
+    "type": "code",
+    "data": {
+      "code": "<video id=\"webcam\" style=\"width: 1280px; height: 720px;\" autoplay playsinline></video>\n<script type=\"module\">\nimport {HandLandmarker,FilesetResolver,DrawingUtils} from \"https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0\";\nconst vision = await FilesetResolver.forVisionTasks(\"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm\");\nconst handLandmarker = await HandLandmarker.createFromOptions(vision, {\n    baseOptions: {\n      modelAssetPath: `https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task`,\n      delegate: \"GPU\"\n    },\n    runningMode: \"video\",\n    numHands: 1\n});\n\n\nconst video = document.getElementById(\"webcam\");\nlet lastVideoTime = -1;\nasync function predictWebcam() {\n    let startTimeMs = performance.now();\n    if (lastVideoTime !== video.currentTime) {\n        lastVideoTime = video.currentTime;\n        const results = handLandmarker.detectForVideo(video, startTimeMs);\n        if (results.landmarks.length !== 0) {\n           // console.log(results.landmarks[0].map(l => ([l.x, l.y])))\n           const result = lexer.analyze(choose_close_goal_pose(results.landmarks[0].map(l => ([l.x, l.y]))))\n           if (result) {\n             console.log(result);\n           }\n        }\n    }\n    requestAnimationFrame(predictWebcam); \n}\n\nvideo.addEventListener(\"loadeddata\", predictWebcam);\nstartVideo(video)\n</script>",
+      "language": "html",
+      "output": ""
+    },
+    "index": 6,
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
+  },
+  {
+    "id": "j9IG5mLLX6",
     "type": "header",
     "data": {
-      "text": "Remove crdts and another metadata",
+      "text": "Hand Landmarker",
       "level": 2
     },
     "index": 6,
-    "createdBy": "pzcncokcfs",
-    "lastEditedBy": "pzcncokcfs",
-    "topic": "pxgtrjirfj"
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
   },
   {
-    "id": "-iYl0WXuiN",
-    "type": "code",
-    "data": {
-      "code": "editor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    blocks.pop()\n    return blocks.map(doc => {\n      delete doc._data.crdts\n      delete doc._data._deleted\n      delete doc._data._deleted\n      delete doc._data._attachments\n      delete doc._data._rev\n      delete doc._data._meta\n      return doc._data\n    })\n  }),\n  map(blocks =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(blocks, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
-      "language": "javascript",
-      "output": ""
-    },
-    "index": 7,
-    "createdBy": "pzcncokcfs",
-    "lastEditedBy": "pzcncokcfs",
-    "topic": "pxgtrjirfj"
-  },
-  {
-    "id": "nihpPmNN1M",
+    "id": "RKUkGLxkwt",
     "type": "header",
     "data": {
-      "text": "Replicate on IPFS",
+      "text": "Pose Landmarker",
       "level": 2
     },
     "index": 8,
-    "createdBy": "pzcncokcfs",
-    "lastEditedBy": "pzcncokcfs",
-    "topic": "pxgtrjirfj"
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
+  },
+  {
+    "id": "UIJD513s5P",
+    "type": "code",
+    "data": {
+      "code": "<video id=\"webcam\" style=\"width: 1280px; height: 720px;\" autoplay playsinline></video>\n<script type=\"module\">\nimport {PoseLandmarker,FilesetResolver,DrawingUtils} from \"https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0\";\nconst vision = await FilesetResolver.forVisionTasks(\"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm\");\nconst poseLandmarker = await PoseLandmarker.createFromOptions(vision, {\n    baseOptions: {\n        modelAssetPath: `https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/latest/pose_landmarker_full.task`,\n        delegate: \"GPU\"\n    },\n    runningMode: \"video\",\n    numPoses: 1,\n    minPoseDetectionConfidence: 0.8,\n    minPosePresenceConfidence: 0.8,\n    minTrackingConfidence: 0.8\n});\n\nconst video = document.getElementById(\"webcam\");\nconst stream = await navigator.mediaDevices.getUserMedia({video: true, audio: false});\nvideo.srcObject = stream;\nvideo.play();\n\nlet lastVideoTime = -1;\nasync function predictWebcam() {\n    let startTimeMs = performance.now();\n    if (lastVideoTime !== video.currentTime) {\n        lastVideoTime = video.currentTime;\n        poseLandmarker.detectForVideo(video, startTimeMs, (result) =>  {\n             if (result.landmarks.length === 0) {\n               return;\n             }\n             if (window.reachPose) {\n                const body = result.landmarks[0].map(l => ([l.x, l.y]));  \n                window.reachPose = false;\n             }\n          }\n        );\n    }\n   window.requestAnimationFrame(predictWebcam);\n}\nvideo.addEventListener(\"loadeddata\", predictWebcam);\n</script>",
+      "language": "html",
+      "output": ""
+    },
+    "index": 9,
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
+  },
+  {
+    "id": "8g1R5tTwAZ",
+    "type": "code",
+    "data": {
+      "code": "editor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    return blocks.map(doc => {\n      delete doc._data.crdts\n      delete doc._data._deleted\n      delete doc._data._deleted\n      delete doc._data._attachments\n      delete doc._data._rev\n      delete doc._data._meta\n      return doc._data\n    })\n  }),\n  map(blocks =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(blocks, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/1-server-replication.json\",\n    commitMessage: \"feat: replicate to GitHub and remove your token\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 11,
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
+  },
+  {
+    "id": "JcsAwBc5Za",
+    "type": "header",
+    "data": {
+      "text": "Replication",
+      "level": 2
+    },
+    "index": 11,
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
+  },
+  {
+    "id": "R-Yh7VFJYh",
+    "type": "paragraph",
+    "data": {
+      "text": ""
+    },
+    "index": 13,
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
   }
 ]
