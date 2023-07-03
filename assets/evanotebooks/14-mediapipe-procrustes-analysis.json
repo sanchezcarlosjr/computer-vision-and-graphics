@@ -15,13 +15,26 @@
     "id": "Ua30gSiVEo",
     "type": "code",
     "data": {
-      "code": "import numpy as np\nfrom scipy.linalg import orthogonal_procrustes\nimport matplotlib.pyplot as plt\n\ndef translation_matrix_3d(dx, dy):\n    return np.array([\n        [1, 0, dx],\n        [0, 1, dy],\n        [0, 0, 0],\n    ])\n\ndef rotation_matrix(angle_rad):\n    cos_angle = np.cos(angle_rad)\n    sin_angle = np.sin(angle_rad)\n    return np.array([[cos_angle, -sin_angle], [sin_angle, cos_angle]])\n\ndef scaling_matrix_3d(sx, sy):\n    return np.array([0\n        [sx, 0],\n        [0, sy]\n    ])\n\ndef min_max_normalization(data):\n    return (data - np.min(data)) / (np.max(data) - np.min(data))\n\n# https://en.wikipedia.org/wiki/Procrustes_analysis\ndef compute_procrustes_similarity(shape1, shape2):\n  procrustes_distance = np.sqrt(((shape2 - shape1)**2).sum())\n  return max(1-round(procrustes_distance,4),0)\n\ndef compute_procrustes(shape1, shape2):\n    shape1 = shape1.astype(float)\n    shape2 = shape2.astype(float)\n    R, scale = orthogonal_procrustes(shape1, shape2)\n    transformed_shape1 = scale * shape1.dot(R)\n    return compute_procrustes_similarity(shape2,transformed_shape1)\n\ndef standard_normalization(shape):\n    shape = shape.astype(float)\n    # centering the shape\n    shape -= np.mean(shape, axis=0)\n    # scale the shape\n    shape /= np.sqrt((shape**2).sum())\n    return shape",
+      "code": "import numpy as np\nfrom scipy.linalg import orthogonal_procrustes\nimport matplotlib.pyplot as plt\n\ndef translation_matrix_3d(dx, dy):\n    return np.array([\n        [1, 0, dx],\n        [0, 1, dy],\n        [0, 0, 0],\n    ])\n\ndef rotation_matrix(angle_rad):\n    cos_angle = np.cos(angle_rad)\n    sin_angle = np.sin(angle_rad)\n    return np.array([[cos_angle, -sin_angle], [sin_angle, cos_angle]])\n\ndef scaling_matrix_3d(sx, sy):\n    return np.array([\n        [sx, 0],\n        [0, sy]\n    ])\n\ndef min_max_normalization(data):\n    return (data - np.min(data)) / (np.max(data) - np.min(data))\n\ndef standard_normalization(landmarks):\n    mean_val = np.mean(landmarks, axis=0)\n    std_val = np.std(landmarks, axis=0)\n    return (landmarks - mean_val) / std_val\n\n# https://en.wikipedia.org/wiki/Procrustes_analysis\ndef compute_procrustes_similarity(shape1, shape2):\n  procrustes_distance = np.sqrt(((shape2 - shape1)**2).sum())\n  return max(1-round(procrustes_distance,3),0)\n\ndef compute_procrustes(shape1, shape2):\n    shape1 = shape1.astype(float)\n    shape2 = shape2.astype(float)\n    R, scale = orthogonal_procrustes(shape1, shape2)\n    transformed_shape1 = scale * shape1.dot(R)\n    return compute_procrustes_similarity(shape2,transformed_shape1)\n\ndef standard_normalization(shape):\n    shape = shape.astype(float)\n    # centering the shape\n    shape -= np.mean(shape, axis=0)\n    # scale the shape\n    shape /= np.sqrt((shape**2).sum())\n    return shape",
       "language": "python",
       "output": "undefined"
     },
     "index": 1,
     "createdBy": "sbxpricfei",
-    "lastEditedBy": "cgflsjntse",
+    "lastEditedBy": "beemoftavt",
+    "topic": "wfhpfmczdk"
+  },
+  {
+    "id": "Od4Bqxg6Qq",
+    "type": "code",
+    "data": {
+      "code": "goals = [\n  np.array([\n    [\n        0.3862111568450928,\n        0.9403453469276428,\n    ],\n    [\n        0.444118857383728,\n        0.8816303610801697\n    ],\n    [\n        0.4814566373825073,\n        0.7915549278259277\n    ],\n    [\n        0.4956647753715515,\n        0.7123805284500122\n    ],\n    [\n        0.508569598197937,\n        0.6401602625846863\n    ],\n    [\n        0.3920263648033142,\n        0.6721675395965576\n    ],\n    [\n        0.36959102749824524,\n        0.566619336605072\n    ],\n    [\n        0.35014912486076355,\n        0.5084306001663208\n    ],\n    [\n        0.330780029296875,\n        0.45730119943618774\n    ],\n    [\n        0.3367011249065399,\n        0.6862635612487793\n    ],\n    [\n        0.2997554540634155,\n        0.5753514766693115\n    ],\n    [\n        0.27116623520851135,\n        0.5118122100830078\n    ],\n    [\n        0.24341821670532227,\n        0.45756709575653076\n    ],\n    [\n        0.29331904649734497,\n        0.7259061932563782\n    ],\n    [\n        0.2509540319442749,\n        0.6312907338142395\n    ],\n    [\n        0.22074800729751587,\n        0.5784557461738586\n    ],\n    [\n        0.19168047606945038,\n        0.5311246514320374\n    ],\n    [\n        0.2582094669342041,\n        0.7830571532249451\n    ],\n    [\n        0.21213380992412567,\n        0.7309069633483887\n    ],\n    [\n        0.17972202599048615,\n        0.6970048546791077\n    ],\n    [\n        0.14870686829090118,\n        0.6620938777923584\n    ]\n]),\n  np.array([\n    [\n        0.5238251686096191,\n        1.0436588525772095\n    ],\n    [\n        0.5989609956741333,\n        0.9904602766036987\n    ],\n    [\n        0.6397580504417419,\n        0.9102765917778015\n    ],\n    [\n        0.6172007918357849,\n        0.8501118421554565\n    ],\n    [\n        0.5564733147621155,\n        0.8281322717666626\n    ],\n    [\n        0.5986024737358093,\n        0.7077441215515137\n    ],\n    [\n        0.6256896257400513,\n        0.5786256790161133\n    ],\n    [\n        0.6382430791854858,\n        0.5041165351867676\n    ],\n    [\n        0.6454107761383057,\n        0.43216919898986816\n    ],\n    [\n        0.5338045954704285,\n        0.7095276117324829\n    ],\n    [\n        0.5035086870193481,\n        0.5608507394790649\n    ],\n    [\n        0.4808644950389862,\n        0.46984052658081055\n    ],\n    [\n        0.4602692723274231,\n        0.3924459218978882\n    ],\n    [\n        0.48424455523490906,\n        0.753059446811676\n    ],\n    [\n        0.48031309247016907,\n        0.6656513214111328\n    ],\n    [\n        0.5208227634429932,\n        0.7704780697822571\n    ],\n    [\n        0.546938955783844,\n        0.8468767404556274\n    ],\n    [\n        0.4453798532485962,\n        0.8260877132415771\n    ],\n    [\n        0.46365484595298767,\n        0.7787992358207703\n    ],\n    [\n        0.5029959678649902,\n        0.8402537703514099\n    ],\n    [\n        0.5297682881355286,\n        0.8920859098434448\n    ]\n]),\n  np.array([\n    [\n        0.47808799147605896,\n        0.8363876342773438\n    ],\n    [\n        0.546364426612854,\n        0.7980321049690247\n    ],\n    [\n        0.6242985725402832,\n        0.730499267578125\n    ],\n    [\n        0.6501966714859009,\n        0.6443168520927429\n    ],\n    [\n        0.6116496324539185,\n        0.5938596129417419\n    ],\n    [\n        0.5639796257019043,\n        0.6175054311752319\n    ],\n    [\n        0.613605797290802,\n        0.5835921764373779\n    ],\n    [\n        0.5876199007034302,\n        0.6688910126686096\n    ],\n    [\n        0.5674670338630676,\n        0.6617234945297241\n    ],\n    [\n        0.5188285112380981,\n        0.6023832559585571\n    ],\n    [\n        0.5667188167572021,\n        0.5648079514503479\n    ],\n    [\n        0.5475907325744629,\n        0.6631887555122375\n    ],\n    [\n        0.531632125377655,\n        0.6528308391571045\n    ],\n    [\n        0.4746507406234741,\n        0.6050103902816772\n    ],\n    [\n        0.5166282653808594,\n        0.5608212947845459\n    ],\n    [\n        0.5100655555725098,\n        0.6557729244232178\n    ],\n    [\n        0.49214494228363037,\n        0.6577298045158386\n    ],\n    [\n        0.4275803565979004,\n        0.6083655953407288\n    ],\n    [\n        0.4658847153186798,\n        0.595893144607544\n    ],\n    [\n        0.46759504079818726,\n        0.6615400910377502\n    ],\n    [\n        0.45337963104248047,\n        0.6628733277320862\n    ]\n])\n]\ngoals[0] = standard_normalization((rotation_matrix(np.pi)@goals[0].T).T)\ngoals[1] = standard_normalization((rotation_matrix(np.pi)@goals[1].T).T)\ngoals[2] = standard_normalization((rotation_matrix(np.pi)@goals[2].T).T)",
+      "language": "python",
+      "output": "undefined"
+    },
+    "index": 2,
+    "createdBy": "cgflsjntse",
+    "lastEditedBy": "beemoftavt",
     "topic": "wfhpfmczdk"
   },
   {
@@ -34,19 +47,6 @@
     },
     "index": 2,
     "createdBy": "sbxpricfei",
-    "lastEditedBy": "sbxpricfei",
-    "topic": "wfhpfmczdk"
-  },
-  {
-    "id": "Od4Bqxg6Qq",
-    "type": "code",
-    "data": {
-      "code": "for i in range(0,len(goal_gestures)):\n  goal_gestures[i] = standard_normalization(goal_gestures[i])\n  \nsplit = 14\nhand_gestures, pose_gestures = goal_gestures[0:split], goal_gestures[split:]\nlen(goal_gestures)",
-      "language": "python",
-      "output": "14"
-    },
-    "index": 3,
-    "createdBy": "cgflsjntse",
     "lastEditedBy": "sbxpricfei",
     "topic": "wfhpfmczdk"
   },
@@ -76,16 +76,16 @@
     "topic": "wfhpfmczdk"
   },
   {
-    "id": "FSj3Moigrk",
+    "id": "sXX4QgfDId",
     "type": "code",
     "data": {
-      "code": "<video id=\"webcam\" style=\"width: 1280px; height: 720px;\" autoplay playsinline></video>\n<script type=\"module\">\nimport {HandLandmarker,FilesetResolver,DrawingUtils} from \"https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0\";\nconst vision = await FilesetResolver.forVisionTasks(\"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm\");\nconst handLandmarker = await HandLandmarker.createFromOptions(vision, {\n    baseOptions: {\n      modelAssetPath: `https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task`,\n      delegate: \"GPU\"\n    },\n    runningMode: \"video\",\n    numHands: 1\n\n});\nconst video = document.getElementById(\"webcam\");\nlet lastVideoTime = -1;\nasync function predictWebcam() {\n    let startTimeMs = performance.now();\n    if (lastVideoTime !== video.currentTime) {\n        lastVideoTime = video.currentTime;\n        const results = handLandmarker.detectForVideo(video, startTimeMs);\n        \n        if (results.worldLandmarks.length !== 0) {\n           console.log(results.worldLandmarks[0].map(l => ([l.x, l.y, l.z])))\n           const goal = choose_close_goal_pose(results.worldLandmarks[0].map(l => ([l.x, l.y, l.z])), 'hands').toJs();\n           console.log(goal)\n           // handSim.next(goal);\n        }\n    }\n    requestAnimationFrame(predictWebcam); \n}\n\nvideo.addEventListener(\"loadeddata\", predictWebcam);\nstartVideo(video)\n</script>",
+      "code": "<script type=\"module\">\nclass Lexer {\n  constructor(rules) {\n    this.state = '';\n    this.rules = rules;\n    // TODO: Implement large match\n    this.policies = {\n     'first_match': (input) => {\n       for (let rule of this.rules) {\n        if (rule.match(this.state, input)) {\n          this.state = '';\n          return rule.apply(input);\n        }\n       }\n      },\n      'all_matches': (input) => {\n        const matches = []\n        for (let rule of this.rules) {\n         if (rule.match(this.state, input)) {\n          matches.push(rule.apply(input));\n         }\n        }\n        if (matches.length > 0) {\n          this.state = '';\n        }\n        return matches;\n      }\n    }\n  }\n  analyze = (input, policy='first_match') => {\n    this.state += input;\n    return this.policies[policy](input)\n  };\n}\n\nwindow.lexer = new Lexer([\n  {\n    match: (state, input) => /0/g.test(state),\n    apply: (input) => 'A',\n  }\n]);\n  \nwindow.startVideo = async (videoElement, peerId) => {\n  const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: false});\n  if (peerId) {\n    peer.call(peerId, stream).on('stream', peerStream => {\n      videoElement.srcObject = peerStream;\n      videoElement.play();\n    });\n  } else {\n    videoElement.srcObject = stream;\n    videoElement.play();\n  }\n}\n</script>",
       "language": "html",
-      "output": ""
+      "output": "<script type=\"module\">\nclass Lexer {\n  constructor(rules) {\n    this.state = '';\n    this.rules = rules;\n    // TODO: Implement large match\n    this.policies = {\n     'first_match': (input) => {\n       for (let rule of this.rules) {\n        if (rule.match(this.state, input)) {\n          this.state = '';\n          return rule.apply(input);\n        }\n       }\n      },\n      'all_matches': (input) => {\n        const matches = []\n        for (let rule of this.rules) {\n         if (rule.match(this.state, input)) {\n          matches.push(rule.apply(input));\n         }\n        }\n        if (matches.length > 0) {\n          this.state = '';\n        }\n        return matches;\n      }\n    }\n  }\n  analyze = (input, policy='first_match') => {\n    this.state += input;\n    return this.policies[policy](input)\n  };\n}\n\nwindow.lexer = new Lexer([\n  {\n    match: (state, input) => /0/g.test(state),\n    apply: (input) => 'A',\n  }\n]);\n  \nwindow.startVideo = async (videoElement, peerId) => {\n  const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: false});\n  if (peerId) {\n    peer.call(peerId, stream).on('stream', peerStream => {\n      videoElement.srcObject = peerStream;\n      videoElement.play();\n    });\n  } else {\n    videoElement.srcObject = stream;\n    videoElement.play();\n  }\n}\n</script>"
     },
-    "index": 6,
+    "index": 5,
     "createdBy": "sbxpricfei",
-    "lastEditedBy": "sbxpricfei",
+    "lastEditedBy": "beemoftavt",
     "topic": "wfhpfmczdk"
   },
   {
@@ -101,26 +101,39 @@
     "topic": "wfhpfmczdk"
   },
   {
+    "id": "f_rUIPH6dn",
+    "type": "code",
+    "data": {
+      "code": "<video id=\"webcam\" style=\"width: 1280px; height: 720px;\" autoplay playsinline></video>\n<script type=\"module\">\nwindow.startVideo = async (videoElement, peerId) => {\n  const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: false});\n  if (peerId) {\n    peer.call(peerId, stream).on('stream', peerStream => {\n      videoElement.srcObject = peerStream;\n      videoElement.play();\n    });\n  } else {\n    videoElement.srcObject = stream;\n    videoElement.play();\n  }\n}\nstartVideo(document.getElementById(\"webcam\"))\n</script>",
+      "language": "html",
+      "output": ""
+    },
+    "index": 8,
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
+  },
+  {
     "id": "j9IG5mLLX6",
     "type": "header",
     "data": {
       "text": "Hand Landmarker",
       "level": 2
     },
-    "index": 8,
+    "index": 9,
     "createdBy": "cgflsjntse",
     "lastEditedBy": "sbxpricfei",
     "topic": "wfhpfmczdk"
   },
   {
-    "id": "sXX4QgfDId",
+    "id": "FSj3Moigrk",
     "type": "code",
     "data": {
-      "code": "<script type=\"module\">\nclass Lexer {\n  constructor(rules) {\n    this.state = '';\n    this.rules = rules;\n    // TODO: Implement large match\n    this.policies = {\n     'first_match': (input) => {\n       for (let rule of this.rules) {\n        if (rule.match(this.state, input)) {\n          this.state = '';\n          return rule.apply(input);\n        }\n       }\n      },\n      'all_matches': (input) => {\n        const matches = []\n        for (let rule of this.rules) {\n         if (rule.match(this.state, input)) {\n          matches.push(rule.apply(input));\n         }\n        }\n        if (matches.length > 0) {\n          this.state = '';\n        }\n        return matches;\n      }\n    }\n  }\n  analyze = (input, policy='first_match') => {\n    this.state += input;\n    return this.policies[policy](input)\n  };\n}\n\nwindow.lexer = new Lexer([\n  {\n    match: (state, input) => /^00$/g.test(state),\n    apply: (input) => 'A',\n  }\n]);\nimport {Subject,zip,map,tap,combineLatest, filter, interval} from 'https://cdn.jsdelivr.net/npm/rxjs@7.8.1/+esm'\n\nwindow.poseSim = new Subject();\nwindow.handSim = new Subject();\nwindow.objectClassification = new Subject();\n\ncombineLatest([handSim,poseSim]).pipe(\n  tap(x => console.log(x[0][1], x[1][1])),\n  filter(x => x[0][1] > 0.9 && x[0][1]  > 0.8),\n  map(x => x.map(x => x[0]).join(\"\")),\n  map(x => lexer.analyze(x))\n).subscribe(console.log);\n  \nwindow.startVideo = async (videoElement, peerId) => {\n  const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: false});\n  if (peerId) {\n    peer.call(peerId, stream).on('stream', peerStream => {\n      console.log(peerStream);\n      videoElement.srcObject = peerStream;\n      videoElement.play();\n    });\n  } else {\n    videoElement.srcObject = stream;\n    videoElement.play();\n  }\n}\n</script>",
+      "code": "<video id=\"webcam\" style=\"width: 1280px; height: 720px;\" autoplay playsinline></video>\n<script type=\"module\">\nimport {HandLandmarker,FilesetResolver,DrawingUtils} from \"https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0\";\nconst vision = await FilesetResolver.forVisionTasks(\"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm\");\nconst handLandmarker = await HandLandmarker.createFromOptions(vision, {\n    baseOptions: {\n      modelAssetPath: `https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task`,\n      delegate: \"GPU\"\n    },\n    runningMode: \"video\",\n    numHands: 1\n});\n\nconst video = document.getElementById(\"webcam\");\nlet lastVideoTime = -1;\nasync function predictWebcam() {\n    let startTimeMs = performance.now();\n    if (lastVideoTime !== video.currentTime) {\n        lastVideoTime = video.currentTime;\n        const results = handLandmarker.detectForVideo(video, startTimeMs);\n        if (results.landmarks.length !== 0) {\n           const result = lexer.analyze(choose_close_goal_pose(results.landmarks[0].map(l => ([l.x, l.y]))))\n           if (result) {\n             console.log(result);\n           }\n        }\n    }\n    requestAnimationFrame(predictWebcam); \n}\n\nvideo.addEventListener(\"loadeddata\", predictWebcam);\nstartVideo(video)\n</script>",
       "language": "html",
-      "output": "<script type=\"module\">\nclass Lexer {\n  constructor(rules) {\n    this.state = '';\n    this.rules = rules;\n    // TODO: Implement large match\n    this.policies = {\n     'first_match': (input) => {\n       for (let rule of this.rules) {\n        if (rule.match(this.state, input)) {\n          this.state = '';\n          return rule.apply(input);\n        }\n       }\n      },\n      'all_matches': (input) => {\n        const matches = []\n        for (let rule of this.rules) {\n         if (rule.match(this.state, input)) {\n          matches.push(rule.apply(input));\n         }\n        }\n        if (matches.length > 0) {\n          this.state = '';\n        }\n        return matches;\n      }\n    }\n  }\n  analyze = (input, policy='first_match') => {\n    this.state += input;\n    return this.policies[policy](input)\n  };\n}\n\nwindow.lexer = new Lexer([\n  {\n    match: (state, input) => /^00$/g.test(state),\n    apply: (input) => 'A',\n  }\n]);\nimport {Subject,zip,map,tap,combineLatest, filter, interval} from 'https://cdn.jsdelivr.net/npm/rxjs@7.8.1/+esm'\n\nwindow.poseSim = new Subject();\nwindow.handSim = new Subject();\nwindow.objectClassification = new Subject();\n\ncombineLatest([handSim,poseSim]).pipe(\n  tap(x => console.log(x[0][1], x[1][1])),\n  filter(x => x[0][1] > 0.9 && x[0][1]  > 0.8),\n  map(x => x.map(x => x[0]).join(\"\")),\n  map(x => lexer.analyze(x))\n).subscribe(console.log);\n  \nwindow.startVideo = async (videoElement, peerId) => {\n  const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: false});\n  if (peerId) {\n    peer.call(peerId, stream).on('stream', peerStream => {\n      console.log(peerStream);\n      videoElement.srcObject = peerStream;\n      videoElement.play();\n    });\n  } else {\n    videoElement.srcObject = stream;\n    videoElement.play();\n  }\n}\n</script>"
+      "output": ""
     },
-    "index": 9,
+    "index": 10,
     "createdBy": "sbxpricfei",
     "lastEditedBy": "sbxpricfei",
     "topic": "wfhpfmczdk"
@@ -131,19 +144,6 @@
     "data": {
       "text": "Pose Landmarker",
       "level": 2
-    },
-    "index": 10,
-    "createdBy": "sbxpricfei",
-    "lastEditedBy": "sbxpricfei",
-    "topic": "wfhpfmczdk"
-  },
-  {
-    "id": "f_rUIPH6dn",
-    "type": "code",
-    "data": {
-      "code": "<video id=\"webcam\" style=\"width: 1280px; height: 720px;\" autoplay playsinline></video>\n<script type=\"module\">\nwindow.startVideo = async (videoElement, peerId) => {\n  const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: false});\n  if (peerId) {\n    peer.call(peerId, stream).on('stream', peerStream => {\n      videoElement.srcObject = peerStream;\n      videoElement.play();\n    });\n  } else {\n    videoElement.srcObject = stream;\n    videoElement.play();\n  }\n}\nstartVideo(document.getElementById(\"webcam\"))\n</script>",
-      "language": "html",
-      "output": "<video id=\"webcam\" style=\"width: 1280px; height: 720px;\" autoplay=\"\" playsinline=\"\"></video>\n<script type=\"module\">\nwindow.startVideo = async (videoElement, peerId) => {\n  const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: false});\n  if (peerId) {\n    peer.call(peerId, stream).on('stream', peerStream => {\n      videoElement.srcObject = peerStream;\n      videoElement.play();\n    });\n  } else {\n    videoElement.srcObject = stream;\n    videoElement.play();\n  }\n}\nstartVideo(document.getElementById(\"webcam\"))\n</script>"
     },
     "index": 11,
     "createdBy": "sbxpricfei",
@@ -162,25 +162,25 @@
     "topic": "wfhpfmczdk"
   },
   {
+    "id": "UIJD513s5P",
+    "type": "code",
+    "data": {
+      "code": "<video id=\"webcam\" style=\"width: 1280px; height: 720px;\" autoplay playsinline></video>\n<script type=\"module\">\nimport {PoseLandmarker,FilesetResolver,DrawingUtils} from \"https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0\";\nconst vision = await FilesetResolver.forVisionTasks(\"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm\");\nconst poseLandmarker = await PoseLandmarker.createFromOptions(vision, {\n    baseOptions: {\n        modelAssetPath: `https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/latest/pose_landmarker_heavy.task`,\n        delegate: \"GPU\"\n    },\n    runningMode: \"video\",\n    numPoses: 1,\n    minPoseDetectionConfidence: 0.8,\n    minPosePresenceConfidence: 0.8,\n    minTrackingConfidence: 0.8\n});\n\nconst video = document.getElementById(\"webcam\");\nlet lastVideoTime = -1;\nasync function predictWebcam() {\n    let startTimeMs = performance.now();\n    if (lastVideoTime !== video.currentTime) {\n        lastVideoTime = video.currentTime;\n        poseLandmarker.detectForVideo(video, startTimeMs, (result) =>  {\n            if (result.landmarks.length === 0) {\n              return;\n            }\n            // console.log(results.landmarks[0].map(l => ([l.x, l.y])))\n            const result = lexer.analyze(choose_close_goal_pose(results.landmarks[0].map(l => ([l.x, l.y]))));\n            if (result) {\n              console.log(result);\n            }\n          }\n        );\n    }\n   window.requestAnimationFrame(predictWebcam);\n}\nvideo.addEventListener(\"loadeddata\", predictWebcam);\nstartVideo(video)\n</script>",
+      "language": "html",
+      "output": ""
+    },
+    "index": 12,
+    "createdBy": "sbxpricfei",
+    "lastEditedBy": "sbxpricfei",
+    "topic": "wfhpfmczdk"
+  },
+  {
     "id": "ACJk0wOHEe",
     "type": "paragraph",
     "data": {
       "text": ""
     },
     "index": 13,
-    "createdBy": "sbxpricfei",
-    "lastEditedBy": "sbxpricfei",
-    "topic": "wfhpfmczdk"
-  },
-  {
-    "id": "UIJD513s5P",
-    "type": "code",
-    "data": {
-      "code": "<script type=\"module\">\nimport {PoseLandmarker,FilesetResolver} from \"https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0\";\nconst vision = await FilesetResolver.forVisionTasks(\"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm\");\nconst poseLandmarker = await PoseLandmarker.createFromOptions(vision, {\n    baseOptions: {\n        modelAssetPath: `https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/latest/pose_landmarker_heavy.task`,\n        delegate: \"GPU\"\n    },\n    runningMode: \"video\",\n    numPoses: 1,\n    minPoseDetectionConfidence: 0.8,\n    minPosePresenceConfidence: 0.8,\n    minTrackingConfidence: 0.8\n});\n\nconst video = document.getElementById(\"webcam\");\nlet lastVideoTime = -1;\nasync function predictWebcam() {\n    let startTimeMs = performance.now();\n    if (lastVideoTime !== video.currentTime) {\n        lastVideoTime = video.currentTime;\n        poseLandmarker.detectForVideo(video, startTimeMs, (results) =>  {\n            if (results.worldLandmarks.length === 0) {\n              return;\n            }\n            // console.log(results.worldLandmarks[0].map(l => ([l.x, l.y, l.z])))\n            const goal = choose_close_goal_pose(results.worldLandmarks[0].map(l => ([l.x, l.y, l.z])), 'pose').toJs();\n            poseSim.next(goal);\n          }\n        );\n    }\n   window.requestAnimationFrame(predictWebcam);\n}\npredictWebcam()\n</script>",
-      "language": "html",
-      "output": "<script type=\"module\">\nimport {PoseLandmarker,FilesetResolver} from \"https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0\";\nconst vision = await FilesetResolver.forVisionTasks(\"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm\");\nconst poseLandmarker = await PoseLandmarker.createFromOptions(vision, {\n    baseOptions: {\n        modelAssetPath: `https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/latest/pose_landmarker_heavy.task`,\n        delegate: \"GPU\"\n    },\n    runningMode: \"video\",\n    numPoses: 1,\n    minPoseDetectionConfidence: 0.8,\n    minPosePresenceConfidence: 0.8,\n    minTrackingConfidence: 0.8\n});\n\nconst video = document.getElementById(\"webcam\");\nlet lastVideoTime = -1;\nasync function predictWebcam() {\n    let startTimeMs = performance.now();\n    if (lastVideoTime !== video.currentTime) {\n        lastVideoTime = video.currentTime;\n        poseLandmarker.detectForVideo(video, startTimeMs, (results) =>  {\n            if (results.worldLandmarks.length === 0) {\n              return;\n            }\n            // console.log(results.worldLandmarks[0].map(l => ([l.x, l.y, l.z])))\n            const goal = choose_close_goal_pose(results.worldLandmarks[0].map(l => ([l.x, l.y, l.z])), 'pose').toJs();\n            poseSim.next(goal);\n          }\n        );\n    }\n   window.requestAnimationFrame(predictWebcam);\n}\npredictWebcam()\n</script>"
-    },
-    "index": 14,
     "createdBy": "sbxpricfei",
     "lastEditedBy": "sbxpricfei",
     "topic": "wfhpfmczdk"
