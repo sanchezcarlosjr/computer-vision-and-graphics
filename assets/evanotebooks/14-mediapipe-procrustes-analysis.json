@@ -45,7 +45,7 @@
       "language": "python",
       "output": "undefined"
     },
-    "index": 2,
+    "index": 3,
     "createdBy": "sbxpricfei",
     "lastEditedBy": "sbxpricfei",
     "topic": "wfhpfmczdk"
@@ -129,7 +129,7 @@
     "id": "FSj3Moigrk",
     "type": "code",
     "data": {
-      "code": "<video id=\"webcam\" style=\"width: 1280px; height: 720px;\" autoplay playsinline></video>\n<script type=\"module\">\nimport {HandLandmarker,FilesetResolver,DrawingUtils} from \"https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0\";\nconst vision = await FilesetResolver.forVisionTasks(\"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm\");\nconst handLandmarker = await HandLandmarker.createFromOptions(vision, {\n    baseOptions: {\n      modelAssetPath: `https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task`,\n      delegate: \"GPU\"\n    },\n    runningMode: \"video\",\n    numHands: 1\n});\n\nconst video = document.getElementById(\"webcam\");\nlet lastVideoTime = -1;\nasync function predictWebcam() {\n    let startTimeMs = performance.now();\n    if (lastVideoTime !== video.currentTime) {\n        lastVideoTime = video.currentTime;\n        const results = handLandmarker.detectForVideo(video, startTimeMs);\n        if (results.landmarks.length !== 0) {\n           const result = lexer.analyze(choose_close_goal_pose(results.landmarks[0].map(l => ([l.x, l.y]))))\n           if (result) {\n             console.log(result);\n           }\n        }\n    }\n    requestAnimationFrame(predictWebcam); \n}\n\nvideo.addEventListener(\"loadeddata\", predictWebcam);\nstartVideo(video)\n</script>",
+      "code": "<script type=\"module\">\nimport {HandLandmarker,FilesetResolver,DrawingUtils} from \"https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0\";\nconst vision = await FilesetResolver.forVisionTasks(\"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm\");\nconst handLandmarker = await HandLandmarker.createFromOptions(vision, {\n    baseOptions: {\n      modelAssetPath: `https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task`,\n      delegate: \"GPU\"\n    },\n    runningMode: \"video\",\n    numHands: 1\n});\n\nconst video = document.getElementById(\"webcam\");\nlet lastVideoTime = -1;\nasync function predictWebcam() {\n    let startTimeMs = performance.now();\n    if (lastVideoTime !== video.currentTime) {\n        lastVideoTime = video.currentTime;\n        const results = handLandmarker.detectForVideo(video, startTimeMs);\n        if (results.landmarks.length !== 0) {\n           const landmarks = results.landmarks[0].map(l => ([l.x, l.y]));\n           console.log(landmarks);\n        }\n    }\n    requestAnimationFrame(predictWebcam); \n}\npredictWebcam()\n</script>",
       "language": "html",
       "output": ""
     },
@@ -165,11 +165,11 @@
     "id": "UIJD513s5P",
     "type": "code",
     "data": {
-      "code": "<video id=\"webcam\" style=\"width: 1280px; height: 720px;\" autoplay playsinline></video>\n<script type=\"module\">\nimport {PoseLandmarker,FilesetResolver,DrawingUtils} from \"https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0\";\nconst vision = await FilesetResolver.forVisionTasks(\"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm\");\nconst poseLandmarker = await PoseLandmarker.createFromOptions(vision, {\n    baseOptions: {\n        modelAssetPath: `https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/latest/pose_landmarker_heavy.task`,\n        delegate: \"GPU\"\n    },\n    runningMode: \"video\",\n    numPoses: 1,\n    minPoseDetectionConfidence: 0.8,\n    minPosePresenceConfidence: 0.8,\n    minTrackingConfidence: 0.8\n});\n\nconst video = document.getElementById(\"webcam\");\nlet lastVideoTime = -1;\nasync function predictWebcam() {\n    let startTimeMs = performance.now();\n    if (lastVideoTime !== video.currentTime) {\n        lastVideoTime = video.currentTime;\n        poseLandmarker.detectForVideo(video, startTimeMs, (result) =>  {\n            if (result.landmarks.length === 0) {\n              return;\n            }\n            // console.log(results.landmarks[0].map(l => ([l.x, l.y])))\n            const result = lexer.analyze(choose_close_goal_pose(results.landmarks[0].map(l => ([l.x, l.y]))));\n            if (result) {\n              console.log(result);\n            }\n          }\n        );\n    }\n   window.requestAnimationFrame(predictWebcam);\n}\nvideo.addEventListener(\"loadeddata\", predictWebcam);\nstartVideo(video)\n</script>",
+      "code": "<video id=\"webcam\" style=\"width: 1280px; height: 720px;\" autoplay playsinline></video>\n<script type=\"module\">\nimport {PoseLandmarker,FilesetResolver,DrawingUtils} from \"https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0\";\nconst vision = await FilesetResolver.forVisionTasks(\"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm\");\nconst poseLandmarker = await PoseLandmarker.createFromOptions(vision, {\n    baseOptions: {\n        modelAssetPath: `https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/latest/pose_landmarker_heavy.task`,\n        delegate: \"GPU\"\n    },\n    runningMode: \"video\",\n    numPoses: 1,\n    minPoseDetectionConfidence: 0.8,\n    minPosePresenceConfidence: 0.8,\n    minTrackingConfidence: 0.8\n});\n\nconst video = document.getElementById(\"webcam\");\nlet lastVideoTime = -1;\nasync function predictWebcam() {\n    let startTimeMs = performance.now();\n    if (lastVideoTime !== video.currentTime) {\n        lastVideoTime = video.currentTime;\n        poseLandmarker.detectForVideo(video, startTimeMs, (result) =>  {\n            if (result.landmarks.length === 0) {\n              return;\n            }\n            // console.log(results.landmarks[0].map(l => ([l.x, l.y])))\n            const results = results.landmarks[0].map(l => ([l.x, l.y]));\n            console.log(results);\n          }\n        );\n    }\n   window.requestAnimationFrame(predictWebcam);\n}\npredictWebcam()\n</script>",
       "language": "html",
       "output": ""
     },
-    "index": 12,
+    "index": 13,
     "createdBy": "sbxpricfei",
     "lastEditedBy": "sbxpricfei",
     "topic": "wfhpfmczdk"
@@ -180,7 +180,7 @@
     "data": {
       "text": ""
     },
-    "index": 13,
+    "index": 14,
     "createdBy": "sbxpricfei",
     "lastEditedBy": "sbxpricfei",
     "topic": "wfhpfmczdk"
