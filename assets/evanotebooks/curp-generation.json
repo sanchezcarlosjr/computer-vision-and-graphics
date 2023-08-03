@@ -16,7 +16,7 @@
     "type": "alert",
     "data": {
       "type": "primary",
-      "message": "Generate the valid search space of a CURP. \"_\" symbol is a placeholder that definite what are you looking for. Examples are&nbsp;CAHF__0818HMNLNL09,&nbsp;CAHF620818HMNLNL09,&nbsp;CAHF__0818HMNLNL0_,&nbsp;<span style=\"letter-spacing: normal;\">CAHF____18HMNLNL09. We don't print repeated results and&nbsp;</span>erroneous<span style=\"letter-spacing: normal;\">&nbsp;results.</span>"
+      "message": "Generate the valid search space of a CURP. \"_\" symbol is a placeholder that definite what are you looking for. Examples are&nbsp;CAHF__0818HMNLNL09,&nbsp;CAHF620818HMNLNL09,&nbsp;CAHF__0818HMNLNL0_,&nbsp;<span style=\"letter-spacing: normal;\">CAHF____18HMNLNL09. We don't print repeated results and&nbsp;</span>erroneous<span style=\"letter-spacing: normal;\">&nbsp;results. Please wait, we're loading Prolog.</span>"
     },
     "index": 1,
     "createdBy": "cckwatjpnk",
