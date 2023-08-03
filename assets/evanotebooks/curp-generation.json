@@ -1,0 +1,63 @@
+[
+  {
+    "id": "5HTgVQq4w5",
+    "type": "header",
+    "data": {
+      "text": "CURP Generator",
+      "level": 1
+    },
+    "index": 0,
+    "createdBy": "cckwatjpnk",
+    "lastEditedBy": "cckwatjpnk",
+    "topic": "vgyhiydaxl"
+  },
+  {
+    "id": "P_V5RumKOt",
+    "type": "alert",
+    "data": {
+      "type": "primary",
+      "message": "Generate the valid search space of a CURP. \"_\" symbol is a placeholder that definite what are you looking for. Examples are&nbsp;CAHF__0818HMNLNL09,&nbsp;CAHF620818HMNLNL09,&nbsp;CAHF__0818HMNLNL0_,&nbsp;<span style=\"letter-spacing: normal;\">CAHF____18HMNLNL09. We don't print repeated results and&nbsp;</span>erroneous<span style=\"letter-spacing: normal;\">&nbsp;results.</span>"
+    },
+    "index": 1,
+    "createdBy": "cckwatjpnk",
+    "lastEditedBy": "cckwatjpnk",
+    "topic": "vgyhiydaxl"
+  },
+  {
+    "id": "oQO6Zcxyde",
+    "type": "code",
+    "data": {
+      "code": "await prolog.open(`\ndate(Year, Month, Day) :- \n    between(1, 12, Month),\n    ((Month = 4; Month = 6; Month = 9; Month = 11) -> between(1, 30, Day);\n    (Month = 2 -> (leap_year(Year) -> between(1, 29, Day); between(1, 28, Day)));\n    between(1, 31, Day)).\n\nleap_year(Year) :-\n    0 is Year mod 4, \n    (Year mod 100 =\\= 0; Year mod 400 =:= 0).\n\nstate('AS').\nstate('BC').\nstate('BS').\nstate('CC').\nstate('CL').\nstate('CM').\nstate('CS').\nstate('CH').\nstate('DF').\nstate('DG').\nstate('GT').\nstate('GR').\nstate('HG').\nstate('JC').\nstate('MC').\nstate('MN').\nstate('MS').\nstate('NT').\nstate('NL').\nstate('OC').\nstate('PL').\nstate('QT').\nstate('QR').\nstate('SP').\nstate('SL').\nstate('SR').\nstate('TC').\nstate('TS').\nstate('TL').\nstate('VC').\nstate('YN').\nstate('ZS').\nstate('NE').\n\nletter(X) :- char_type(X, alpha),char_type(X,upper),char_type(X,ascii).\ndigit(X) :-  char_type(X, digit).\n\nvowel('A').\nvowel('E').\nvowel('I').\nvowel('O').\nvowel('U').\nvowel('Y').\n\nconsonant('B').\nconsonant('C').\nconsonant('D').\nconsonant('F').\nconsonant('G').\nconsonant('H').\nconsonant('J').\nconsonant('K').\nconsonant('L').\nconsonant('M').\nconsonant('N').\nconsonant('P').\nconsonant('Q').\nconsonant('R').\nconsonant('S').\nconsonant('T').\nconsonant('V').\nconsonant('X').\nconsonant('Z').\n\nforbidden_word('BACA').\nforbidden_word('BAKA').\nforbidden_word('BUEI').\nforbidden_word('BUEY').\nforbidden_word('CACA').\nforbidden_word('CACO').\nforbidden_word('CAGA').\nforbidden_word('CAGO').\nforbidden_word('CAKA').\nforbidden_word('CAKO').\nforbidden_word('COGE').\nforbidden_word('COGI').\nforbidden_word('COJA').\nforbidden_word('COJE').\nforbidden_word('COJI').\nforbidden_word('COJO').\nforbidden_word('COLA').\nforbidden_word('CULO').\nforbidden_word('FALO').\nforbidden_word('FETO').\nforbidden_word('GETA').\nforbidden_word('GUEI').\nforbidden_word('GUEY').\nforbidden_word('JETA').\nforbidden_word('JOTO').\nforbidden_word('KACA').\nforbidden_word('KACO').\nforbidden_word('KAGA').\nforbidden_word('KAGO').\nforbidden_word('KAKA').\nforbidden_word('KAKO').\nforbidden_word('KOGE').\nforbidden_word('KOGI').\nforbidden_word('KOJA').\nforbidden_word('KOJE').\nforbidden_word('KOJI').\nforbidden_word('KOJO').\nforbidden_word('KOLA').\nforbidden_word('KULO').\nforbidden_word('LILO').\nforbidden_word('LOCA').\nforbidden_word('LOCO').\nforbidden_word('LOKA').\nforbidden_word('LOKO').\nforbidden_word('MAME').\nforbidden_word('MAMO').\nforbidden_word('MEAR').\nforbidden_word('MEAS').\nforbidden_word('MEON').\nforbidden_word('MIAR').\nforbidden_word('MION').\nforbidden_word('MOCO').\nforbidden_word('MOKO').\nforbidden_word('MULA').\nforbidden_word('MULO').\nforbidden_word('NACA').\nforbidden_word('NACO').\nforbidden_word('PEDA').\nforbidden_word('PEDO').\nforbidden_word('PENE').\nforbidden_word('PIPI').\nforbidden_word('PITO').\nforbidden_word('POPO').\nforbidden_word('PUTA').\nforbidden_word('PUTO').\nforbidden_word('QULO').\nforbidden_word('RATA').\nforbidden_word('ROBA').\nforbidden_word('ROBE').\nforbidden_word('ROBO').\nforbidden_word('RUIN').\nforbidden_word('SENO').\nforbidden_word('TETA').\nforbidden_word('VACA').\nforbidden_word('VAGA').\nforbidden_word('VAGO').\nforbidden_word('VAKA').\nforbidden_word('VUEI').\nforbidden_word('VUEY').\nforbidden_word('WUEI').\nforbidden_word('WUEY').\n\ntable_renapo(X, Value) :- \n    digit(X), \n    atom_number(X,Value).\n\ntable_renapo(X, Value) :- \n    letter(X), \n    char_code(X,Code), \n    Code >= 65, \n    Code =< 78, \n    Value is Code - 55.\n    \ntable_renapo(X, Value) :- \n    letter(X), \n    char_code(X,Code), \n    Code >= 79, \n    Code =< 90, \n    Value is Code - 54.\n    \ntable_renapo('Ñ', 24).\n\nsum_curp([_], 1, 0).\nsum_curp([H|T],I, S) :- sum_curp(T,I1,Rest), I is I1+1, table_renapo(H,Value), S is Rest+Value*I.\n\nverify_curp(CURP,Digit) :- \n   sum_curp(CURP, 18, Sum),\n   Digit is (10 - Sum mod 10) mod 10.\n\nsex('H').\nsex('M').\nsex('X').\n\nyear(YearTwoDigitFormat, YearFourDigitFormat) :-\n   (YearTwoDigitFormat =< ${(new Date().getFullYear() % 100)}  -> YearFourDigitFormat is 2000+YearTwoDigitFormat\n   ; YearFourDigitFormat is 1900+YearTwoDigitFormat).\n   \ncharacters_number(C1,C2,TwoFormat) :- atom_concat(C1, C2, C1C2), atom_number(C1C2, TwoFormat).\n\nhom(X, Y) :- (X >= 2000 -> letter(Y);digit(Y)).\n\ncurp([C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18]) :- \nletter(C1),vowel(C2),letter(C3),letter(C4),digit(C5),digit(C6),digit(C7),digit(C8),digit(C9),digit(C10),sex(C11),letter(C12),\nletter(C13),consonant(C14),consonant(C15),consonant(C16),digit(C18),atom_concat(C12, C13, State),state(State),characters_number(C5,C6,YearTwoFormat),characters_number(C7,C8,Month),characters_number(C9,C10,Day),year(YearTwoFormat, YearFourFormat),date(YearFourFormat,Month,Day),hom(YearFourFormat,C17), \natom_number(C18, NC18),verify_curp([C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18], NC18),atomic_list_concat([C1, C2, C3, C4], C1C2C3C4), \\\\+ forbidden_word(C1C2C3C4).\n`);\n\nconst curp_regex = /^([A-Z&]|[a-z&]{1})([AEIOU]|[aeiou]{1})([A-Z&]|[a-z&]{1})([A-Z&]|[a-z&]{1})([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])([HM]|[hm]{1})([AS|as|BC|bc|BS|bs|CC|cc|CS|cs|CH|ch|CL|cl|CM|cm|DF|df|DG|dg|GT|gt|GR|gr|HG|hg|JC|jc|MC|mc|MN|mn|MS|ms|NT|nt|NL|nl|OC|oc|PL|pl|QT|qt|QR|qr|SP|sp|SL|sl|SR|sr|TC|tc|TS|ts|TL|tl|VZ|vz|YN|yn|ZS|zs|NE|ne]{2})([^A|a|E|e|I|i|O|o|U|u]{1})([^A|a|E|e|I|i|O|o|U|u]{1})([^A|a|E|e|I|i|O|o|U|u]{1})([0-9]{2})$/g;\n\nconst month_birth_distribution = [8.4,7.4,8.1,7.8,8.1,8.1,8.5,9.2,9,8.9,8.2,8.5];\n\nform({\n schema: {\n  \"type\": \"object\",\n  \"properties\": {\n    \"CURP\": {\n      \"type\": \"string\",\n      \"minLength\": 18,\n      \"maxLength\": 18\n    }\n   },\n   \"required\": [\n     \"CURP\"\n   ]\n  },\n  data: {\n     CURP: \"\"\n  }\n }\n).pipe(\n  Rx.debounceTime(800),\n  map(x => Array.from(x.CURP.toUpperCase())),\n  concatMap(CURP => prolog.query(`curp([${CURP.map((v,index) =>  v === \"_\" ? `C${index+1}` : `'${v}'`).join()}])`).pipe(\n   map(answer => {\n    const curp = [...CURP];\n    Object.keys(answer).forEach(key => {\n      if (key !== \"$tag\") {\n        curp[key.slice(1)-1] = answer[key];\n      }\n    });\n    return curp.join(\"\");\n   }),\n    reduceWithSum,\n    switchMap(x => from(x.map(curp => \n      [curp,month_birth_distribution[parseInt([...curp.matchAll(curp_regex)][0][6])-1]]\n      ).sort((a,b) => b[1]-a[1]).map(x => x[0]))),\n  )),\n  Rx.distinct(),\n  display\n)",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 2,
+    "createdBy": "cckwatjpnk",
+    "lastEditedBy": "cckwatjpnk",
+    "topic": "vgyhiydaxl"
+  },
+  {
+    "id": "DEA0vktC8s",
+    "type": "code",
+    "data": {
+      "code": "editor.blocks.get$.pipe(\n  first(),\n  map(blocks => {\n    return blocks.map(doc => {\n      delete doc._data.crdts\n      delete doc._data._deleted\n      delete doc._data._deleted\n      delete doc._data._attachments\n      delete doc._data._rev\n      delete doc._data._meta\n      return doc._data\n    })\n  }),\n  map(blocks =>\n    btoa(unescape(encodeURIComponent(JSON.stringify(blocks, null, 2).replaceAll(environment.GITHUB_TOKEN, \"\"))))),\n  commitOnGitHub({\n    owner: \"sanchezcarlosjr\",\n    repo: \"computer-vision-and-graphics\",\n    filePath: \"assets/evanotebooks/curp-generation.json\",\n    commitMessage: \"feat: generate the search space\",\n    GITHUB_TOKEN: environment.GITHUB_TOKEN\n   }\n  )\n)",
+      "language": "javascript",
+      "output": ""
+    },
+    "index": 3,
+    "createdBy": "cckwatjpnk",
+    "lastEditedBy": "cckwatjpnk",
+    "topic": "vgyhiydaxl"
+  },
+  {
+    "id": "ATyNTn_UDt",
+    "type": "paragraph",
+    "data": {
+      "text": ""
+    },
+    "index": 6,
+    "createdBy": "cckwatjpnk",
+    "lastEditedBy": "cckwatjpnk",
+    "topic": "vgyhiydaxl"
+  }
+]
